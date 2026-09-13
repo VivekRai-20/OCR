@@ -1,0 +1,52 @@
+{
+  "enabled": true,
+  "embedding": null,
+  "keywords": [
+    {
+      "keyword": "rate",
+      "score": 1.0
+    },
+    {
+      "keyword": "reaction",
+      "score": 0.3214
+    },
+    {
+      "keyword": "time",
+      "score": 0.3214
+    },
+    {
+      "keyword": "order",
+      "score": 0.2143
+    },
+    {
+      "keyword": "tion",
+      "score": 0.1786
+    },
+    {
+      "keyword": "step",
+      "score": 0.1786
+    },
+    {
+      "keyword": "yeaction",
+      "score": 0.1429
+    },
+    {
+      "keyword": "slope",
+      "score": 0.1429
+    },
+    {
+      "keyword": "xate",
+      "score": 0.1429
+    },
+    {
+      "keyword": "which",
+      "score": 0.1429
+    }
+  ],
+  "classification": {
+    "label": "UNKNOWN",
+    "confidence": 0.0,
+    "categories": []
+  },
+  "similarities": []
+}

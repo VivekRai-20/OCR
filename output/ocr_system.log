@@ -1,0 +1,1298 @@
+2026-08-19 00:24:24  INFO      main                                 Mode: patterns
+2026-08-19 00:24:24  INFO      extraction.pattern_manager           Loaded 11 field definition(s) from C:\OCR\extraction\patterns.yaml
+2026-08-19 00:24:24  INFO      main                                 Loaded text from: C:\OCR\input\sample.txt
+2026-08-19 00:24:24  INFO      output.output_writer                 Wrote: C:\OCR\output\sample\extracted.json
+2026-08-19 00:24:43  INFO      main                                 Mode: patterns
+2026-08-19 00:24:43  INFO      extraction.pattern_manager           Loaded 11 field definition(s) from C:\OCR\extraction\patterns.yaml
+2026-08-19 00:24:43  INFO      main                                 Loaded text from: C:\OCR\input\sample.txt
+2026-08-19 00:24:43  INFO      output.output_writer                 Wrote: C:\OCR\output\sample\extracted.json
+2026-08-19 00:24:49  INFO      main                                 Mode: check-offline
+2026-08-19 00:25:21  INFO      main                                 Mode: check-offline
+2026-08-19 00:25:21  INFO      utils.offline_checker                Model directory OK: DET   (1 file(s)) — C:\OCR\models\paddleocr\det
+2026-08-19 00:25:21  INFO      utils.offline_checker                Model directory OK: REC   (1 file(s)) — C:\OCR\models\paddleocr\rec
+2026-08-19 00:25:21  INFO      utils.offline_checker                Model directory OK: CLS   (1 file(s)) — C:\OCR\models\paddleocr\cls
+2026-08-19 00:25:21  INFO      utils.offline_checker                Patterns file OK: C:\OCR\extraction\patterns.yaml
+2026-08-19 00:25:57  INFO      main                                 Mode: check-offline
+2026-08-19 00:25:57  WARNING   utils.offline_checker                Model directory has no model files (.pdmodel/.pdiparams): DET  (C:\OCR\models\paddleocr\det)
+2026-08-19 00:25:57  WARNING   utils.offline_checker                Model directory has no model files (.pdmodel/.pdiparams): REC  (C:\OCR\models\paddleocr\rec)
+2026-08-19 00:25:57  WARNING   utils.offline_checker                Model directory has no model files (.pdmodel/.pdiparams): CLS  (C:\OCR\models\paddleocr\cls)
+2026-08-19 00:25:57  INFO      utils.offline_checker                Patterns file OK: C:\OCR\extraction\patterns.yaml
+2026-08-23 00:33:01  INFO      main                                 Mode: check-offline
+2026-08-23 00:33:01  WARNING   utils.offline_checker                Model directory has no model files (.pdmodel/.pdiparams): DET  (C:\OCR\models\paddleocr\det)
+2026-08-23 00:33:01  WARNING   utils.offline_checker                Model directory has no model files (.pdmodel/.pdiparams): REC  (C:\OCR\models\paddleocr\rec)
+2026-08-23 00:33:01  WARNING   utils.offline_checker                Model directory has no model files (.pdmodel/.pdiparams): CLS  (C:\OCR\models\paddleocr\cls)
+2026-08-23 00:33:01  INFO      utils.offline_checker                Patterns file OK: C:\OCR\extraction\patterns.yaml
+2026-08-23 00:42:00  INFO      main                                 Mode: check-offline
+2026-08-23 00:42:00  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-08-23 00:42:00  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-08-23 00:42:00  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-08-23 00:42:00  INFO      utils.offline_checker                System cache contains 5 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-08-23 00:42:00  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-08-23 00:42:00  INFO      utils.offline_checker                Patterns file OK: C:\OCR\extraction\patterns.yaml
+2026-08-23 00:42:01  INFO      main                                 Mode: patterns
+2026-08-23 00:42:01  INFO      extraction.pattern_manager           Loaded 11 field definition(s) from C:\OCR\extraction\patterns.yaml
+2026-08-23 00:42:01  INFO      main                                 Loaded text from: C:\OCR\input\sample.txt
+2026-08-23 00:42:01  INFO      output.output_writer                 Wrote: C:\OCR\output\sample\extracted.json
+2026-08-23 00:42:40  INFO      main                                 Mode: check-offline
+2026-08-23 00:42:40  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-08-23 00:42:40  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-08-23 00:42:40  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-08-23 00:42:40  INFO      utils.offline_checker                System cache contains 5 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-08-23 00:42:40  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-08-23 00:42:40  INFO      utils.offline_checker                Patterns file OK: C:\OCR\extraction\patterns.yaml
+2026-08-23 00:42:54  INFO      main                                 Mode: ocr
+2026-08-23 00:42:55  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-08-23 00:42:55  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-08-23 00:42:55  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-08-23 00:42:55  INFO      utils.offline_checker                System cache contains 5 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-08-23 00:42:55  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-08-23 00:42:55  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-08-23 00:42:55  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-08-23 00:42:55  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-08-23 00:42:55  INFO      utils.offline_checker                System cache contains 5 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-08-23 00:42:55  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-08-23 00:42:58  INFO      ocr.paddle_engine                    PaddleOCR version: 3.7.0 (major: 3)
+2026-08-23 00:42:58  INFO      ocr.paddle_engine                    Initialising PaddleOCR 3.7.0 …
+2026-08-23 00:43:40  INFO      main                                 Mode: ocr
+2026-08-23 00:44:00  INFO      main                                 Mode: check-offline
+2026-08-23 00:44:00  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-08-23 00:44:00  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-08-23 00:44:00  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-08-23 00:44:00  INFO      utils.offline_checker                System cache contains 5 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-08-23 00:44:00  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-08-23 00:44:00  INFO      utils.offline_checker                Patterns file OK: C:\OCR\extraction\patterns.yaml
+2026-08-23 00:44:01  INFO      main                                 Mode: patterns
+2026-08-23 00:44:01  INFO      extraction.pattern_manager           Loaded 11 field definition(s) from C:\OCR\extraction\patterns.yaml
+2026-08-23 00:44:03  INFO      main                                 Mode: full
+2026-08-23 00:44:03  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-08-23 00:44:03  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-08-23 00:44:03  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-08-23 00:44:03  INFO      utils.offline_checker                System cache contains 5 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-08-23 00:44:03  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-08-23 00:44:03  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-08-23 00:44:03  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-08-23 00:44:03  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-08-23 00:44:03  INFO      utils.offline_checker                System cache contains 5 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-08-23 00:44:03  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-08-23 00:44:06  INFO      ocr.paddle_engine                    PaddleOCR version: 3.7.0 (major: 3)
+2026-08-23 00:44:06  INFO      ocr.paddle_engine                    Initialising PaddleOCR 3.7.0 …
+2026-08-23 00:44:10  INFO      ocr.paddle_engine                    PaddleOCR initialised successfully.
+2026-08-23 00:44:10  INFO      ocr.ocr_pipeline                     ============================================================
+2026-08-23 00:44:10  INFO      ocr.ocr_pipeline                     Processing: test_doc.png
+2026-08-23 00:44:10  INFO      ocr.ocr_pipeline                     Document type: IMAGE
+2026-08-23 00:44:10  INFO      document.image_processor             Loading image: test_doc.png
+2026-08-23 00:44:10  INFO      document.image_processor             Image has 1 frame(s).
+2026-08-23 00:44:14  INFO      ocr.paddle_engine                    Page 1: 0 region(s) detected in 4.14s
+2026-08-23 00:44:14  INFO      ocr.ocr_pipeline                     Done: 1 page(s), 0 region(s) in 4.35s
+2026-08-23 00:44:14  INFO      extraction.pattern_manager           Loaded 11 field definition(s) from C:\OCR\extraction\patterns.yaml
+2026-08-23 00:44:14  INFO      output.output_writer                 Wrote: C:\OCR\output\test_doc\ocr.txt
+2026-08-23 00:44:14  INFO      output.output_writer                 Wrote: C:\OCR\output\test_doc\ocr.json
+2026-08-23 00:44:14  INFO      output.output_writer                 Wrote: C:\OCR\output\test_doc\extracted.json
+2026-08-23 00:44:14  INFO      output.output_writer                 Wrote: C:\OCR\output\test_doc\result.json
+2026-08-23 00:44:34  INFO      main                                 Mode: full
+2026-08-23 00:44:34  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-08-23 00:44:34  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-08-23 00:44:34  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-08-23 00:44:34  INFO      utils.offline_checker                System cache contains 5 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-08-23 00:44:34  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-08-23 00:44:34  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-08-23 00:44:34  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-08-23 00:44:34  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-08-23 00:44:34  INFO      utils.offline_checker                System cache contains 5 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-08-23 00:44:34  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-08-23 00:44:37  INFO      ocr.paddle_engine                    PaddleOCR version: 3.7.0 (major: 3)
+2026-08-23 00:44:37  INFO      ocr.paddle_engine                    Initialising PaddleOCR 3.7.0 …
+2026-08-23 00:44:42  INFO      ocr.paddle_engine                    PaddleOCR initialised successfully.
+2026-08-23 00:44:42  INFO      ocr.ocr_pipeline                     ============================================================
+2026-08-23 00:44:42  INFO      ocr.ocr_pipeline                     Processing: test_doc.png
+2026-08-23 00:44:42  INFO      ocr.ocr_pipeline                     Document type: IMAGE
+2026-08-23 00:44:42  INFO      document.image_processor             Loading image: test_doc.png
+2026-08-23 00:44:42  INFO      document.image_processor             Image has 1 frame(s).
+2026-08-23 00:44:48  INFO      ocr.paddle_engine                    Page 1: 0 region(s) detected in 5.53s
+2026-08-23 00:44:48  INFO      ocr.ocr_pipeline                     Done: 1 page(s), 0 region(s) in 5.92s
+2026-08-23 00:44:48  INFO      extraction.pattern_manager           Loaded 11 field definition(s) from C:\OCR\extraction\patterns.yaml
+2026-08-23 00:44:48  INFO      output.output_writer                 Wrote: C:\OCR\output\test_doc\ocr.txt
+2026-08-23 00:44:48  INFO      output.output_writer                 Wrote: C:\OCR\output\test_doc\ocr.json
+2026-08-23 00:44:48  INFO      output.output_writer                 Wrote: C:\OCR\output\test_doc\extracted.json
+2026-08-23 00:44:48  INFO      output.output_writer                 Wrote: C:\OCR\output\test_doc\result.json
+2026-08-23 00:46:04  INFO      main                                 Mode: patterns
+2026-08-23 00:46:04  INFO      extraction.pattern_manager           Loaded 11 field definition(s) from C:\OCR\extraction\patterns.yaml
+2026-08-23 00:46:04  INFO      main                                 Loaded text from: C:\OCR\input\SIH.pdf
+2026-08-23 00:46:04  INFO      output.output_writer                 Wrote: C:\OCR\output\SIH\extracted.json
+2026-08-23 00:47:38  INFO      main                                 Mode: full
+2026-08-23 00:47:38  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-08-23 00:47:38  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-08-23 00:47:38  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-08-23 00:47:38  INFO      utils.offline_checker                System cache contains 5 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-08-23 00:47:38  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-08-23 00:47:38  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-08-23 00:47:38  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-08-23 00:47:38  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-08-23 00:47:38  INFO      utils.offline_checker                System cache contains 5 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-08-23 00:47:38  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-08-23 00:47:42  INFO      ocr.paddle_engine                    PaddleOCR version: 3.7.0 (major: 3)
+2026-08-23 00:47:42  INFO      ocr.paddle_engine                    Initialising PaddleOCR 3.7.0 …
+2026-08-23 00:47:47  INFO      ocr.paddle_engine                    PaddleOCR initialised successfully.
+2026-08-23 00:47:47  INFO      ocr.ocr_pipeline                     ============================================================
+2026-08-23 00:47:47  INFO      ocr.ocr_pipeline                     Processing: test_doc.png
+2026-08-23 00:47:47  INFO      ocr.ocr_pipeline                     Document type: IMAGE
+2026-08-23 00:47:47  INFO      document.image_processor             Loading image: test_doc.png
+2026-08-23 00:47:47  INFO      document.image_processor             Image has 1 frame(s).
+2026-08-23 00:48:27  INFO      main                                 Mode: full
+2026-08-23 00:48:27  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-08-23 00:48:27  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-08-23 00:48:27  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-08-23 00:48:27  INFO      utils.offline_checker                System cache contains 5 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-08-23 00:48:27  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-08-23 00:48:27  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-08-23 00:48:27  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-08-23 00:48:27  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-08-23 00:48:27  INFO      utils.offline_checker                System cache contains 5 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-08-23 00:48:27  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-08-23 00:48:30  INFO      ocr.paddle_engine                    PaddleOCR version: 3.7.0 (major: 3)
+2026-08-23 00:48:30  INFO      ocr.paddle_engine                    Initialising PaddleOCR 3.7.0 …
+2026-08-23 00:48:35  INFO      ocr.paddle_engine                    PaddleOCR initialised successfully.
+2026-08-23 00:48:35  INFO      ocr.ocr_pipeline                     ============================================================
+2026-08-23 00:48:35  INFO      ocr.ocr_pipeline                     Processing: test_doc.png
+2026-08-23 00:48:35  INFO      ocr.ocr_pipeline                     Document type: IMAGE
+2026-08-23 00:48:35  INFO      document.image_processor             Loading image: test_doc.png
+2026-08-23 00:48:35  INFO      document.image_processor             Image has 1 frame(s).
+2026-08-23 00:48:40  INFO      ocr.paddle_engine                    Page 1: 6 region(s) detected in 4.68s
+2026-08-23 00:48:40  INFO      ocr.ocr_pipeline                     Done: 1 page(s), 6 region(s) in 5.12s
+2026-08-23 00:48:40  INFO      extraction.pattern_manager           Loaded 11 field definition(s) from C:\OCR\extraction\patterns.yaml
+2026-08-23 00:48:40  INFO      output.output_writer                 Wrote: C:\OCR\output\test_doc\ocr.txt
+2026-08-23 00:48:40  INFO      output.output_writer                 Wrote: C:\OCR\output\test_doc\ocr.json
+2026-08-23 00:48:40  INFO      output.output_writer                 Wrote: C:\OCR\output\test_doc\extracted.json
+2026-08-23 00:48:40  INFO      output.output_writer                 Wrote: C:\OCR\output\test_doc\result.json
+2026-08-23 00:49:46  INFO      main                                 Mode: patterns
+2026-08-23 00:49:46  INFO      extraction.pattern_manager           Loaded 11 field definition(s) from C:\OCR\extraction\patterns.yaml
+2026-08-23 00:49:47  INFO      main                                 Loaded text from: C:\OCR\input\SIH.pdf
+2026-08-23 00:49:47  INFO      output.output_writer                 Wrote: C:\OCR\output\SIH\extracted.json
+2026-08-23 00:50:42  INFO      main                                 Mode: full
+2026-08-23 00:50:43  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-08-23 00:50:43  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-08-23 00:50:43  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-08-23 00:50:43  INFO      utils.offline_checker                System cache contains 5 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-08-23 00:50:43  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-08-23 00:50:43  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-08-23 00:50:43  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-08-23 00:50:43  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-08-23 00:50:43  INFO      utils.offline_checker                System cache contains 5 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-08-23 00:50:43  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-08-23 00:50:46  INFO      ocr.paddle_engine                    PaddleOCR version: 3.7.0 (major: 3)
+2026-08-23 00:50:46  INFO      ocr.paddle_engine                    Initialising PaddleOCR 3.7.0 …
+2026-08-23 00:50:50  INFO      ocr.paddle_engine                    PaddleOCR initialised successfully.
+2026-08-23 00:50:50  INFO      ocr.ocr_pipeline                     ============================================================
+2026-08-23 00:50:50  INFO      ocr.ocr_pipeline                     Processing: SIH.pdf
+2026-08-23 00:50:50  INFO      ocr.ocr_pipeline                     Document type: PDF
+2026-08-23 00:50:50  INFO      document.pdf_processor               Rendering PDF: SIH.pdf  (DPI=300, format=PNG)
+2026-08-23 00:51:09  INFO      main                                 Mode: full
+2026-08-23 00:51:09  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-08-23 00:51:09  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-08-23 00:51:09  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-08-23 00:51:10  INFO      utils.offline_checker                System cache contains 5 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-08-23 00:51:10  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-08-23 00:51:10  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-08-23 00:51:10  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-08-23 00:51:10  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-08-23 00:51:10  INFO      utils.offline_checker                System cache contains 5 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-08-23 00:51:10  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-08-23 00:51:12  INFO      ocr.paddle_engine                    PaddleOCR version: 3.7.0 (major: 3)
+2026-08-23 00:51:12  INFO      ocr.paddle_engine                    Initialising PaddleOCR 3.7.0 …
+2026-08-23 00:51:17  INFO      ocr.paddle_engine                    PaddleOCR initialised successfully.
+2026-08-23 00:51:17  INFO      ocr.ocr_pipeline                     ============================================================
+2026-08-23 00:51:17  INFO      ocr.ocr_pipeline                     Processing: SIH.pdf
+2026-08-23 00:51:17  INFO      ocr.ocr_pipeline                     Document type: PDF
+2026-08-23 00:51:17  INFO      document.pdf_processor               Rendering PDF via pypdfium2: SIH.pdf (DPI=300, scale=4.17)
+2026-08-23 00:51:17  INFO      document.pdf_processor               PDF has 1 page(s).
+2026-08-23 00:51:51  INFO      ocr.paddle_engine                    Page 1: 43 region(s) detected in 30.71s
+2026-08-23 00:51:51  INFO      ocr.ocr_pipeline                     Done: 1 page(s), 43 region(s) in 34.44s
+2026-08-23 00:51:51  INFO      extraction.pattern_manager           Loaded 11 field definition(s) from C:\OCR\extraction\patterns.yaml
+2026-08-23 00:51:51  INFO      output.output_writer                 Wrote: C:\OCR\output\SIH\ocr.txt
+2026-08-23 00:51:51  INFO      output.output_writer                 Wrote: C:\OCR\output\SIH\ocr.json
+2026-08-23 00:51:51  INFO      output.output_writer                 Wrote: C:\OCR\output\SIH\extracted.json
+2026-08-23 00:51:51  INFO      output.output_writer                 Wrote: C:\OCR\output\SIH\result.json
+2026-08-23 00:52:10  INFO      main                                 Mode: patterns
+2026-08-23 00:52:10  INFO      extraction.pattern_manager           Loaded 11 field definition(s) from C:\OCR\extraction\patterns.yaml
+2026-08-23 00:52:10  INFO      main                                 Loaded text from: C:\OCR\input\SIH.pdf
+2026-08-23 00:52:11  INFO      output.output_writer                 Wrote: C:\OCR\output\SIH\extracted.json
+2026-08-23 00:52:25  INFO      main                                 Mode: patterns
+2026-08-23 00:52:25  INFO      extraction.pattern_manager           Loaded 11 field definition(s) from C:\OCR\extraction\patterns.yaml
+2026-08-23 00:52:25  INFO      main                                 Loaded text from: C:\OCR\input\SIH.pdf
+2026-08-23 00:52:26  INFO      output.output_writer                 Wrote: C:\OCR\output\SIH\extracted.json
+2026-08-23 00:52:52  INFO      main                                 Mode: full
+2026-08-23 00:53:07  INFO      main                                 Mode: full
+2026-08-23 00:53:07  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-08-23 00:53:07  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-08-23 00:53:07  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-08-23 00:53:07  INFO      utils.offline_checker                System cache contains 5 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-08-23 00:53:07  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-08-23 00:53:07  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-08-23 00:53:07  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-08-23 00:53:07  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-08-23 00:53:07  INFO      utils.offline_checker                System cache contains 5 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-08-23 00:53:07  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-08-23 00:53:11  INFO      ocr.paddle_engine                    PaddleOCR version: 3.7.0 (major: 3)
+2026-08-23 00:53:11  INFO      ocr.paddle_engine                    Initialising PaddleOCR 3.7.0 …
+2026-08-23 00:53:16  INFO      ocr.paddle_engine                    PaddleOCR initialised successfully.
+2026-08-23 00:53:16  INFO      ocr.ocr_pipeline                     ============================================================
+2026-08-23 00:53:16  INFO      ocr.ocr_pipeline                     Processing: SIH.pdf
+2026-08-23 00:53:16  INFO      ocr.ocr_pipeline                     Document type: PDF
+2026-08-23 00:53:16  INFO      document.pdf_processor               Rendering PDF via pypdfium2: SIH.pdf (DPI=300, scale=4.17)
+2026-08-23 00:53:16  INFO      document.pdf_processor               PDF has 1 page(s).
+2026-08-23 00:53:52  INFO      ocr.paddle_engine                    Page 1: 43 region(s) detected in 31.82s
+2026-08-23 00:53:52  INFO      ocr.ocr_pipeline                     Done: 1 page(s), 43 region(s) in 35.75s
+2026-08-23 00:53:52  INFO      extraction.pattern_manager           Loaded 11 field definition(s) from C:\OCR\extraction\patterns.yaml
+2026-08-23 00:53:52  INFO      output.output_writer                 Wrote: C:\OCR\output\SIH\ocr.txt
+2026-08-23 00:53:52  INFO      output.output_writer                 Wrote: C:\OCR\output\SIH\ocr.json
+2026-08-23 00:53:52  INFO      output.output_writer                 Wrote: C:\OCR\output\SIH\extracted.json
+2026-08-23 00:53:52  INFO      output.output_writer                 Wrote: C:\OCR\output\SIH\result.json
+2026-08-23 00:57:03  INFO      main                                 Mode: full
+2026-08-23 00:57:03  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-08-23 00:57:03  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-08-23 00:57:03  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-08-23 00:57:03  INFO      utils.offline_checker                System cache contains 5 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-08-23 00:57:03  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-08-23 00:57:03  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-08-23 00:57:03  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-08-23 00:57:03  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-08-23 00:57:03  INFO      utils.offline_checker                System cache contains 5 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-08-23 00:57:03  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-08-23 00:57:07  INFO      ocr.paddle_engine                    PaddleOCR version: 3.7.0 (major: 3)
+2026-08-23 00:57:07  INFO      ocr.paddle_engine                    Initialising PaddleOCR 3.7.0 …
+2026-08-23 00:57:12  INFO      ocr.paddle_engine                    PaddleOCR initialised successfully.
+2026-08-23 00:57:12  INFO      ocr.ocr_pipeline                     ============================================================
+2026-08-23 00:57:12  INFO      ocr.ocr_pipeline                     Processing: ChemicalKinetics.pdf
+2026-08-23 00:57:12  INFO      ocr.ocr_pipeline                     Document type: PDF
+2026-08-23 00:57:12  INFO      document.pdf_processor               Rendering PDF via pypdfium2: ChemicalKinetics.pdf (DPI=300, scale=4.17)
+2026-08-23 00:57:13  INFO      document.pdf_processor               PDF has 13 page(s).
+2026-08-23 00:59:02  INFO      main                                 Mode: full
+2026-08-23 00:59:02  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-08-23 00:59:03  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-08-23 00:59:03  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-08-23 00:59:03  INFO      utils.offline_checker                System cache contains 5 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-08-23 00:59:03  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-08-23 00:59:03  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-08-23 00:59:03  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-08-23 00:59:03  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-08-23 00:59:03  INFO      utils.offline_checker                System cache contains 5 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-08-23 00:59:03  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-08-23 00:59:06  INFO      ocr.paddle_engine                    PaddleOCR version: 3.7.0 (major: 3)
+2026-08-23 00:59:06  INFO      ocr.paddle_engine                    Initialising PaddleOCR 3.7.0 …
+2026-08-23 00:59:12  INFO      ocr.paddle_engine                    PaddleOCR initialised successfully.
+2026-08-23 00:59:12  INFO      ocr.ocr_pipeline                     ============================================================
+2026-08-23 00:59:12  INFO      ocr.ocr_pipeline                     Processing: ChemicalKinetics.pdf
+2026-08-23 00:59:12  INFO      ocr.ocr_pipeline                     Document type: PDF
+2026-08-23 00:59:12  INFO      document.pdf_processor               Rendering PDF via pypdfium2: ChemicalKinetics.pdf (DPI=300, scale=4.17)
+2026-08-23 00:59:12  INFO      document.pdf_processor               PDF has 13 page(s).
+2026-08-23 00:59:33  INFO      ocr.paddle_engine                    Page 1: 0 region(s) detected in 17.06s
+2026-08-23 00:59:36  INFO      main                                 Mode: full
+2026-08-23 00:59:36  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-08-23 00:59:36  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-08-23 00:59:36  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-08-23 00:59:36  INFO      utils.offline_checker                System cache contains 5 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-08-23 00:59:36  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-08-23 00:59:36  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-08-23 00:59:36  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-08-23 00:59:36  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-08-23 00:59:36  INFO      utils.offline_checker                System cache contains 5 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-08-23 00:59:36  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-08-23 00:59:39  INFO      ocr.paddle_engine                    PaddleOCR version: 3.7.0 (major: 3)
+2026-08-23 00:59:39  INFO      ocr.paddle_engine                    Initialising PaddleOCR 3.7.0 …
+2026-08-23 00:59:51  INFO      ocr.paddle_engine                    PaddleOCR initialised successfully.
+2026-08-23 00:59:51  INFO      ocr.ocr_pipeline                     ============================================================
+2026-08-23 00:59:51  INFO      ocr.ocr_pipeline                     Processing: ChemicalKinetics.pdf
+2026-08-23 00:59:51  INFO      ocr.ocr_pipeline                     Document type: PDF
+2026-08-23 00:59:51  INFO      document.pdf_processor               Rendering PDF via pypdfium2: ChemicalKinetics.pdf (DPI=300, scale=4.17)
+2026-08-23 00:59:51  INFO      document.pdf_processor               PDF has 13 page(s).
+2026-08-23 01:00:12  INFO      ocr.paddle_engine                    Page 1: 0 region(s) detected in 16.75s
+2026-08-23 01:01:13  INFO      main                                 Mode: full
+2026-08-23 01:01:13  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-08-23 01:01:13  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-08-23 01:01:13  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-08-23 01:01:14  INFO      utils.offline_checker                System cache contains 5 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-08-23 01:01:14  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-08-23 01:01:14  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-08-23 01:01:14  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-08-23 01:01:14  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-08-23 01:01:14  INFO      utils.offline_checker                System cache contains 5 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-08-23 01:01:14  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-08-23 01:01:18  INFO      ocr.paddle_engine                    PaddleOCR version: 3.7.0 (major: 3)
+2026-08-23 01:01:18  INFO      ocr.paddle_engine                    Initialising PaddleOCR 3.7.0 …
+2026-08-23 01:01:23  INFO      ocr.paddle_engine                    PaddleOCR initialised successfully.
+2026-08-23 01:01:23  INFO      ocr.ocr_pipeline                     ============================================================
+2026-08-23 01:01:23  INFO      ocr.ocr_pipeline                     Processing: ChemicalKinetics.pdf
+2026-08-23 01:01:23  INFO      ocr.ocr_pipeline                     Document type: PDF
+2026-08-23 01:01:23  INFO      document.pdf_processor               Rendering PDF via pypdfium2: ChemicalKinetics.pdf (DPI=300, scale=4.17)
+2026-08-23 01:01:23  INFO      document.pdf_processor               PDF has 13 page(s).
+2026-08-23 01:01:40  INFO      ocr.paddle_engine                    Page 1: 0 region(s) detected in 16.72s
+2026-08-23 01:01:54  WARNING   ocr.ocr_pipeline                     OCR failed on preprocessed page 2 (Unknown exception). Retrying with raw image...
+2026-08-23 01:02:08  ERROR     ocr.ocr_pipeline                     OCR recognition completely failed on page 2: Unknown exception
+2026-08-23 01:02:24  WARNING   ocr.ocr_pipeline                     OCR failed on preprocessed page 3 (Unknown exception). Retrying with raw image...
+2026-08-23 10:04:48  INFO      main                                 Mode: full
+2026-08-23 10:04:48  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-08-23 10:04:48  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-08-23 10:04:48  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-08-23 10:04:48  INFO      utils.offline_checker                System cache contains 5 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-08-23 10:04:48  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-08-23 10:04:48  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-08-23 10:04:48  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-08-23 10:04:48  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-08-23 10:04:48  INFO      utils.offline_checker                System cache contains 5 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-08-23 10:04:48  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-08-23 10:04:51  INFO      ocr.paddle_engine                    PaddleOCR version: 3.7.0 (major: 3)
+2026-08-23 10:04:51  INFO      ocr.paddle_engine                    Initialising PaddleOCR 3.7.0 …
+2026-08-23 10:04:56  INFO      ocr.paddle_engine                    PaddleOCR initialised successfully.
+2026-08-23 10:04:56  INFO      ocr.ocr_pipeline                     ============================================================
+2026-08-23 10:04:56  INFO      ocr.ocr_pipeline                     Processing: ChemicalKinetics.pdf
+2026-08-23 10:04:56  INFO      ocr.ocr_pipeline                     Document type: PDF
+2026-08-23 10:04:56  INFO      document.pdf_processor               Rendering PDF via pypdfium2: ChemicalKinetics.pdf (DPI=300, scale=4.17)
+2026-08-23 10:04:56  INFO      document.pdf_processor               PDF has 13 page(s).
+2026-08-23 10:05:13  INFO      ocr.paddle_engine                    Page 1: 0 region(s) detected in 17.04s
+2026-08-23 10:05:27  INFO      ocr.paddle_engine                    Page 2: 0 region(s) detected in 13.32s
+2026-08-23 10:05:40  WARNING   ocr.ocr_pipeline                     OCR failed on preprocessed page 3 (Unknown exception). Retrying with raw image...
+2026-08-23 10:05:56  ERROR     ocr.ocr_pipeline                     OCR recognition completely failed on page 3: Unknown exception
+2026-08-23 10:06:11  INFO      ocr.paddle_engine                    Page 4: 0 region(s) detected in 14.74s
+2026-08-23 10:06:25  WARNING   ocr.ocr_pipeline                     OCR failed on preprocessed page 5 (Unknown exception). Retrying with raw image...
+2026-08-23 20:17:39  INFO      main                                 Mode: full
+2026-08-23 20:17:39  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-08-23 20:17:39  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-08-23 20:17:39  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-08-23 20:17:39  INFO      utils.offline_checker                System cache contains 5 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-08-23 20:17:39  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-08-23 20:17:39  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-08-23 20:17:39  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-08-23 20:17:39  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-08-23 20:17:39  INFO      utils.offline_checker                System cache contains 5 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-08-23 20:17:39  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-08-23 20:17:42  INFO      ocr.paddle_engine                    PaddleOCR version: 3.7.0 (major: 3)
+2026-08-23 20:17:42  INFO      ocr.paddle_engine                    Initialising PaddleOCR 3.7.0 …
+2026-08-23 20:17:47  INFO      ocr.paddle_engine                    PaddleOCR initialised successfully.
+2026-08-23 20:17:47  INFO      ocr.ocr_pipeline                     ============================================================
+2026-08-23 20:17:47  INFO      ocr.ocr_pipeline                     Processing: ChemicalKinetics.pdf
+2026-08-23 20:17:47  INFO      ocr.ocr_pipeline                     Document type: PDF
+2026-08-23 20:17:47  INFO      document.pdf_processor               Rendering PDF via pypdfium2: ChemicalKinetics.pdf (DPI=300, scale=4.17)
+2026-08-23 20:17:47  INFO      document.pdf_processor               PDF has 13 page(s).
+2026-08-23 20:18:05  INFO      ocr.paddle_engine                    Page 1: 0 region(s) detected in 18.03s
+2026-08-23 20:18:21  WARNING   ocr.ocr_pipeline                     OCR failed on preprocessed page 2 (Unknown exception). Retrying with raw image...
+2026-08-23 20:18:36  ERROR     ocr.ocr_pipeline                     OCR recognition completely failed on page 2: Unknown exception
+2026-08-23 20:18:53  WARNING   ocr.ocr_pipeline                     OCR failed on preprocessed page 3 (Unknown exception). Retrying with raw image...
+2026-08-23 20:19:10  ERROR     ocr.ocr_pipeline                     OCR recognition completely failed on page 3: Unknown exception
+2026-08-23 20:19:27  INFO      ocr.paddle_engine                    Page 4: 0 region(s) detected in 16.77s
+2026-08-23 20:19:44  WARNING   ocr.ocr_pipeline                     OCR failed on preprocessed page 5 (Unknown exception). Retrying with raw image...
+2026-08-23 20:35:59  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-08-23 20:35:59  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-08-23 20:35:59  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-08-23 20:35:59  INFO      utils.offline_checker                System cache contains 8 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-08-23 20:35:59  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-08-23 20:35:59  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-08-23 20:35:59  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-08-23 20:35:59  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-08-23 20:35:59  INFO      utils.offline_checker                System cache contains 8 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-08-23 20:35:59  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-08-23 20:36:01  INFO      ocr.paddle_engine                    PaddleOCR version: 3.7.0 (major: 3)
+2026-08-23 20:36:01  INFO      ocr.paddle_engine                    Initialising PaddleOCR 3.7.0 (version=PP-OCRv4, lang=en) …
+2026-08-23 20:36:03  INFO      ocr.paddle_engine                    PaddleOCR initialised successfully.
+2026-08-23 20:36:03  INFO      ocr.ocr_pipeline                     ============================================================
+2026-08-23 20:36:03  INFO      ocr.ocr_pipeline                     Processing: tmp8bi9aest.png
+2026-08-23 20:36:03  INFO      ocr.ocr_pipeline                     Document type: IMAGE
+2026-08-23 20:36:03  INFO      document.image_processor             Loading image: tmp8bi9aest.png
+2026-08-23 20:36:03  INFO      document.image_processor             Image has 1 frame(s).
+2026-08-23 20:36:05  INFO      ocr.paddle_engine                    Page 1: 1 region(s) detected in 1.88s
+2026-08-23 20:36:05  INFO      ocr.ocr_pipeline                     Done: 1 page(s), 1 region(s) in 1.89s
+2026-08-23 20:36:05  INFO      ocr.ocr_pipeline                     ============================================================
+2026-08-23 20:36:05  INFO      ocr.ocr_pipeline                     Processing: tmpaf5llfxr.png
+2026-08-23 20:36:05  INFO      ocr.ocr_pipeline                     Document type: IMAGE
+2026-08-23 20:36:05  INFO      document.image_processor             Loading image: tmpaf5llfxr.png
+2026-08-23 20:36:05  INFO      document.image_processor             Image has 1 frame(s).
+2026-08-23 20:36:06  INFO      ocr.paddle_engine                    Page 1: 1 region(s) detected in 1.43s
+2026-08-23 20:36:06  INFO      ocr.ocr_pipeline                     Done: 1 page(s), 1 region(s) in 1.44s
+2026-08-23 20:36:06  INFO      ocr.ocr_pipeline                     ============================================================
+2026-08-23 20:36:06  INFO      ocr.ocr_pipeline                     Processing: tmp0xtp2m0e.png
+2026-08-23 20:36:06  INFO      ocr.ocr_pipeline                     Document type: IMAGE
+2026-08-23 20:36:06  INFO      document.image_processor             Loading image: tmp0xtp2m0e.png
+2026-08-23 20:36:06  INFO      document.image_processor             Image has 1 frame(s).
+2026-08-23 20:36:08  INFO      ocr.paddle_engine                    Page 1: 1 region(s) detected in 1.48s
+2026-08-23 20:36:08  INFO      ocr.ocr_pipeline                     Done: 1 page(s), 1 region(s) in 1.49s
+2026-08-23 20:36:08  INFO      ocr.ocr_pipeline                     ============================================================
+2026-08-23 20:36:08  INFO      ocr.ocr_pipeline                     Processing: tmpq9j_u_fi.png
+2026-08-23 20:36:08  INFO      ocr.ocr_pipeline                     Document type: IMAGE
+2026-08-23 20:36:08  INFO      document.image_processor             Loading image: tmpq9j_u_fi.png
+2026-08-23 20:36:08  INFO      document.image_processor             Image has 1 frame(s).
+2026-08-23 20:36:09  INFO      ocr.paddle_engine                    Page 1: 1 region(s) detected in 1.52s
+2026-08-23 20:36:09  INFO      ocr.ocr_pipeline                     Done: 1 page(s), 1 region(s) in 1.53s
+2026-08-23 20:36:09  INFO      utils.offline_checker                Offline mode: ENABLED
+2026-08-23 20:36:09  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-08-23 20:36:09  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-08-23 20:36:09  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-08-23 20:36:09  INFO      utils.offline_checker                System cache contains 8 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-08-23 20:36:09  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-08-23 20:36:09  INFO      utils.offline_checker                Patterns file OK: C:\OCR\extraction\patterns.yaml
+2026-08-23 20:36:09  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-08-23 20:36:09  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-08-23 20:36:09  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-08-23 20:36:09  INFO      utils.offline_checker                System cache contains 8 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-08-23 20:36:09  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-08-23 20:36:09  INFO      ocr.paddle_engine                    PaddleOCR version: 3.7.0 (major: 3)
+2026-08-23 20:36:09  INFO      ocr.paddle_engine                    Initialising PaddleOCR 3.7.0 (version=PP-OCRv4, lang=en) …
+2026-08-23 20:36:10  INFO      ocr.paddle_engine                    PaddleOCR initialised successfully.
+2026-08-23 20:36:12  INFO      ocr.paddle_engine                    Page 1: 1 region(s) detected in 1.65s
+2026-08-23 20:36:13  INFO      ocr.paddle_engine                    Page 1: 0 region(s) detected in 1.37s
+2026-08-23 20:36:15  INFO      ocr.paddle_engine                    Page 1: 1 region(s) detected in 1.43s
+2026-08-23 20:36:16  INFO      ocr.paddle_engine                    Page 1: 1 region(s) detected in 1.44s
+2026-08-23 20:36:22  INFO      main                                 Mode: full
+2026-08-23 20:36:22  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-08-23 20:36:22  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-08-23 20:36:22  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-08-23 20:36:22  INFO      utils.offline_checker                System cache contains 8 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-08-23 20:36:22  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-08-23 20:36:22  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-08-23 20:36:22  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-08-23 20:36:22  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-08-23 20:36:22  INFO      utils.offline_checker                System cache contains 8 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-08-23 20:36:22  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-08-23 20:36:23  INFO      ocr.paddle_engine                    PaddleOCR version: 3.7.0 (major: 3)
+2026-08-23 20:36:23  INFO      ocr.paddle_engine                    Initialising PaddleOCR 3.7.0 (version=PP-OCRv4, lang=en) …
+2026-08-23 20:36:25  INFO      ocr.paddle_engine                    PaddleOCR initialised successfully.
+2026-08-23 20:36:25  INFO      ocr.ocr_pipeline                     ============================================================
+2026-08-23 20:36:25  INFO      ocr.ocr_pipeline                     Processing: test_doc.png
+2026-08-23 20:36:25  INFO      ocr.ocr_pipeline                     Document type: IMAGE
+2026-08-23 20:36:25  INFO      document.image_processor             Loading image: test_doc.png
+2026-08-23 20:36:25  INFO      document.image_processor             Image has 1 frame(s).
+2026-08-23 20:36:27  INFO      ocr.paddle_engine                    Page 1: 6 region(s) detected in 1.73s
+2026-08-23 20:36:27  INFO      ocr.ocr_pipeline                     Done: 1 page(s), 6 region(s) in 1.76s
+2026-08-23 20:36:27  INFO      extraction.pattern_manager           Loaded 11 field definition(s) from C:\OCR\extraction\patterns.yaml
+2026-08-23 20:36:27  INFO      output.output_writer                 Wrote: C:\OCR\output\test_doc\ocr.txt
+2026-08-23 20:36:27  INFO      output.output_writer                 Wrote: C:\OCR\output\test_doc\ocr.json
+2026-08-23 20:36:27  INFO      output.output_writer                 Wrote: C:\OCR\output\test_doc\extracted.json
+2026-08-23 20:36:27  INFO      output.output_writer                 Wrote: C:\OCR\output\test_doc\result.json
+2026-08-23 20:36:31  INFO      main                                 Mode: full
+2026-08-23 20:36:31  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-08-23 20:36:31  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-08-23 20:36:31  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-08-23 20:36:31  INFO      utils.offline_checker                System cache contains 8 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-08-23 20:36:31  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-08-23 20:36:31  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-08-23 20:36:31  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-08-23 20:36:31  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-08-23 20:36:31  INFO      utils.offline_checker                System cache contains 8 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-08-23 20:36:31  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-08-23 20:36:32  INFO      ocr.paddle_engine                    PaddleOCR version: 3.7.0 (major: 3)
+2026-08-23 20:36:32  INFO      ocr.paddle_engine                    Initialising PaddleOCR 3.7.0 (version=PP-OCRv4, lang=en) …
+2026-08-23 20:36:34  INFO      ocr.paddle_engine                    PaddleOCR initialised successfully.
+2026-08-23 20:36:34  INFO      ocr.ocr_pipeline                     ============================================================
+2026-08-23 20:36:34  INFO      ocr.ocr_pipeline                     Processing: form_sample.png
+2026-08-23 20:36:34  INFO      ocr.ocr_pipeline                     Document type: IMAGE
+2026-08-23 20:36:34  INFO      document.image_processor             Loading image: form_sample.png
+2026-08-23 20:36:34  INFO      document.image_processor             Image has 1 frame(s).
+2026-08-23 20:36:37  INFO      ocr.paddle_engine                    Page 1: 24 region(s) detected in 2.54s
+2026-08-23 20:36:37  INFO      ocr.ocr_pipeline                     Done: 1 page(s), 24 region(s) in 2.59s
+2026-08-23 20:36:37  INFO      extraction.pattern_manager           Loaded 11 field definition(s) from C:\OCR\extraction\patterns.yaml
+2026-08-23 20:36:37  INFO      output.output_writer                 Wrote: C:\OCR\output\form_sample\ocr.txt
+2026-08-23 20:36:37  INFO      output.output_writer                 Wrote: C:\OCR\output\form_sample\ocr.json
+2026-08-23 20:36:37  INFO      output.output_writer                 Wrote: C:\OCR\output\form_sample\extracted.json
+2026-08-23 20:36:37  INFO      output.output_writer                 Wrote: C:\OCR\output\form_sample\result.json
+2026-08-23 20:36:53  INFO      main                                 Mode: full
+2026-08-23 20:36:53  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-08-23 20:36:53  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-08-23 20:36:53  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-08-23 20:36:53  INFO      utils.offline_checker                System cache contains 8 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-08-23 20:36:53  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-08-23 20:36:53  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-08-23 20:36:53  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-08-23 20:36:53  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-08-23 20:36:53  INFO      utils.offline_checker                System cache contains 8 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-08-23 20:36:53  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-08-23 20:36:55  INFO      ocr.paddle_engine                    PaddleOCR version: 3.7.0 (major: 3)
+2026-08-23 20:36:55  INFO      ocr.paddle_engine                    Initialising PaddleOCR 3.7.0 (version=PP-OCRv4, lang=en) …
+2026-08-23 20:36:57  INFO      ocr.paddle_engine                    PaddleOCR initialised successfully.
+2026-08-23 20:36:57  INFO      ocr.ocr_pipeline                     ============================================================
+2026-08-23 20:36:57  INFO      ocr.ocr_pipeline                     Processing: SIH.pdf
+2026-08-23 20:36:57  INFO      ocr.ocr_pipeline                     Document type: PDF
+2026-08-23 20:36:57  INFO      document.pdf_processor               Rendering PDF via pypdfium2: SIH.pdf (DPI=300, scale=4.17)
+2026-08-23 20:36:57  INFO      document.pdf_processor               PDF has 1 page(s).
+2026-08-23 20:37:08  INFO      ocr.paddle_engine                    Page 1: 49 region(s) detected in 10.39s
+2026-08-23 20:37:08  INFO      ocr.ocr_pipeline                     Done: 1 page(s), 49 region(s) in 10.88s
+2026-08-23 20:37:08  INFO      extraction.pattern_manager           Loaded 11 field definition(s) from C:\OCR\extraction\patterns.yaml
+2026-08-23 20:37:08  INFO      output.output_writer                 Wrote: C:\OCR\output\SIH\ocr.txt
+2026-08-23 20:37:08  INFO      output.output_writer                 Wrote: C:\OCR\output\SIH\ocr.json
+2026-08-23 20:37:08  INFO      output.output_writer                 Wrote: C:\OCR\output\SIH\extracted.json
+2026-08-23 20:37:08  INFO      output.output_writer                 Wrote: C:\OCR\output\SIH\result.json
+2026-08-23 20:37:27  INFO      main                                 Mode: check-offline
+2026-08-23 20:37:27  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-08-23 20:37:27  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-08-23 20:37:27  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-08-23 20:37:27  INFO      utils.offline_checker                System cache contains 8 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-08-23 20:37:27  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-08-23 20:37:27  INFO      utils.offline_checker                Patterns file OK: C:\OCR\extraction\patterns.yaml
+2026-08-23 22:57:29  INFO      main                                 Mode: full
+2026-08-23 22:57:29  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-08-23 22:57:29  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-08-23 22:57:29  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-08-23 22:57:29  INFO      utils.offline_checker                System cache contains 8 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-08-23 22:57:29  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-08-23 22:57:29  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-08-23 22:57:29  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-08-23 22:57:29  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-08-23 22:57:29  INFO      utils.offline_checker                System cache contains 8 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-08-23 22:57:29  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-08-23 22:57:30  INFO      ocr.paddle_engine                    PaddleOCR version: 3.7.0 (major: 3)
+2026-08-23 22:57:30  INFO      ocr.paddle_engine                    Initialising PaddleOCR 3.7.0 (version=PP-OCRv4, lang=en) …
+2026-08-23 22:57:32  INFO      ocr.paddle_engine                    PaddleOCR initialised successfully.
+2026-08-23 22:57:32  INFO      ocr.ocr_pipeline                     ============================================================
+2026-08-23 22:57:32  INFO      ocr.ocr_pipeline                     Processing: ChemicalKinetics.pdf
+2026-08-23 22:57:32  INFO      ocr.ocr_pipeline                     Document type: PDF
+2026-08-23 22:57:32  INFO      document.pdf_processor               Rendering PDF via pypdfium2: ChemicalKinetics.pdf (DPI=300, scale=4.17)
+2026-08-23 22:57:32  INFO      document.pdf_processor               PDF has 13 page(s).
+2026-08-23 22:57:33  WARNING   document.pdf_processor               Page 1 rendered as a solid blank image (mean=255.0). The PDF page may be blank or contain corrupted image streams.
+2026-08-23 22:57:37  INFO      ocr.paddle_engine                    Page 1: 0 region(s) detected in 3.97s
+2026-08-23 22:57:37  WARNING   document.pdf_processor               Page 2 rendered as a solid blank image (mean=255.0). The PDF page may be blank or contain corrupted image streams.
+2026-08-23 22:57:40  INFO      ocr.paddle_engine                    Page 2: 0 region(s) detected in 3.21s
+2026-08-23 22:57:40  WARNING   document.pdf_processor               Page 3 rendered as a solid blank image (mean=255.0). The PDF page may be blank or contain corrupted image streams.
+2026-08-23 22:57:44  INFO      ocr.paddle_engine                    Page 3: 0 region(s) detected in 3.53s
+2026-08-23 22:57:44  WARNING   document.pdf_processor               Page 4 rendered as a solid blank image (mean=255.0). The PDF page may be blank or contain corrupted image streams.
+2026-08-23 22:57:48  INFO      ocr.paddle_engine                    Page 4: 0 region(s) detected in 3.19s
+2026-08-23 22:57:48  WARNING   document.pdf_processor               Page 5 rendered as a solid blank image (mean=255.0). The PDF page may be blank or contain corrupted image streams.
+2026-08-23 22:57:52  INFO      ocr.paddle_engine                    Page 5: 0 region(s) detected in 3.70s
+2026-08-23 22:57:52  WARNING   document.pdf_processor               Page 6 rendered as a solid blank image (mean=255.0). The PDF page may be blank or contain corrupted image streams.
+2026-08-23 22:57:55  INFO      ocr.paddle_engine                    Page 6: 0 region(s) detected in 3.25s
+2026-08-23 22:57:55  WARNING   document.pdf_processor               Page 7 rendered as a solid blank image (mean=255.0). The PDF page may be blank or contain corrupted image streams.
+2026-08-23 22:57:59  WARNING   ocr.ocr_pipeline                     OCR failed on preprocessed page 7 (Unknown exception). Retrying with raw image...
+2026-09-13 15:27:01  INFO      main                                 Mode: check-offline
+2026-09-13 15:27:01  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-09-13 15:27:01  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-09-13 15:27:01  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-09-13 15:27:01  INFO      utils.offline_checker                System cache contains 8 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-09-13 15:27:01  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-09-13 15:27:01  INFO      utils.offline_checker                Patterns file OK: C:\OCR\extraction\patterns.yaml
+2026-09-13 15:27:48  INFO      main                                 Mode: full
+2026-09-13 15:27:48  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-09-13 15:27:48  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-09-13 15:27:48  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-09-13 15:27:48  INFO      utils.offline_checker                System cache contains 8 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-09-13 15:27:48  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-09-13 15:27:48  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-09-13 15:27:48  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-09-13 15:27:48  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-09-13 15:27:48  INFO      utils.offline_checker                System cache contains 8 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-09-13 15:27:48  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-09-13 15:28:32  INFO      ocr.paddle_engine                    PaddleOCR version: 3.7.0 (major: 3)
+2026-09-13 15:28:32  INFO      ocr.paddle_engine                    Initialising PaddleOCR 3.7.0 (version=PP-OCRv4, lang=en) …
+2026-09-13 15:28:43  INFO      ocr.paddle_engine                    PaddleOCR initialised successfully.
+2026-09-13 15:28:43  INFO      ocr.ocr_pipeline                     ============================================================
+2026-09-13 15:28:43  INFO      ocr.ocr_pipeline                     Processing: ChemicalKinetics.pdf
+2026-09-13 15:28:43  INFO      ocr.ocr_pipeline                     Document type: PDF
+2026-09-13 15:28:43  INFO      document.pdf_processor               Rendering PDF via pypdfium2: ChemicalKinetics.pdf (DPI=300, scale=4.17)
+2026-09-13 15:28:43  INFO      document.pdf_processor               PDF has 13 page(s).
+2026-09-13 15:28:43  WARNING   document.pdf_processor               Page 1 rendered as a solid blank image (mean=255.0). The PDF page may be blank or contain corrupted image streams.
+2026-09-13 15:28:47  INFO      ocr.paddle_engine                    Page 1: 0 region(s) detected in 3.57s
+2026-09-13 15:28:47  WARNING   document.pdf_processor               Page 2 rendered as a solid blank image (mean=255.0). The PDF page may be blank or contain corrupted image streams.
+2026-09-13 15:28:50  INFO      ocr.paddle_engine                    Page 2: 0 region(s) detected in 2.99s
+2026-09-13 15:28:50  WARNING   document.pdf_processor               Page 3 rendered as a solid blank image (mean=255.0). The PDF page may be blank or contain corrupted image streams.
+2026-09-13 15:28:53  INFO      ocr.paddle_engine                    Page 3: 0 region(s) detected in 3.23s
+2026-09-13 15:28:54  WARNING   document.pdf_processor               Page 4 rendered as a solid blank image (mean=255.0). The PDF page may be blank or contain corrupted image streams.
+2026-09-13 15:28:57  INFO      ocr.paddle_engine                    Page 4: 0 region(s) detected in 2.90s
+2026-09-13 15:28:57  WARNING   document.pdf_processor               Page 5 rendered as a solid blank image (mean=255.0). The PDF page may be blank or contain corrupted image streams.
+2026-09-13 15:29:00  INFO      ocr.paddle_engine                    Page 5: 0 region(s) detected in 3.42s
+2026-09-13 15:29:01  WARNING   document.pdf_processor               Page 6 rendered as a solid blank image (mean=255.0). The PDF page may be blank or contain corrupted image streams.
+2026-09-13 15:29:04  INFO      ocr.paddle_engine                    Page 6: 0 region(s) detected in 3.02s
+2026-09-13 15:29:04  WARNING   document.pdf_processor               Page 7 rendered as a solid blank image (mean=255.0). The PDF page may be blank or contain corrupted image streams.
+2026-09-13 15:29:07  INFO      ocr.paddle_engine                    Page 7: 0 region(s) detected in 3.40s
+2026-09-13 15:29:08  WARNING   document.pdf_processor               Page 8 rendered as a solid blank image (mean=255.0). The PDF page may be blank or contain corrupted image streams.
+2026-09-13 15:29:10  INFO      ocr.paddle_engine                    Page 8: 0 region(s) detected in 2.79s
+2026-09-13 15:29:11  WARNING   document.pdf_processor               Page 9 rendered as a solid blank image (mean=255.0). The PDF page may be blank or contain corrupted image streams.
+2026-09-13 15:29:14  WARNING   ocr.ocr_pipeline                     OCR failed on preprocessed page 9 (Unknown exception). Retrying with raw image...
+2026-09-13 15:29:17  ERROR     ocr.ocr_pipeline                     OCR recognition completely failed on page 9: Unknown exception
+2026-09-13 15:29:17  WARNING   document.pdf_processor               Page 10 rendered as a solid blank image (mean=255.0). The PDF page may be blank or contain corrupted image streams.
+2026-09-13 15:29:20  WARNING   ocr.ocr_pipeline                     OCR failed on preprocessed page 10 (Unknown exception). Retrying with raw image...
+2026-09-13 15:29:49  INFO      main                                 Mode: full
+2026-09-13 15:29:49  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-09-13 15:29:49  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-09-13 15:29:49  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-09-13 15:29:49  INFO      utils.offline_checker                System cache contains 8 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-09-13 15:29:49  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-09-13 15:29:49  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-09-13 15:29:49  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-09-13 15:29:49  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-09-13 15:29:49  INFO      utils.offline_checker                System cache contains 8 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-09-13 15:29:49  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-09-13 15:29:51  INFO      ocr.paddle_engine                    PaddleOCR version: 3.7.0 (major: 3)
+2026-09-13 15:29:51  INFO      ocr.paddle_engine                    Initialising PaddleOCR 3.7.0 (version=PP-OCRv4, lang=en) …
+2026-09-13 15:29:54  INFO      ocr.paddle_engine                    PaddleOCR initialised successfully.
+2026-09-13 15:29:54  INFO      ocr.ocr_pipeline                     ============================================================
+2026-09-13 15:29:54  INFO      ocr.ocr_pipeline                     Processing: SIH.pdf
+2026-09-13 15:29:54  INFO      ocr.ocr_pipeline                     Document type: PDF
+2026-09-13 15:29:54  INFO      document.pdf_processor               Rendering PDF via pypdfium2: SIH.pdf (DPI=300, scale=4.17)
+2026-09-13 15:29:54  INFO      document.pdf_processor               PDF has 1 page(s).
+2026-09-13 15:30:04  INFO      ocr.paddle_engine                    Page 1: 49 region(s) detected in 9.63s
+2026-09-13 15:30:04  INFO      ocr.ocr_pipeline                     Done: 1 page(s), 49 region(s) in 10.05s
+2026-09-13 15:30:04  INFO      extraction.pattern_manager           Loaded 11 field definition(s) from C:\OCR\extraction\patterns.yaml
+2026-09-13 15:30:04  INFO      output.output_writer                 Wrote: C:\OCR\output\SIH\ocr.txt
+2026-09-13 15:30:04  INFO      output.output_writer                 Wrote: C:\OCR\output\SIH\ocr.json
+2026-09-13 15:30:04  INFO      output.output_writer                 Wrote: C:\OCR\output\SIH\extracted.json
+2026-09-13 15:30:04  INFO      output.output_writer                 Wrote: C:\OCR\output\SIH\result.json
+2026-09-13 15:30:43  INFO      main                                 Mode: full
+2026-09-13 15:30:43  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-09-13 15:30:43  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-09-13 15:30:43  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-09-13 15:30:43  INFO      utils.offline_checker                System cache contains 8 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-09-13 15:30:43  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-09-13 15:30:43  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-09-13 15:30:43  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-09-13 15:30:43  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-09-13 15:30:43  INFO      utils.offline_checker                System cache contains 8 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-09-13 15:30:43  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-09-13 15:30:45  INFO      ocr.paddle_engine                    PaddleOCR version: 3.7.0 (major: 3)
+2026-09-13 15:30:45  INFO      ocr.paddle_engine                    Initialising PaddleOCR 3.7.0 (version=PP-OCRv4, lang=en) …
+2026-09-13 15:30:47  INFO      ocr.paddle_engine                    PaddleOCR initialised successfully.
+2026-09-13 15:30:47  INFO      ocr.ocr_pipeline                     ============================================================
+2026-09-13 15:30:47  INFO      ocr.ocr_pipeline                     Processing: SIH.pdf
+2026-09-13 15:30:47  INFO      ocr.ocr_pipeline                     Document type: PDF
+2026-09-13 15:30:47  INFO      document.pdf_processor               Rendering PDF via pypdfium2: SIH.pdf (DPI=300, scale=4.17)
+2026-09-13 15:30:47  INFO      document.pdf_processor               PDF has 1 page(s).
+2026-09-13 15:30:57  INFO      ocr.paddle_engine                    Page 1: 49 region(s) detected in 9.58s
+2026-09-13 15:30:57  INFO      ocr.ocr_pipeline                     Done: 1 page(s), 49 region(s) in 10.02s
+2026-09-13 15:30:57  INFO      extraction.pattern_manager           Loaded 11 field definition(s) from C:\OCR\extraction\patterns.yaml
+2026-09-13 15:30:57  INFO      output.output_writer                 Wrote: C:\OCR\output\SIH\ocr.txt
+2026-09-13 15:30:57  INFO      output.output_writer                 Wrote: C:\OCR\output\SIH\ocr.json
+2026-09-13 15:30:57  INFO      output.output_writer                 Wrote: C:\OCR\output\SIH\extracted.json
+2026-09-13 15:30:57  INFO      output.output_writer                 Wrote: C:\OCR\output\SIH\result.json
+2026-09-13 15:31:31  INFO      main                                 Mode: full
+2026-09-13 15:31:31  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-09-13 15:31:31  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-09-13 15:31:31  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-09-13 15:31:31  INFO      utils.offline_checker                System cache contains 8 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-09-13 15:31:31  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-09-13 15:31:31  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-09-13 15:31:31  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-09-13 15:31:31  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-09-13 15:31:31  INFO      utils.offline_checker                System cache contains 8 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-09-13 15:31:31  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-09-13 15:31:33  INFO      ocr.paddle_engine                    PaddleOCR version: 3.7.0 (major: 3)
+2026-09-13 15:31:33  INFO      ocr.paddle_engine                    Initialising PaddleOCR 3.7.0 (version=PP-OCRv4, lang=en) …
+2026-09-13 15:31:35  INFO      ocr.paddle_engine                    PaddleOCR initialised successfully.
+2026-09-13 15:31:35  INFO      ocr.ocr_pipeline                     ============================================================
+2026-09-13 15:31:35  INFO      ocr.ocr_pipeline                     Processing: ChemicalKinetics.pdf
+2026-09-13 15:31:35  INFO      ocr.ocr_pipeline                     Document type: PDF
+2026-09-13 15:31:35  INFO      document.pdf_processor               Rendering PDF via pypdfium2: ChemicalKinetics.pdf (DPI=300, scale=4.17)
+2026-09-13 15:31:35  INFO      document.pdf_processor               PDF has 13 page(s).
+2026-09-13 15:31:35  WARNING   document.pdf_processor               Page 1 rendered as a solid blank image (mean=255.0). The PDF page may be blank or contain corrupted image streams.
+2026-09-13 15:31:39  INFO      ocr.paddle_engine                    Page 1: 0 region(s) detected in 3.23s
+2026-09-13 15:31:39  WARNING   document.pdf_processor               Page 2 rendered as a solid blank image (mean=255.0). The PDF page may be blank or contain corrupted image streams.
+2026-09-13 15:31:42  INFO      ocr.paddle_engine                    Page 2: 0 region(s) detected in 2.81s
+2026-09-13 15:31:42  WARNING   document.pdf_processor               Page 3 rendered as a solid blank image (mean=255.0). The PDF page may be blank or contain corrupted image streams.
+2026-09-13 15:31:45  INFO      ocr.paddle_engine                    Page 3: 0 region(s) detected in 3.31s
+2026-09-13 15:31:45  WARNING   document.pdf_processor               Page 4 rendered as a solid blank image (mean=255.0). The PDF page may be blank or contain corrupted image streams.
+2026-09-13 15:31:48  INFO      ocr.paddle_engine                    Page 4: 0 region(s) detected in 2.97s
+2026-09-13 15:31:49  WARNING   document.pdf_processor               Page 5 rendered as a solid blank image (mean=255.0). The PDF page may be blank or contain corrupted image streams.
+2026-09-13 15:31:52  INFO      ocr.paddle_engine                    Page 5: 0 region(s) detected in 3.36s
+2026-09-13 15:31:52  WARNING   document.pdf_processor               Page 6 rendered as a solid blank image (mean=255.0). The PDF page may be blank or contain corrupted image streams.
+2026-09-13 15:31:55  INFO      ocr.paddle_engine                    Page 6: 0 region(s) detected in 3.03s
+2026-09-13 15:31:56  WARNING   document.pdf_processor               Page 7 rendered as a solid blank image (mean=255.0). The PDF page may be blank or contain corrupted image streams.
+2026-09-13 15:31:59  INFO      ocr.paddle_engine                    Page 7: 0 region(s) detected in 3.20s
+2026-09-13 15:31:59  WARNING   document.pdf_processor               Page 8 rendered as a solid blank image (mean=255.0). The PDF page may be blank or contain corrupted image streams.
+2026-09-13 15:32:02  INFO      ocr.paddle_engine                    Page 8: 0 region(s) detected in 2.79s
+2026-09-13 15:32:02  WARNING   document.pdf_processor               Page 9 rendered as a solid blank image (mean=255.0). The PDF page may be blank or contain corrupted image streams.
+2026-09-13 15:32:06  WARNING   ocr.ocr_pipeline                     OCR failed on preprocessed page 9 (Unknown exception). Retrying with raw image...
+2026-09-13 15:41:39  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-09-13 15:41:39  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-09-13 15:41:39  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-09-13 15:41:39  INFO      utils.offline_checker                System cache contains 8 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-09-13 15:41:39  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-09-13 15:41:41  INFO      ocr.paddle_engine                    PaddleOCR version: 3.7.0 (major: 3)
+2026-09-13 15:41:41  INFO      ocr.paddle_engine                    Initialising PaddleOCR 3.7.0 (version=PP-OCRv4, lang=en) …
+2026-09-13 15:41:44  INFO      ocr.paddle_engine                    PaddleOCR initialised successfully.
+2026-09-13 15:41:48  INFO      ocr.paddle_engine                    Page 1: 70 region(s) detected in 4.98s
+2026-09-13 15:41:57  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-09-13 15:45:10  INFO      main                                 Mode: check-offline
+2026-09-13 15:45:10  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-09-13 15:45:10  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-09-13 15:45:10  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-09-13 15:45:10  INFO      utils.offline_checker                System cache contains 8 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-09-13 15:45:10  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-09-13 15:45:10  INFO      utils.offline_checker                Patterns file OK: C:\OCR\extraction\patterns.yaml
+2026-09-13 15:45:14  INFO      main                                 Mode: full
+2026-09-13 15:45:14  INFO      document_intelligence                DocumentProcessor.process: file=SIH.pdf, mode=full
+2026-09-13 15:45:25  INFO      main                                 Mode: full
+2026-09-13 15:45:25  INFO      document_intelligence                DocumentProcessor.process: file=SIH.pdf, mode=full
+2026-09-13 15:45:25  INFO      document.document_normalizer         Normalizing 'SIH.pdf' (type=PDF)
+2026-09-13 15:45:25  INFO      document.pdf_processor               Rendering PDF via pypdfium2: SIH.pdf (DPI=300, scale=4.17)
+2026-09-13 15:45:25  INFO      document.pdf_processor               PDF has 1 page(s).
+2026-09-13 15:45:25  INFO      document.document_normalizer         Normalized 'SIH.pdf': 1 page(s)
+2026-09-13 15:45:25  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-09-13 15:45:25  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-09-13 15:45:25  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-09-13 15:45:25  INFO      utils.offline_checker                System cache contains 8 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-09-13 15:45:25  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-09-13 15:45:25  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-09-13 15:45:25  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-09-13 15:45:25  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-09-13 15:45:25  INFO      utils.offline_checker                System cache contains 8 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-09-13 15:45:25  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-09-13 15:45:27  INFO      ocr.paddle_engine                    PaddleOCR version: 3.7.0 (major: 3)
+2026-09-13 15:45:27  INFO      ocr.paddle_engine                    Initialising PaddleOCR 3.7.0 (version=PP-OCRv4, lang=en) …
+2026-09-13 15:45:29  INFO      ocr.paddle_engine                    PaddleOCR initialised successfully.
+2026-09-13 15:45:29  INFO      ocr.ocr_pipeline                     ============================================================
+2026-09-13 15:45:29  INFO      ocr.ocr_pipeline                     Processing: SIH.pdf
+2026-09-13 15:45:29  INFO      ocr.ocr_pipeline                     Document type: PDF
+2026-09-13 15:45:29  INFO      document.pdf_processor               Rendering PDF via pypdfium2: SIH.pdf (DPI=300, scale=4.17)
+2026-09-13 15:45:29  INFO      document.pdf_processor               PDF has 1 page(s).
+2026-09-13 15:45:40  INFO      ocr.paddle_engine                    Page 1: 49 region(s) detected in 11.15s
+2026-09-13 15:45:40  INFO      ocr.ocr_pipeline                     Done: 1 page(s), 49 region(s) in 11.60s
+2026-09-13 15:45:40  INFO      layout.layout_analyzer               Layout analysis complete: 46 total region(s) across 1 page(s).
+2026-09-13 15:45:40  INFO      nlp.ner_engine                       NER engine using regex fallback backend.
+2026-09-13 15:45:40  INFO      extraction.pattern_manager           Loaded 11 field definition(s) from C:\OCR\extraction\patterns.yaml
+2026-09-13 15:45:41  WARNING   semantic.semantic_pipeline           Embedding failed: The 'sentence-transformers' package is required.
+Install with:  pip install sentence-transformers
+2026-09-13 15:45:41  INFO      output.json_writer                   JSON output written to 'C:\OCR\output\SIH'.
+2026-09-13 15:45:41  INFO      output.text_writer                   Plain text output written to 'C:\OCR\output\SIH\ocr.txt'.
+2026-09-13 15:45:47  INFO      main                                 Mode: full
+2026-09-13 15:45:47  INFO      document_intelligence                DocumentProcessor.process: file=ChemicalKinetics.pdf, mode=full
+2026-09-13 15:45:48  INFO      document.document_normalizer         Normalizing 'ChemicalKinetics.pdf' (type=PDF)
+2026-09-13 15:45:48  INFO      document.pdf_processor               Rendering PDF via pypdfium2: ChemicalKinetics.pdf (DPI=300, scale=4.17)
+2026-09-13 15:45:48  INFO      document.pdf_processor               PDF has 13 page(s).
+2026-09-13 15:45:52  INFO      document.document_normalizer         Normalized 'ChemicalKinetics.pdf': 13 page(s)
+2026-09-13 15:45:52  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-09-13 15:45:52  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-09-13 15:45:52  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-09-13 15:45:52  INFO      utils.offline_checker                System cache contains 8 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-09-13 15:45:52  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-09-13 15:45:52  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-09-13 15:45:52  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-09-13 15:45:52  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-09-13 15:45:52  INFO      utils.offline_checker                System cache contains 8 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-09-13 15:45:52  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-09-13 15:45:53  INFO      ocr.paddle_engine                    PaddleOCR version: 3.7.0 (major: 3)
+2026-09-13 15:45:53  INFO      ocr.paddle_engine                    Initialising PaddleOCR 3.7.0 (version=PP-OCRv4, lang=en) …
+2026-09-13 15:45:55  INFO      ocr.paddle_engine                    PaddleOCR initialised successfully.
+2026-09-13 15:45:55  INFO      ocr.ocr_pipeline                     ============================================================
+2026-09-13 15:45:55  INFO      ocr.ocr_pipeline                     Processing: ChemicalKinetics.pdf
+2026-09-13 15:45:55  INFO      ocr.ocr_pipeline                     Document type: PDF
+2026-09-13 15:45:55  INFO      document.pdf_processor               Rendering PDF via pypdfium2: ChemicalKinetics.pdf (DPI=300, scale=4.17)
+2026-09-13 15:45:55  INFO      document.pdf_processor               PDF has 13 page(s).
+2026-09-13 15:46:05  INFO      ocr.paddle_engine                    Page 1: 112 region(s) detected in 9.09s
+2026-09-13 15:46:13  INFO      ocr.paddle_engine                    Page 2: 87 region(s) detected in 7.80s
+2026-09-13 15:46:21  INFO      ocr.paddle_engine                    Page 3: 59 region(s) detected in 7.26s
+2026-09-13 15:46:30  INFO      ocr.paddle_engine                    Page 4: 107 region(s) detected in 8.64s
+2026-09-13 15:46:39  INFO      ocr.paddle_engine                    Page 5: 83 region(s) detected in 7.80s
+2026-09-13 15:46:47  INFO      ocr.paddle_engine                    Page 6: 84 region(s) detected in 7.71s
+2026-09-13 15:46:54  INFO      ocr.paddle_engine                    Page 7: 72 region(s) detected in 6.79s
+2026-09-13 15:47:02  INFO      ocr.paddle_engine                    Page 8: 94 region(s) detected in 7.55s
+2026-09-13 15:47:09  INFO      ocr.paddle_engine                    Page 9: 42 region(s) detected in 5.93s
+2026-09-13 15:47:17  INFO      ocr.paddle_engine                    Page 10: 99 region(s) detected in 7.89s
+2026-09-13 15:47:24  INFO      ocr.paddle_engine                    Page 11: 61 region(s) detected in 5.93s
+2026-09-13 15:47:30  INFO      ocr.paddle_engine                    Page 12: 45 region(s) detected in 5.94s
+2026-09-13 15:47:36  INFO      ocr.paddle_engine                    Page 13: 37 region(s) detected in 5.24s
+2026-09-13 15:47:36  INFO      ocr.ocr_pipeline                     Done: 13 page(s), 982 region(s) in 100.88s
+2026-09-13 15:47:37  INFO      layout.layout_analyzer               Layout analysis complete: 1261 total region(s) across 13 page(s).
+2026-09-13 15:47:37  INFO      nlp.ner_engine                       NER engine using regex fallback backend.
+2026-09-13 15:47:37  INFO      extraction.pattern_manager           Loaded 11 field definition(s) from C:\OCR\extraction\patterns.yaml
+2026-09-13 15:47:37  WARNING   semantic.semantic_pipeline           Embedding failed: The 'sentence-transformers' package is required.
+Install with:  pip install sentence-transformers
+2026-09-13 15:47:37  INFO      output.json_writer                   JSON output written to 'C:\OCR\output\ChemicalKinetics'.
+2026-09-13 15:47:37  INFO      output.text_writer                   Plain text output written to 'C:\OCR\output\ChemicalKinetics\ocr.txt'.
+2026-09-13 15:48:49  INFO      main                                 Mode: full
+2026-09-13 15:48:49  INFO      document_intelligence                DocumentProcessor.process: file=ChemicalKinetics.pdf, mode=full
+2026-09-13 15:48:49  INFO      document.document_normalizer         Normalizing 'ChemicalKinetics.pdf' (type=PDF)
+2026-09-13 15:48:49  INFO      document.pdf_processor               Rendering PDF via pypdfium2: ChemicalKinetics.pdf (DPI=300, scale=4.17)
+2026-09-13 15:48:49  INFO      document.pdf_processor               PDF has 13 page(s).
+2026-09-13 15:48:53  INFO      document.document_normalizer         Normalized 'ChemicalKinetics.pdf': 13 page(s)
+2026-09-13 15:48:53  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-09-13 15:48:53  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-09-13 15:48:53  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-09-13 15:48:53  INFO      utils.offline_checker                System cache contains 8 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-09-13 15:48:53  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-09-13 15:48:53  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-09-13 15:48:53  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-09-13 15:48:53  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-09-13 15:48:53  INFO      utils.offline_checker                System cache contains 8 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-09-13 15:48:53  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-09-13 15:48:55  INFO      ocr.paddle_engine                    PaddleOCR version: 3.7.0 (major: 3)
+2026-09-13 15:48:55  INFO      ocr.paddle_engine                    Initialising PaddleOCR 3.7.0 (version=PP-OCRv4, lang=en) …
+2026-09-13 15:48:57  INFO      ocr.paddle_engine                    PaddleOCR initialised successfully.
+2026-09-13 15:48:57  INFO      ocr.ocr_pipeline                     ============================================================
+2026-09-13 15:48:57  INFO      ocr.ocr_pipeline                     Processing: ChemicalKinetics.pdf
+2026-09-13 15:48:57  INFO      ocr.ocr_pipeline                     Document type: PDF
+2026-09-13 15:48:57  INFO      document.pdf_processor               Rendering PDF via pypdfium2: ChemicalKinetics.pdf (DPI=300, scale=4.17)
+2026-09-13 15:48:57  INFO      document.pdf_processor               PDF has 13 page(s).
+2026-09-13 15:49:06  INFO      ocr.paddle_engine                    Page 1: 112 region(s) detected in 8.03s
+2026-09-13 15:49:13  INFO      ocr.paddle_engine                    Page 2: 87 region(s) detected in 6.77s
+2026-09-13 15:49:20  INFO      ocr.paddle_engine                    Page 3: 59 region(s) detected in 6.44s
+2026-09-13 15:49:28  INFO      ocr.paddle_engine                    Page 4: 107 region(s) detected in 7.96s
+2026-09-13 15:49:36  INFO      ocr.paddle_engine                    Page 5: 83 region(s) detected in 7.21s
+2026-09-13 15:49:44  INFO      ocr.paddle_engine                    Page 6: 84 region(s) detected in 7.20s
+2026-09-13 15:49:51  INFO      ocr.paddle_engine                    Page 7: 72 region(s) detected in 6.28s
+2026-09-13 15:49:58  INFO      ocr.paddle_engine                    Page 8: 94 region(s) detected in 7.01s
+2026-09-13 15:50:04  INFO      ocr.paddle_engine                    Page 9: 42 region(s) detected in 5.54s
+2026-09-13 15:50:12  INFO      ocr.paddle_engine                    Page 10: 99 region(s) detected in 7.59s
+2026-09-13 15:50:18  INFO      ocr.paddle_engine                    Page 11: 61 region(s) detected in 5.49s
+2026-09-13 15:50:24  INFO      ocr.paddle_engine                    Page 12: 45 region(s) detected in 5.33s
+2026-09-13 15:50:30  INFO      ocr.paddle_engine                    Page 13: 37 region(s) detected in 4.99s
+2026-09-13 15:50:30  INFO      ocr.ocr_pipeline                     Done: 13 page(s), 982 region(s) in 92.54s
+2026-09-13 15:50:30  INFO      layout.layout_analyzer               Layout analysis complete: 1261 total region(s) across 13 page(s).
+2026-09-13 15:50:30  INFO      nlp.ner_engine                       NER engine using regex fallback backend.
+2026-09-13 15:50:30  INFO      extraction.pattern_manager           Loaded 11 field definition(s) from C:\OCR\extraction\patterns.yaml
+2026-09-13 15:50:30  WARNING   semantic.semantic_pipeline           Embedding failed: The 'sentence-transformers' package is required.
+Install with:  pip install sentence-transformers
+2026-09-13 15:50:30  INFO      output.json_writer                   JSON output written to 'C:\OCR\output\ChemicalKinetics'.
+2026-09-13 15:50:30  INFO      output.text_writer                   Plain text output written to 'C:\OCR\output\ChemicalKinetics\ocr.txt'.
+2026-09-13 15:59:22  INFO      main                                 Mode: full
+2026-09-13 15:59:22  INFO      document_intelligence                DocumentProcessor.process: file=ChemicalKinetics.pdf, mode=full
+2026-09-13 15:59:22  INFO      document.document_normalizer         Normalizing 'ChemicalKinetics.pdf' (type=PDF)
+2026-09-13 15:59:22  INFO      document.pdf_processor               Rendering PDF via pypdfium2: ChemicalKinetics.pdf (DPI=300, scale=4.17)
+2026-09-13 15:59:22  INFO      document.pdf_processor               PDF has 13 page(s).
+2026-09-13 15:59:27  INFO      document.document_normalizer         Normalized 'ChemicalKinetics.pdf': 13 page(s)
+2026-09-13 15:59:27  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-09-13 15:59:27  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-09-13 15:59:27  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-09-13 15:59:27  INFO      utils.offline_checker                System cache contains 8 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-09-13 15:59:27  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-09-13 15:59:27  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-09-13 15:59:27  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-09-13 15:59:27  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-09-13 15:59:27  INFO      utils.offline_checker                System cache contains 8 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-09-13 15:59:27  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-09-13 15:59:29  INFO      ocr.paddle_engine                    PaddleOCR version: 3.7.0 (major: 3)
+2026-09-13 15:59:29  INFO      ocr.paddle_engine                    Initialising PaddleOCR 3.7.0 (version=PP-OCRv6, lang=en) …
+2026-09-13 15:59:32  INFO      ocr.paddle_engine                    PaddleOCR initialised successfully.
+2026-09-13 15:59:32  INFO      ocr.ocr_pipeline                     ============================================================
+2026-09-13 15:59:32  INFO      ocr.ocr_pipeline                     Processing: ChemicalKinetics.pdf
+2026-09-13 15:59:32  INFO      ocr.ocr_pipeline                     Document type: PDF
+2026-09-13 15:59:32  INFO      document.pdf_processor               Rendering PDF via pypdfium2: ChemicalKinetics.pdf (DPI=300, scale=4.17)
+2026-09-13 15:59:32  INFO      document.pdf_processor               PDF has 13 page(s).
+2026-09-13 15:59:48  INFO      ocr.paddle_engine                    Page 1: 28 region(s) detected in 15.46s
+2026-09-13 16:00:01  INFO      ocr.paddle_engine                    Page 2: 17 region(s) detected in 12.28s
+2026-09-13 16:00:15  INFO      ocr.paddle_engine                    Page 3: 37 region(s) detected in 13.74s
+2026-09-13 16:00:29  INFO      ocr.paddle_engine                    Page 4: 19 region(s) detected in 13.20s
+2026-09-13 16:00:44  INFO      ocr.paddle_engine                    Page 5: 34 region(s) detected in 14.36s
+2026-09-13 16:00:56  INFO      ocr.paddle_engine                    Page 6: 15 region(s) detected in 11.75s
+2026-09-13 16:01:13  INFO      ocr.paddle_engine                    Page 7: 27 region(s) detected in 16.19s
+2026-09-13 16:01:27  INFO      ocr.paddle_engine                    Page 8: 28 region(s) detected in 13.37s
+2026-09-13 16:01:40  INFO      ocr.paddle_engine                    Page 9: 32 region(s) detected in 13.28s
+2026-09-13 16:01:52  INFO      ocr.paddle_engine                    Page 10: 24 region(s) detected in 11.49s
+2026-09-13 16:03:43  INFO      document_intelligence                DocumentProcessor.process: file=ChemicalKinetics.pdf, mode=full
+2026-09-13 16:03:44  INFO      document.document_normalizer         Normalizing 'ChemicalKinetics.pdf' (type=PDF)
+2026-09-13 16:03:44  INFO      document.pdf_processor               Rendering PDF via pypdfium2: ChemicalKinetics.pdf (DPI=300, scale=4.17)
+2026-09-13 16:03:44  INFO      document.pdf_processor               PDF has 13 page(s).
+2026-09-13 16:03:48  INFO      document.document_normalizer         Normalized 'ChemicalKinetics.pdf': 13 page(s)
+2026-09-13 16:03:48  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-09-13 16:03:48  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-09-13 16:03:48  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-09-13 16:03:48  INFO      utils.offline_checker                System cache contains 8 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-09-13 16:03:48  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-09-13 16:03:48  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-09-13 16:03:48  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-09-13 16:03:48  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-09-13 16:03:48  INFO      utils.offline_checker                System cache contains 8 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-09-13 16:03:48  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-09-13 16:03:49  INFO      ocr.paddle_engine                    PaddleOCR version: 3.7.0 (major: 3)
+2026-09-13 16:03:49  INFO      ocr.paddle_engine                    Initialising PaddleOCR 3.7.0 (version=PP-OCRv6, lang=en) …
+2026-09-13 16:03:52  INFO      ocr.paddle_engine                    PaddleOCR initialised successfully.
+2026-09-13 16:03:52  INFO      ocr.ocr_pipeline                     ============================================================
+2026-09-13 16:03:52  INFO      ocr.ocr_pipeline                     Processing: ChemicalKinetics.pdf
+2026-09-13 16:03:52  INFO      ocr.ocr_pipeline                     Document type: PDF
+2026-09-13 16:03:52  INFO      document.pdf_processor               Rendering PDF via pypdfium2: ChemicalKinetics.pdf (DPI=300, scale=4.17)
+2026-09-13 16:03:52  INFO      document.pdf_processor               PDF has 13 page(s).
+2026-09-13 16:04:06  INFO      main                                 Mode: full
+2026-09-13 16:04:06  INFO      document_intelligence                DocumentProcessor.process: file=ChemicalKinetics.pdf, mode=full
+2026-09-13 16:04:07  INFO      document.document_normalizer         Normalizing 'ChemicalKinetics.pdf' (type=PDF)
+2026-09-13 16:04:07  INFO      document.pdf_processor               Rendering PDF via pypdfium2: ChemicalKinetics.pdf (DPI=300, scale=4.17)
+2026-09-13 16:04:07  INFO      document.pdf_processor               PDF has 13 page(s).
+2026-09-13 16:04:07  INFO      ocr.paddle_engine                    Page 1: 28 region(s) detected in 14.34s
+2026-09-13 16:04:17  INFO      document.document_normalizer         Normalized 'ChemicalKinetics.pdf': 13 page(s)
+2026-09-13 16:04:17  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-09-13 16:04:17  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-09-13 16:04:17  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-09-13 16:04:18  INFO      utils.offline_checker                System cache contains 8 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-09-13 16:04:18  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-09-13 16:04:18  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-09-13 16:04:18  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-09-13 16:04:18  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-09-13 16:04:18  INFO      utils.offline_checker                System cache contains 8 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-09-13 16:04:18  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-09-13 16:04:20  INFO      ocr.paddle_engine                    Page 2: 17 region(s) detected in 12.56s
+2026-09-13 16:04:22  INFO      ocr.paddle_engine                    PaddleOCR version: 3.7.0 (major: 3)
+2026-09-13 16:04:22  INFO      ocr.paddle_engine                    Initialising PaddleOCR 3.7.0 (version=PP-OCRv6, lang=en) …
+2026-09-13 16:04:31  INFO      ocr.paddle_engine                    PaddleOCR initialised successfully.
+2026-09-13 16:04:31  INFO      ocr.ocr_pipeline                     ============================================================
+2026-09-13 16:04:31  INFO      ocr.ocr_pipeline                     Processing: ChemicalKinetics.pdf
+2026-09-13 16:04:31  INFO      ocr.ocr_pipeline                     Document type: PDF
+2026-09-13 16:04:31  INFO      document.pdf_processor               Rendering PDF via pypdfium2: ChemicalKinetics.pdf (DPI=300, scale=4.17)
+2026-09-13 16:04:31  INFO      document.pdf_processor               PDF has 13 page(s).
+2026-09-13 16:04:43  INFO      ocr.paddle_engine                    Page 3: 37 region(s) detected in 21.97s
+2026-09-13 16:04:44  WARNING   ocr.paddle_engine                    Primary OCR method failed (Unknown exception), falling back to ocr()...
+2026-09-13 16:05:03  ERROR     ocr.paddle_engine                    OCR recognition completely failed on page 1: Unknown exception
+2026-09-13 16:05:05  WARNING   ocr.paddle_engine                    Primary OCR method failed (Unknown exception), falling back to ocr()...
+2026-09-13 16:09:59  INFO      main                                 Mode: check-offline
+2026-09-13 16:09:59  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-09-13 16:09:59  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-09-13 16:09:59  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-09-13 16:09:59  INFO      utils.offline_checker                System cache contains 8 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-09-13 16:09:59  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-09-13 16:09:59  INFO      utils.offline_checker                Patterns file OK: C:\OCR\extraction\patterns.yaml
+2026-09-13 16:10:01  INFO      main                                 Mode: full
+2026-09-13 16:10:01  INFO      document_intelligence                DocumentProcessor.process: file=ChemicalKinetics.pdf, mode=full
+2026-09-13 16:10:02  INFO      document.document_normalizer         Normalizing 'ChemicalKinetics.pdf' (type=PDF)
+2026-09-13 16:10:02  INFO      document.pdf_processor               Rendering PDF via pypdfium2: ChemicalKinetics.pdf (DPI=300, scale=4.17)
+2026-09-13 16:10:02  INFO      document.pdf_processor               PDF has 13 page(s).
+2026-09-13 16:10:06  INFO      document.document_normalizer         Normalized 'ChemicalKinetics.pdf': 13 page(s)
+2026-09-13 16:10:06  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-09-13 16:10:06  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-09-13 16:10:06  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-09-13 16:10:06  INFO      utils.offline_checker                System cache contains 8 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-09-13 16:10:06  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-09-13 16:10:06  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-09-13 16:10:06  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-09-13 16:10:06  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-09-13 16:10:06  INFO      utils.offline_checker                System cache contains 8 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-09-13 16:10:06  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-09-13 16:10:08  INFO      ocr.paddle_engine                    PaddleOCR version: 3.7.0 (major: 3)
+2026-09-13 16:10:08  INFO      ocr.paddle_engine                    Initialising PaddleOCR 3.7.0 (version=PP-OCRv6, lang=en) …
+2026-09-13 16:10:10  INFO      ocr.paddle_engine                    PaddleOCR initialised successfully.
+2026-09-13 16:10:10  INFO      ocr.ocr_pipeline                     ============================================================
+2026-09-13 16:10:10  INFO      ocr.ocr_pipeline                     Processing: ChemicalKinetics.pdf
+2026-09-13 16:10:10  INFO      ocr.ocr_pipeline                     Document type: PDF
+2026-09-13 16:10:10  INFO      document.pdf_processor               Rendering PDF via pypdfium2: ChemicalKinetics.pdf (DPI=300, scale=4.17)
+2026-09-13 16:10:10  INFO      document.pdf_processor               PDF has 13 page(s).
+2026-09-13 16:10:24  INFO      ocr.paddle_engine                    Page 1: 28 region(s) detected in 13.95s
+2026-09-13 16:10:36  INFO      ocr.paddle_engine                    Page 2: 17 region(s) detected in 10.75s
+2026-09-13 16:10:37  INFO      main                                 Mode: full
+2026-09-13 16:10:37  INFO      document_intelligence                DocumentProcessor.process: file=ChemicalKinetics.pdf, mode=full
+2026-09-13 16:10:37  INFO      document.document_normalizer         Normalizing 'ChemicalKinetics.pdf' (type=PDF)
+2026-09-13 16:10:38  INFO      document.pdf_processor               Rendering PDF via pypdfium2: ChemicalKinetics.pdf (DPI=300, scale=4.17)
+2026-09-13 16:10:38  INFO      document.pdf_processor               PDF has 13 page(s).
+2026-09-13 16:10:48  INFO      document.document_normalizer         Normalized 'ChemicalKinetics.pdf': 13 page(s)
+2026-09-13 16:10:48  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-09-13 16:10:48  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-09-13 16:10:48  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-09-13 16:10:48  INFO      utils.offline_checker                System cache contains 8 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-09-13 16:10:48  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-09-13 16:10:48  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-09-13 16:10:48  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-09-13 16:10:48  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-09-13 16:10:48  INFO      utils.offline_checker                System cache contains 8 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-09-13 16:10:48  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-09-13 16:10:50  INFO      ocr.paddle_engine                    Page 3: 37 region(s) detected in 14.22s
+2026-09-13 16:10:52  INFO      ocr.paddle_engine                    PaddleOCR version: 3.7.0 (major: 3)
+2026-09-13 16:10:52  INFO      ocr.paddle_engine                    Initialising PaddleOCR 3.7.0 (version=PP-OCRv6, lang=en) …
+2026-09-13 16:10:55  INFO      ocr.paddle_engine                    PaddleOCR initialised successfully.
+2026-09-13 16:10:55  INFO      ocr.ocr_pipeline                     ============================================================
+2026-09-13 16:10:55  INFO      ocr.ocr_pipeline                     Processing: ChemicalKinetics.pdf
+2026-09-13 16:10:55  INFO      ocr.ocr_pipeline                     Document type: PDF
+2026-09-13 16:10:55  INFO      document.pdf_processor               Rendering PDF via pypdfium2: ChemicalKinetics.pdf (DPI=300, scale=4.17)
+2026-09-13 16:10:55  INFO      document.pdf_processor               PDF has 13 page(s).
+2026-09-13 16:22:10  INFO      main                                 Mode: full
+2026-09-13 16:22:10  INFO      document_intelligence                DocumentProcessor.process: file=ChemicalKinetics.pdf, mode=full
+2026-09-13 16:22:10  INFO      document.document_normalizer         Normalizing 'ChemicalKinetics.pdf' (type=PDF)
+2026-09-13 16:22:10  INFO      document.pdf_processor               Rendering PDF via pypdfium2: ChemicalKinetics.pdf (DPI=300, scale=4.17)
+2026-09-13 16:22:10  INFO      document.pdf_processor               PDF has 13 page(s).
+2026-09-13 16:22:18  INFO      document.document_normalizer         Normalized 'ChemicalKinetics.pdf': 13 page(s)
+2026-09-13 16:22:18  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-09-13 16:22:18  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-09-13 16:22:18  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-09-13 16:22:18  INFO      utils.offline_checker                System cache contains 8 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-09-13 16:22:18  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-09-13 16:22:18  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-09-13 16:22:18  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-09-13 16:22:18  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-09-13 16:22:18  INFO      utils.offline_checker                System cache contains 8 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-09-13 16:22:18  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-09-13 16:22:22  INFO      ocr.paddle_engine                    PaddleOCR version: 3.7.0 (major: 3)
+2026-09-13 16:22:22  INFO      ocr.paddle_engine                    Initialising PaddleOCR 3.7.0 (version=PP-OCRv6, lang=en) …
+2026-09-13 16:22:26  INFO      ocr.paddle_engine                    PaddleOCR initialised successfully.
+2026-09-13 16:22:26  INFO      ocr.ocr_pipeline                     ============================================================
+2026-09-13 16:22:26  INFO      ocr.ocr_pipeline                     Processing: ChemicalKinetics.pdf
+2026-09-13 16:22:26  INFO      ocr.ocr_pipeline                     Document type: PDF
+2026-09-13 16:22:26  INFO      document.pdf_processor               Rendering PDF via pypdfium2: ChemicalKinetics.pdf (DPI=300, scale=4.17)
+2026-09-13 16:22:26  INFO      document.pdf_processor               PDF has 13 page(s).
+2026-09-13 16:22:45  INFO      ocr.paddle_engine                    Page 1: 28 region(s) detected in 18.51s
+2026-09-13 16:22:59  WARNING   ocr.paddle_engine                    Primary OCR method failed on page 2: Unknown exception
+Traceback (most recent call last):
+  File "C:\OCR\ocr\paddle_engine.py", line 184, in recognize
+    raw_result = self._ocr.predict(image)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vivek Rai\AppData\Local\Programs\Python\Python312\Lib\site-packages\paddleocr\_pipelines\ocr.py", line 223, in predict
+    return list(
+           ^^^^^
+  File "C:\Users\Vivek Rai\AppData\Local\Programs\Python\Python312\Lib\site-packages\paddlex\inference\pipelines\_parallel.py", line 161, in predict
+    yield from self._pipeline.predict(
+  File "C:\Users\Vivek Rai\AppData\Local\Programs\Python\Python312\Lib\site-packages\paddlex\inference\pipelines\ocr\pipeline.py", line 366, in predict
+    det_results = list(
+                  ^^^^^
+  File "C:\Users\Vivek Rai\AppData\Local\Programs\Python\Python312\Lib\site-packages\paddlex\inference\models\predictors\base_predictor.py", line 117, in __call__
+    yield from self.apply(input, **kwargs)
+  File "C:\Users\Vivek Rai\AppData\Local\Programs\Python\Python312\Lib\site-packages\paddlex\inference\models\predictors\base_predictor.py", line 140, in apply
+    pred = self.process(batch_data, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vivek Rai\AppData\Local\Programs\Python\Python312\Lib\site-packages\paddlex\inference\models\text_detection\predictor.py", line 145, in process
+    batch_preds = self.runner(x=x)
+                  ^^^^^^^^^^^^^^^^
+  File "C:\Users\Vivek Rai\AppData\Local\Programs\Python\Python312\Lib\site-packages\paddlex\inference\models\runners\paddle_static\runner.py", line 297, in __call__
+    pred = self.infer(x)
+           ^^^^^^^^^^^^^
+  File "C:\Users\Vivek Rai\AppData\Local\Programs\Python\Python312\Lib\site-packages\paddlex\inference\models\runners\paddle_static\runner.py", line 265, in __call__
+    self.predictor.run()
+RuntimeError: Unknown exception
+
+2026-09-13 16:23:12  WARNING   ocr.paddle_engine                    Primary OCR method failed on page 3: Unknown exception
+Traceback (most recent call last):
+  File "C:\OCR\ocr\paddle_engine.py", line 184, in recognize
+    raw_result = self._ocr.predict(image)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vivek Rai\AppData\Local\Programs\Python\Python312\Lib\site-packages\paddleocr\_pipelines\ocr.py", line 223, in predict
+    return list(
+           ^^^^^
+  File "C:\Users\Vivek Rai\AppData\Local\Programs\Python\Python312\Lib\site-packages\paddlex\inference\pipelines\_parallel.py", line 161, in predict
+    yield from self._pipeline.predict(
+  File "C:\Users\Vivek Rai\AppData\Local\Programs\Python\Python312\Lib\site-packages\paddlex\inference\pipelines\ocr\pipeline.py", line 366, in predict
+    det_results = list(
+                  ^^^^^
+  File "C:\Users\Vivek Rai\AppData\Local\Programs\Python\Python312\Lib\site-packages\paddlex\inference\models\predictors\base_predictor.py", line 117, in __call__
+    yield from self.apply(input, **kwargs)
+  File "C:\Users\Vivek Rai\AppData\Local\Programs\Python\Python312\Lib\site-packages\paddlex\inference\models\predictors\base_predictor.py", line 140, in apply
+    pred = self.process(batch_data, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vivek Rai\AppData\Local\Programs\Python\Python312\Lib\site-packages\paddlex\inference\models\text_detection\predictor.py", line 145, in process
+    batch_preds = self.runner(x=x)
+                  ^^^^^^^^^^^^^^^^
+  File "C:\Users\Vivek Rai\AppData\Local\Programs\Python\Python312\Lib\site-packages\paddlex\inference\models\runners\paddle_static\runner.py", line 297, in __call__
+    pred = self.infer(x)
+           ^^^^^^^^^^^^^
+  File "C:\Users\Vivek Rai\AppData\Local\Programs\Python\Python312\Lib\site-packages\paddlex\inference\models\runners\paddle_static\runner.py", line 265, in __call__
+    self.predictor.run()
+RuntimeError: Unknown exception
+
+2026-09-13 16:23:49  INFO      main                                 Mode: full
+2026-09-13 16:23:49  INFO      document_intelligence                DocumentProcessor.process: file=ChemicalKinetics.pdf, mode=full
+2026-09-13 16:23:50  INFO      document.document_normalizer         Normalizing 'ChemicalKinetics.pdf' (type=PDF)
+2026-09-13 16:23:50  INFO      document.pdf_processor               Rendering PDF via pypdfium2: ChemicalKinetics.pdf (DPI=300, scale=4.17)
+2026-09-13 16:23:50  INFO      document.pdf_processor               PDF has 13 page(s).
+2026-09-13 16:23:54  INFO      document.document_normalizer         Normalized 'ChemicalKinetics.pdf': 13 page(s)
+2026-09-13 16:23:54  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-09-13 16:23:54  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-09-13 16:23:54  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-09-13 16:23:54  INFO      utils.offline_checker                System cache contains 8 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-09-13 16:23:54  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-09-13 16:23:54  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-09-13 16:23:54  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-09-13 16:23:54  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-09-13 16:23:54  INFO      utils.offline_checker                System cache contains 8 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-09-13 16:23:54  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-09-13 16:23:57  INFO      ocr.paddle_engine                    PaddleOCR version: 3.7.0 (major: 3)
+2026-09-13 16:23:57  INFO      ocr.paddle_engine                    Initialising PaddleOCR 3.7.0 (version=PP-OCRv4, lang=en) …
+2026-09-13 16:24:00  INFO      ocr.paddle_engine                    PaddleOCR initialised successfully.
+2026-09-13 16:24:00  INFO      ocr.ocr_pipeline                     ============================================================
+2026-09-13 16:24:00  INFO      ocr.ocr_pipeline                     Processing: ChemicalKinetics.pdf
+2026-09-13 16:24:00  INFO      ocr.ocr_pipeline                     Document type: PDF
+2026-09-13 16:24:00  INFO      document.pdf_processor               Rendering PDF via pypdfium2: ChemicalKinetics.pdf (DPI=300, scale=4.17)
+2026-09-13 16:24:00  INFO      document.pdf_processor               PDF has 13 page(s).
+2026-09-13 16:24:10  INFO      ocr.paddle_engine                    Page 1: 112 region(s) detected in 9.18s
+2026-09-13 16:24:17  INFO      ocr.paddle_engine                    Page 2: 87 region(s) detected in 7.41s
+2026-09-13 16:24:26  INFO      ocr.paddle_engine                    Page 3: 59 region(s) detected in 7.64s
+2026-09-13 16:24:35  INFO      ocr.paddle_engine                    Page 4: 107 region(s) detected in 8.65s
+2026-09-13 16:24:45  INFO      ocr.paddle_engine                    Page 5: 83 region(s) detected in 9.57s
+2026-09-13 16:24:57  INFO      ocr.paddle_engine                    Page 6: 84 region(s) detected in 10.89s
+2026-09-13 16:25:07  INFO      ocr.paddle_engine                    Page 7: 72 region(s) detected in 9.42s
+2026-09-13 16:25:17  INFO      ocr.paddle_engine                    Page 8: 94 region(s) detected in 9.73s
+2026-09-13 16:25:25  INFO      ocr.paddle_engine                    Page 9: 42 region(s) detected in 7.48s
+2026-09-13 16:25:36  INFO      ocr.paddle_engine                    Page 10: 99 region(s) detected in 10.09s
+2026-09-13 16:25:44  INFO      ocr.paddle_engine                    Page 11: 61 region(s) detected in 7.85s
+2026-09-13 16:25:52  INFO      ocr.paddle_engine                    Page 12: 45 region(s) detected in 6.67s
+2026-09-13 16:25:58  INFO      ocr.paddle_engine                    Page 13: 37 region(s) detected in 5.77s
+2026-09-13 16:25:58  INFO      ocr.ocr_pipeline                     Done: 13 page(s), 982 region(s) in 118.11s
+2026-09-13 16:25:58  INFO      layout.layout_analyzer               Layout analysis complete: 1261 total region(s) across 13 page(s).
+2026-09-13 16:25:59  INFO      nlp.ner_engine                       NER engine using regex fallback backend.
+2026-09-13 16:25:59  INFO      extraction.pattern_manager           Loaded 11 field definition(s) from C:\OCR\extraction\patterns.yaml
+2026-09-13 16:25:59  WARNING   semantic.semantic_pipeline           Embedding failed: The 'sentence-transformers' package is required.
+Install with:  pip install sentence-transformers
+2026-09-13 16:25:59  INFO      output.json_writer                   JSON output written to 'C:\OCR\output\ChemicalKinetics'.
+2026-09-13 16:25:59  INFO      output.text_writer                   Plain text output written to 'C:\OCR\output\ChemicalKinetics\ocr.txt'.
+2026-09-13 16:35:01  INFO      main                                 Mode: full
+2026-09-13 16:35:01  INFO      document_intelligence                DocumentProcessor.process: file=SIH.pdf, mode=full
+2026-09-13 16:35:02  INFO      document.document_normalizer         Normalizing 'SIH.pdf' (type=PDF)
+2026-09-13 16:35:02  INFO      document.pdf_processor               Rendering PDF via pypdfium2: SIH.pdf (DPI=300, scale=4.17)
+2026-09-13 16:35:02  INFO      document.pdf_processor               PDF has 1 page(s).
+2026-09-13 16:35:02  INFO      document.document_normalizer         Normalized 'SIH.pdf': 1 page(s)
+2026-09-13 16:35:02  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-09-13 16:35:02  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-09-13 16:35:02  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-09-13 16:35:02  INFO      utils.offline_checker                System cache contains 8 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-09-13 16:35:02  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-09-13 16:35:02  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-09-13 16:35:02  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-09-13 16:35:02  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-09-13 16:35:02  INFO      utils.offline_checker                System cache contains 8 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-09-13 16:35:02  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-09-13 16:35:05  INFO      ocr.paddle_engine                    PaddleOCR version: 3.7.0 (major: 3)
+2026-09-13 16:35:05  INFO      ocr.paddle_engine                    Initialising PaddleOCR 3.7.0 (version=PP-OCRv4, lang=en) …
+2026-09-13 16:35:08  INFO      ocr.paddle_engine                    PaddleOCR initialised successfully.
+2026-09-13 16:35:08  INFO      ocr.ocr_pipeline                     ============================================================
+2026-09-13 16:35:08  INFO      ocr.ocr_pipeline                     Processing: SIH.pdf
+2026-09-13 16:35:08  INFO      ocr.ocr_pipeline                     Document type: PDF
+2026-09-13 16:35:08  INFO      document.pdf_processor               Rendering PDF via pypdfium2: SIH.pdf (DPI=300, scale=4.17)
+2026-09-13 16:35:08  INFO      document.pdf_processor               PDF has 1 page(s).
+2026-09-13 16:35:20  INFO      ocr.paddle_engine                    Page 1: 49 region(s) detected in 10.62s
+2026-09-13 16:35:20  INFO      ocr.ocr_pipeline                     Done: 1 page(s), 49 region(s) in 11.15s
+2026-09-13 16:35:20  INFO      layout.layout_analyzer               Layout analysis complete: 46 total region(s) across 1 page(s).
+2026-09-13 16:35:20  INFO      nlp.ner_engine                       NER engine using regex fallback backend.
+2026-09-13 16:35:20  INFO      extraction.pattern_manager           Loaded 11 field definition(s) from C:\OCR\extraction\patterns.yaml
+2026-09-13 16:35:20  WARNING   semantic.semantic_pipeline           Embedding failed: The 'sentence-transformers' package is required.
+Install with:  pip install sentence-transformers
+2026-09-13 16:35:20  INFO      output.json_writer                   JSON output written to 'C:\OCR\output\SIH'.
+2026-09-13 16:35:20  INFO      output.text_writer                   Plain text output written to 'C:\OCR\output\SIH\ocr.txt'.

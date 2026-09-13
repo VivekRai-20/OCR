@@ -1,0 +1,61 @@
+# =============================================================================
+# requirements.txt
+# Offline OCR & Document Information-Extraction System
+# =============================================================================
+#
+# IMPORTANT — Python version requirement:
+#   PaddlePaddle ONLY supports Python 3.8, 3.9, 3.10, 3.11, 3.12.
+#   Python 3.13 and 3.14 are NOT supported.
+#
+#   Recommended: Python 3.11
+#   Download: https://www.python.org/ftp/python/3.11.9/python-3.11.9-amd64.exe
+#
+# Setup (recommended order):
+#   1. Install Python 3.11 from python.org
+#   2. py -3.11 -m venv .venv
+#   3. .venv\Scripts\activate
+#   4. pip install -r requirements.txt
+#
+# GPU note:
+#   The default installs CPU PaddlePaddle.
+#   For GPU (CUDA 11.x), replace paddlepaddle with:
+#     pip install paddlepaddle-gpu==2.6.2 -f https://www.paddlepaddle.org.cn/whl/windows/mkl/avx/stable.html
+#
+# Poppler (required for PDF processing, NOT installed by pip):
+#   Windows: https://github.com/oschwartz10612/poppler-windows/releases
+#   Extract and add the bin/ directory to PATH, or set pdf.poppler_path in config.yaml.
+#   Linux:   sudo apt install poppler-utils
+#   macOS:   brew install poppler
+# =============================================================================
+
+# ---- Core OCR ---------------------------------------------------------------
+# PaddleOCR 3.x requires PaddlePaddle 3.x AND Python 3.8-3.12
+# PaddleX 3.x is pulled in automatically as a dependency of paddleocr 3.x
+#
+# Verified working combination:
+#   paddlepaddle==3.1.0  +  paddleocr>=3.7.0  (Python 3.12)
+#
+# GPU version (replace paddlepaddle below):
+#   pip install paddlepaddle-gpu -i https://www.paddlepaddle.org.cn/packages/stable/cu118/
+paddlepaddle==3.1.0
+paddleocr>=3.7.0
+
+# ── Computer vision ───────────────────────────────────────────────────────────
+opencv-python-headless>=4.8.0
+Pillow>=10.0.0
+numpy>=1.24.0
+
+# ── Image processing helpers ──────────────────────────────────────────────────
+scikit-image>=0.21.0
+scipy>=1.11.0
+
+# ── Document processing ───────────────────────────────────────────────────────
+pdf2image>=1.17.0        # PDF → images (requires Poppler binaries, see above)
+pdfplumber>=0.10.0       # PDF text extraction fallback
+python-docx>=1.1.0       # DOCX reading and embedded image extraction
+
+# ── Configuration ─────────────────────────────────────────────────────────────
+PyYAML>=6.0
+
+# ── Testing ───────────────────────────────────────────────────────────────────
+pytest>=7.4.0

@@ -1,0 +1,643 @@
+{
+  "text": "IM\nTHAKUR ZCT's\nTCET THAKUR COLLEGE OF\nENGINEERING & TECHNOLOGY A\nApproved by AlCTE & Govt.of Maharashtra |Affiliated to University of Mumbai\nNOITCF FEAR 25 - zryoozz1druoNes SIEERREEEE\n1120/6\nTnts annnrs Sub:SIH 2026-Guidance Session on Effective PPT Preparation for SIH 2026\nAs part of the preparation for Smart India Hackathon (SIH) 2026, an orientation session has\nbeen organised to guide students on effective PPT preparation,presentation skills, and confident interaction with judges. The session will focus on:\nPPT Structure & Content-Clear problem statement proposed solution, innovation\nfeasibility, and impact. Design & Presentation-Professional visuals, clarity, confidence, and effective time\nmanagement.\nInteraction with Judges -Handling questions confidently, clearly, and precisely.\nFinal Submission-Ensuring all required deliverables are complete and submitted on time.\nSession Details\nDate:14 August 2026\nTime:4:30PM\nMode:Online-Microsoft Teams\nTopic:SIH Orientation for AY2025-26\nResource Persons:\nDr Laukik Salvi,Associate Professor, TCET\nMr Abhijeet M.Jadhav, Alumni\nLink for meeting\nhttps://teams.microsoft.com/meet/46534782152881?p=R7cclvU1JEabrHR17x\nAll concerned faculty members are requested to encourage the participating students to attend\nthe session and benefit from the guidance provided\n(Dr.B.K.Mishra\nPrincipal\nCopy to:\nVice Principal,\nAll Deans,\nAll Associate Deans,\nAll HODs\n.\nController of Examination,\nActivity Head-Co-Curricular\nServer Room",
+  "full_text": "IM\nTHAKUR ZCT's\nTCET THAKUR COLLEGE OF\nENGINEERING & TECHNOLOGY A\nApproved by AlCTE & Govt.of Maharashtra |Affiliated to University of Mumbai\nNOITCF FEAR 25 - zryoozz1druoNes SIEERREEEE\n1120/6\nTnts annnrs Sub:SIH 2026-Guidance Session on Effective PPT Preparation for SIH 2026\nAs part of the preparation for Smart India Hackathon (SIH) 2026, an orientation session has\nbeen organised to guide students on effective PPT preparation,presentation skills, and confident interaction with judges. The session will focus on:\nPPT Structure & Content-Clear problem statement proposed solution, innovation\nfeasibility, and impact. Design & Presentation-Professional visuals, clarity, confidence, and effective time\nmanagement.\nInteraction with Judges -Handling questions confidently, clearly, and precisely.\nFinal Submission-Ensuring all required deliverables are complete and submitted on time.\nSession Details\nDate:14 August 2026\nTime:4:30PM\nMode:Online-Microsoft Teams\nTopic:SIH Orientation for AY2025-26\nResource Persons:\nDr Laukik Salvi,Associate Professor, TCET\nMr Abhijeet M.Jadhav, Alumni\nLink for meeting\nhttps://teams.microsoft.com/meet/46534782152881?p=R7cclvU1JEabrHR17x\nAll concerned faculty members are requested to encourage the participating students to attend\nthe session and benefit from the guidance provided\n(Dr.B.K.Mishra\nPrincipal\nCopy to:\nVice Principal,\nAll Deans,\nAll Associate Deans,\nAll HODs\n.\nController of Examination,\nActivity Head-Co-Curricular\nServer Room",
+  "regions": [
+    {
+      "text": "IM",
+      "confidence": 0.3983,
+      "bbox": [
+        413,
+        24,
+        441,
+        37
+      ],
+      "page": 1,
+      "text_type": "UNKNOWN",
+      "text_type_confidence": 0.5
+    },
+    {
+      "text": "THAKUR",
+      "confidence": 0.997,
+      "bbox": [
+        120,
+        38,
+        239,
+        60
+      ],
+      "page": 1,
+      "text_type": "UNKNOWN",
+      "text_type_confidence": 0.5
+    },
+    {
+      "text": "ZCT's",
+      "confidence": 0.8848,
+      "bbox": [
+        277,
+        40,
+        354,
+        63
+      ],
+      "page": 1,
+      "text_type": "UNKNOWN",
+      "text_type_confidence": 0.5
+    },
+    {
+      "text": "THAKUR COLLEGE OF",
+      "confidence": 0.9463,
+      "bbox": [
+        805,
+        54,
+        1310,
+        92
+      ],
+      "page": 1,
+      "text_type": "PRINTED",
+      "text_type_confidence": 0.75
+    },
+    {
+      "text": "TCET",
+      "confidence": 0.9962,
+      "bbox": [
+        441,
+        44,
+        794,
+        128
+      ],
+      "page": 1,
+      "text_type": "HANDWRITTEN",
+      "text_type_confidence": 0.7
+    },
+    {
+      "text": "A",
+      "confidence": 0.4382,
+      "bbox": [
+        2240,
+        88,
+        2256,
+        105
+      ],
+      "page": 1,
+      "text_type": "UNKNOWN",
+      "text_type_confidence": 0.5
+    },
+    {
+      "text": "ENGINEERING & TECHNOLOGY",
+      "confidence": 0.9684,
+      "bbox": [
+        806,
+        87,
+        1547,
+        131
+      ],
+      "page": 1,
+      "text_type": "PRINTED",
+      "text_type_confidence": 0.75
+    },
+    {
+      "text": "Approved by AlCTE & Govt.of Maharashtra |Affiliated to University of Mumbai",
+      "confidence": 0.942,
+      "bbox": [
+        2290,
+        108,
+        2308,
+        123
+      ],
+      "page": 1,
+      "text_type": "UNKNOWN",
+      "text_type_confidence": 0.5
+    },
+    {
+      "text": "25",
+      "confidence": 0.9975,
+      "bbox": [
+        2164,
+        96,
+        2301,
+        189
+      ],
+      "page": 1,
+      "text_type": "HANDWRITTEN",
+      "text_type_confidence": 0.7
+    },
+    {
+      "text": "SIEERREEEE",
+      "confidence": 0.3922,
+      "bbox": [
+        2240,
+        134,
+        2247,
+        146
+      ],
+      "page": 1,
+      "text_type": "UNKNOWN",
+      "text_type_confidence": 0.0
+    },
+    {
+      "text": "FEAR",
+      "confidence": 0.858,
+      "bbox": [
+        433,
+        131,
+        1746,
+        175
+      ],
+      "page": 1,
+      "text_type": "PRINTED",
+      "text_type_confidence": 0.75
+    },
+    {
+      "text": "-",
+      "confidence": 0.5154,
+      "bbox": [
+        2206,
+        146,
+        2213,
+        154
+      ],
+      "page": 1,
+      "text_type": "UNKNOWN",
+      "text_type_confidence": 0.0
+    },
+    {
+      "text": "zryoozz1druoNes",
+      "confidence": 0.3759,
+      "bbox": [
+        2210,
+        146,
+        2217,
+        154
+      ],
+      "page": 1,
+      "text_type": "UNKNOWN",
+      "text_type_confidence": 0.0
+    },
+    {
+      "text": "NOITCF",
+      "confidence": 0.6133,
+      "bbox": [
+        429,
+        168,
+        1574,
+        210
+      ],
+      "page": 1,
+      "text_type": "PRINTED",
+      "text_type_confidence": 0.75
+    },
+    {
+      "text": "1120/6",
+      "confidence": 0.5619,
+      "bbox": [
+        2205,
+        178,
+        2291,
+        208
+      ],
+      "page": 1,
+      "text_type": "HANDWRITTEN",
+      "text_type_confidence": 0.7
+    },
+    {
+      "text": "Tnts annnrs",
+      "confidence": 0.4084,
+      "bbox": [
+        427,
+        200,
+        1776,
+        246
+      ],
+      "page": 1,
+      "text_type": "PRINTED",
+      "text_type_confidence": 0.75
+    },
+    {
+      "text": "Sub:SIH 2026-Guidance Session on Effective PPT Preparation for SIH 2026",
+      "confidence": 0.9633,
+      "bbox": [
+        2115,
+        220,
+        2380,
+        257
+      ],
+      "page": 1,
+      "text_type": "HANDWRITTEN",
+      "text_type_confidence": 0.7
+    },
+    {
+      "text": "As part of the preparation for Smart India Hackathon (SIH) 2026, an orientation session has",
+      "confidence": 0.966,
+      "bbox": [
+        435,
+        235,
+        1510,
+        277
+      ],
+      "page": 1,
+      "text_type": "PRINTED",
+      "text_type_confidence": 0.75
+    },
+    {
+      "text": "been organised to guide students on effective PPT preparation,presentation skills, and",
+      "confidence": 0.9625,
+      "bbox": [
+        443,
+        276,
+        460,
+        288
+      ],
+      "page": 1,
+      "text_type": "UNKNOWN",
+      "text_type_confidence": 0.5
+    },
+    {
+      "text": "confident interaction with judges. The session will focus on:",
+      "confidence": 0.9585,
+      "bbox": [
+        448,
+        268,
+        2039,
+        313
+      ],
+      "page": 1,
+      "text_type": "PRINTED",
+      "text_type_confidence": 0.75
+    },
+    {
+      "text": "PPT Structure & Content-Clear problem statement proposed solution, innovation",
+      "confidence": 0.9623,
+      "bbox": [
+        421,
+        328,
+        1193,
+        404
+      ],
+      "page": 1,
+      "text_type": "PRINTED",
+      "text_type_confidence": 0.75
+    },
+    {
+      "text": "feasibility, and impact.",
+      "confidence": 0.9737,
+      "bbox": [
+        1065,
+        398,
+        1282,
+        450
+      ],
+      "page": 1,
+      "text_type": "UNKNOWN",
+      "text_type_confidence": 0.5
+    },
+    {
+      "text": "Design & Presentation-Professional visuals, clarity, confidence, and effective time",
+      "confidence": 0.9526,
+      "bbox": [
+        1984,
+        404,
+        2207,
+        457
+      ],
+      "page": 1,
+      "text_type": "UNKNOWN",
+      "text_type_confidence": 0.5
+    },
+    {
+      "text": "management.",
+      "confidence": 0.992,
+      "bbox": [
+        319,
+        495,
+        918,
+        549
+      ],
+      "page": 1,
+      "text_type": "UNKNOWN",
+      "text_type_confidence": 0.5
+    },
+    {
+      "text": "Interaction with Judges -Handling questions confidently, clearly, and precisely.",
+      "confidence": 0.9688,
+      "bbox": [
+        316,
+        551,
+        1992,
+        617
+      ],
+      "page": 1,
+      "text_type": "UNKNOWN",
+      "text_type_confidence": 0.5
+    },
+    {
+      "text": "Final Submission-Ensuring all required deliverables are complete and submitted on time.",
+      "confidence": 0.9846,
+      "bbox": [
+        318,
+        650,
+        2165,
+        718
+      ],
+      "page": 1,
+      "text_type": "UNKNOWN",
+      "text_type_confidence": 0.5
+    },
+    {
+      "text": "Session Details",
+      "confidence": 0.9918,
+      "bbox": [
+        314,
+        718,
+        2048,
+        785
+      ],
+      "page": 1,
+      "text_type": "UNKNOWN",
+      "text_type_confidence": 0.5
+    },
+    {
+      "text": "Date:14 August 2026",
+      "confidence": 0.9561,
+      "bbox": [
+        318,
+        784,
+        1533,
+        845
+      ],
+      "page": 1,
+      "text_type": "UNKNOWN",
+      "text_type_confidence": 0.5
+    },
+    {
+      "text": "Time:4:30PM",
+      "confidence": 0.9549,
+      "bbox": [
+        313,
+        850,
+        1996,
+        919
+      ],
+      "page": 1,
+      "text_type": "UNKNOWN",
+      "text_type_confidence": 0.5
+    },
+    {
+      "text": "Mode:Online-Microsoft Teams",
+      "confidence": 0.985,
+      "bbox": [
+        315,
+        918,
+        770,
+        979
+      ],
+      "page": 1,
+      "text_type": "UNKNOWN",
+      "text_type_confidence": 0.5
+    },
+    {
+      "text": "Topic:SIH Orientation for AY2025-26",
+      "confidence": 0.9718,
+      "bbox": [
+        316,
+        987,
+        2000,
+        1051
+      ],
+      "page": 1,
+      "text_type": "UNKNOWN",
+      "text_type_confidence": 0.5
+    },
+    {
+      "text": "Resource Persons:",
+      "confidence": 0.9713,
+      "bbox": [
+        314,
+        1062,
+        578,
+        1107
+      ],
+      "page": 1,
+      "text_type": "UNKNOWN",
+      "text_type_confidence": 0.5
+    },
+    {
+      "text": "Dr Laukik Salvi,Associate Professor, TCET",
+      "confidence": 0.9627,
+      "bbox": [
+        310,
+        1115,
+        1913,
+        1189
+      ],
+      "page": 1,
+      "text_type": "UNKNOWN",
+      "text_type_confidence": 0.5
+    },
+    {
+      "text": "Mr Abhijeet M.Jadhav, Alumni",
+      "confidence": 0.9672,
+      "bbox": [
+        308,
+        1183,
+        2130,
+        1258
+      ],
+      "page": 1,
+      "text_type": "UNKNOWN",
+      "text_type_confidence": 0.5
+    },
+    {
+      "text": "Link for meeting",
+      "confidence": 0.9414,
+      "bbox": [
+        311,
+        1321,
+        638,
+        1373
+      ],
+      "page": 1,
+      "text_type": "UNKNOWN",
+      "text_type_confidence": 0.5
+    },
+    {
+      "text": "https://teams.microsoft.com/meet/46534782152881?p=R7cclvU1JEabrHR17x",
+      "confidence": 0.9847,
+      "bbox": [
+        310,
+        1385,
+        752,
+        1444
+      ],
+      "page": 1,
+      "text_type": "UNKNOWN",
+      "text_type_confidence": 0.5
+    },
+    {
+      "text": "All concerned faculty members are requested to encourage the participating students to attend",
+      "confidence": 0.9758,
+      "bbox": [
+        310,
+        1449,
+        618,
+        1505
+      ],
+      "page": 1,
+      "text_type": "UNKNOWN",
+      "text_type_confidence": 0.5
+    },
+    {
+      "text": "the session and benefit from the guidance provided",
+      "confidence": 0.9809,
+      "bbox": [
+        307,
+        1517,
+        982,
+        1575
+      ],
+      "page": 1,
+      "text_type": "UNKNOWN",
+      "text_type_confidence": 0.5
+    },
+    {
+      "text": "(Dr.B.K.Mishra",
+      "confidence": 0.9256,
+      "bbox": [
+        308,
+        1585,
+        1109,
+        1645
+      ],
+      "page": 1,
+      "text_type": "UNKNOWN",
+      "text_type_confidence": 0.5
+    },
+    {
+      "text": "Principal",
+      "confidence": 0.9983,
+      "bbox": [
+        310,
+        1655,
+        702,
+        1707
+      ],
+      "page": 1,
+      "text_type": "UNKNOWN",
+      "text_type_confidence": 0.5
+    },
+    {
+      "text": "Copy to:",
+      "confidence": 0.9729,
+      "bbox": [
+        308,
+        1719,
+        1196,
+        1777
+      ],
+      "page": 1,
+      "text_type": "UNKNOWN",
+      "text_type_confidence": 0.5
+    },
+    {
+      "text": "Vice Principal,",
+      "confidence": 0.972,
+      "bbox": [
+        308,
+        1786,
+        946,
+        1843
+      ],
+      "page": 1,
+      "text_type": "UNKNOWN",
+      "text_type_confidence": 0.5
+    },
+    {
+      "text": "All Deans,",
+      "confidence": 0.9572,
+      "bbox": [
+        302,
+        1914,
+        679,
+        1983
+      ],
+      "page": 1,
+      "text_type": "UNKNOWN",
+      "text_type_confidence": 0.5
+    },
+    {
+      "text": "All Associate Deans,",
+      "confidence": 0.9698,
+      "bbox": [
+        306,
+        1989,
+        1944,
+        2051
+      ],
+      "page": 1,
+      "text_type": "UNKNOWN",
+      "text_type_confidence": 0.5
+    },
+    {
+      "text": "All HODs",
+      "confidence": 0.9258,
+      "bbox": [
+        305,
+        2117,
+        2190,
+        2194
+      ],
+      "page": 1,
+      "text_type": "UNKNOWN",
+      "text_type_confidence": 0.5
+    },
+    {
+      "text": ".",
+      "confidence": 0.4926,
+      "bbox": [
+        301,
+        2187,
+        1333,
+        2249
+      ],
+      "page": 1,
+      "text_type": "UNKNOWN",
+      "text_type_confidence": 0.5
+    },
+    {
+      "text": "Controller of Examination,",
+      "confidence": 0.9478,
+      "bbox": [
+        1810,
+        2400,
+        2180,
+        2454
+      ],
+      "page": 1,
+      "text_type": "UNKNOWN",
+      "text_type_confidence": 0.5
+    },
+    {
+      "text": "Activity Head-Co-Curricular",
+      "confidence": 0.9865,
+      "bbox": [
+        1888,
+        2453,
+        2095,
+        2514
+      ],
+      "page": 1,
+      "text_type": "UNKNOWN",
+      "text_type_confidence": 0.5
+    },
+    {
+      "text": "Server Room",
+      "confidence": 0.9622,
+      "bbox": [
+        299,
+        2595,
+        491,
+        2662
+      ],
+      "page": 1,
+      "text_type": "UNKNOWN",
+      "text_type_confidence": 0.5
+    }
+  ]
+}
