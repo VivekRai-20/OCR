@@ -10,6 +10,112 @@ The system also provides a dedicated **offline fine-tuning framework** so that O
 
 ---
 
+## Quick Start: Independent Usage & Application Integration
+
+### 1. How to Run the OCR Independently (CLI)
+
+The engine can run standalone directly from your terminal with zero external dependencies or internet connection:
+
+#### Check Offline Readiness
+```bash
+python main.py --mode check-offline
+```
+
+#### Run the Complete Pipeline (OCR + Layout + Text-Type + Extraction + Classification)
+```bash
+python main.py --mode full --input input/document.pdf
+```
+*Outputs generated in `output/<filename>/`:*
+- `result.json` — Consolidated standardized JSON summary
+- `ocr.txt` — Plain extracted text
+- `ocr.json` — Per-region text, bounding boxes, and confidence
+- `layout.json` — Layout regions and logical reading order
+- `text_types.json` — Handwritten vs. printed classification
+- `entities.json` — Named entities (Dates, Names, Phone numbers, etc.)
+- `extracted.json` — Structured key-value fields
+- `classification.json` — Document category and confidence
+- `semantic.json` — Semantic categories and top keywords
+
+#### Run Specific Modular Modes
+```bash
+# OCR text & bounding boxes only:
+python main.py --mode ocr --input input/document.pdf
+
+# Semantic analysis & keyword extraction:
+python main.py --mode understand --input input/document.pdf
+
+# Document classification only:
+python main.py --mode classify --input input/document.pdf
+
+# Entity and structured field extraction:
+python main.py --mode extract --input input/document.pdf
+```
+
+---
+
+### 2. How to Use the OCR in Different Applications
+
+The engine is completely application-agnostic and can be integrated into external Python code, backend servers, or microservices:
+
+#### Option A: High-Level Python SDK (`document_intelligence`)
+Use the clean, object-oriented SDK inside your Python application:
+
+```python
+from document_intelligence import DocumentProcessor
+
+# Initialize the offline processor
+processor = DocumentProcessor()
+
+# Process any supported document (PDF, PNG, JPG, TIFF, DOCX)
+result = processor.process("input/document.pdf")
+
+# Access structured document intelligence
+print("Document Type   :", result.document_type)
+print("Extracted Text  :", result.text)
+print("Named Entities  :", result.entities)
+print("Extracted Fields:", result.extracted_fields)
+print("Classification  :", result.classification)
+print("Regions Found   :", len(result.regions))
+
+# Export to standardized dictionary or save all result files
+data_dict = result.to_dict()
+result.save(output_dir="output/")
+```
+
+#### Option B: Low-Level OCR Engine Integration (`ocr`)
+If your application only requires OCR text and bounding boxes without high-level intelligence:
+
+```python
+from ocr.paddle_engine import PaddleEngine
+from ocr.ocr_pipeline import OCRPipeline
+
+# Initialize OCR engine
+engine = PaddleEngine()
+engine.initialize({})
+
+# Process document
+pipeline = OCRPipeline(engine, config={})
+ocr_result = pipeline.process("input/document.pdf")
+
+for region in ocr_result["regions"]:
+    print(f"[{region['confidence']:.2f}] (Page {region['page']}) {region['text']} -> {region['bbox']}")
+```
+
+#### Option C: Local Microservice REST API (For Non-Python Applications)
+For Node.js, Go, Java, C#, or web applications, run the local FastAPI service on `localhost`:
+
+```bash
+uvicorn api.app:app --host 127.0.0.1 --port 8000
+```
+
+Send local HTTP requests from any programming language:
+- **Full Pipeline**: `POST http://127.0.0.1:8000/process` with body `{"file_path": "input/document.pdf"}`
+- **OCR Only**: `POST http://127.0.0.1:8000/ocr` with body `{"file_path": "input/document.pdf"}`
+- **Classification**: `POST http://127.0.0.1:8000/classify` with body `{"text": "your document text"}`
+- **Health Check**: `GET http://127.0.0.1:8000/health`
+
+---
+
 # 1. Purpose
 
 Traditional OCR systems primarily answer:

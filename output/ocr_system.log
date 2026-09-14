@@ -1296,3 +1296,568 @@ The system will still work using the cache location.
 Install with:  pip install sentence-transformers
 2026-09-13 16:35:20  INFO      output.json_writer                   JSON output written to 'C:\OCR\output\SIH'.
 2026-09-13 16:35:20  INFO      output.text_writer                   Plain text output written to 'C:\OCR\output\SIH\ocr.txt'.
+2026-09-14 11:04:11  INFO      main                                 Mode: full
+2026-09-14 11:04:11  INFO      document_intelligence                DocumentProcessor.process: file=ChemicalKinetics.pdf, mode=full
+2026-09-14 11:04:11  INFO      document.document_normalizer         Normalizing 'ChemicalKinetics.pdf' (type=PDF)
+2026-09-14 11:04:11  INFO      document.pdf_processor               Rendering PDF via pypdfium2: ChemicalKinetics.pdf (DPI=300, scale=4.17)
+2026-09-14 11:04:11  INFO      document.pdf_processor               PDF has 13 page(s).
+2026-09-14 11:04:15  INFO      document.document_normalizer         Normalized 'ChemicalKinetics.pdf': 13 page(s)
+2026-09-14 11:04:16  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-09-14 11:04:16  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-09-14 11:04:16  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-09-14 11:04:16  INFO      utils.offline_checker                System cache contains 8 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-09-14 11:04:16  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-09-14 11:04:16  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-09-14 11:04:16  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-09-14 11:04:16  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-09-14 11:04:16  INFO      utils.offline_checker                System cache contains 8 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-09-14 11:04:16  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-09-14 11:06:41  INFO      ocr.paddle_engine                    PaddleOCR version: 3.7.0 (major: 3)
+2026-09-14 11:06:41  INFO      ocr.paddle_engine                    Initialising PaddleOCR 3.7.0 (version=PP-OCRv4, lang=en) …
+2026-09-14 11:06:44  INFO      ocr.paddle_engine                    PaddleOCR initialised successfully.
+2026-09-14 11:06:44  INFO      ocr.ocr_pipeline                     ============================================================
+2026-09-14 11:06:44  INFO      ocr.ocr_pipeline                     Processing: ChemicalKinetics.pdf
+2026-09-14 11:06:44  INFO      ocr.ocr_pipeline                     Document type: PDF
+2026-09-14 11:06:44  INFO      document.pdf_processor               Rendering PDF via pypdfium2: ChemicalKinetics.pdf (DPI=300, scale=4.17)
+2026-09-14 11:06:44  INFO      document.pdf_processor               PDF has 13 page(s).
+2026-09-14 11:06:54  INFO      ocr.paddle_engine                    Page 1: 112 region(s) detected in 8.67s
+2026-09-14 11:07:01  INFO      ocr.paddle_engine                    Page 2: 87 region(s) detected in 6.84s
+2026-09-14 11:07:07  INFO      ocr.paddle_engine                    Page 3: 59 region(s) detected in 6.07s
+2026-09-14 11:07:15  INFO      ocr.paddle_engine                    Page 4: 107 region(s) detected in 7.53s
+2026-09-14 11:07:23  INFO      ocr.paddle_engine                    Page 5: 83 region(s) detected in 6.88s
+2026-09-14 11:07:30  INFO      ocr.paddle_engine                    Page 6: 84 region(s) detected in 6.77s
+2026-09-14 11:07:37  INFO      ocr.paddle_engine                    Page 7: 72 region(s) detected in 5.95s
+2026-09-14 11:07:44  INFO      ocr.paddle_engine                    Page 8: 94 region(s) detected in 6.54s
+2026-09-14 11:07:49  INFO      ocr.paddle_engine                    Page 9: 42 region(s) detected in 5.21s
+2026-09-14 11:07:57  INFO      ocr.paddle_engine                    Page 10: 99 region(s) detected in 6.90s
+2026-09-14 11:08:02  INFO      ocr.paddle_engine                    Page 11: 61 region(s) detected in 5.29s
+2026-09-14 11:08:08  INFO      ocr.paddle_engine                    Page 12: 45 region(s) detected in 4.98s
+2026-09-14 11:08:13  INFO      ocr.paddle_engine                    Page 13: 37 region(s) detected in 4.79s
+2026-09-14 11:08:13  INFO      ocr.ocr_pipeline                     Done: 13 page(s), 982 region(s) in 88.89s
+2026-09-14 11:08:14  INFO      layout.layout_analyzer               Layout analysis complete: 1261 total region(s) across 13 page(s).
+2026-09-14 11:09:00  INFO      nlp.ner_engine                       NER engine using regex fallback backend.
+2026-09-14 11:09:00  INFO      extraction.pattern_manager           Loaded 11 field definition(s) from C:\OCR\extraction\patterns.yaml
+2026-09-14 11:09:04  INFO      sentence_transformers.base.model     No device provided, using cpu
+2026-09-14 11:09:04  INFO      sentence_transformers.base.model     No modules.json found for C:\OCR\models\embeddings\model, initializing a new SentenceTransformer model.
+2026-09-14 11:09:04  WARNING   semantic.semantic_pipeline           Embedding failed: Unrecognized model in C:\OCR\models\embeddings\model. Should have a `model_type` key in its config.json.
+2026-09-14 11:09:05  INFO      output.json_writer                   JSON output written to 'C:\OCR\output\ChemicalKinetics'.
+2026-09-14 11:09:05  INFO      output.text_writer                   Plain text output written to 'C:\OCR\output\ChemicalKinetics\ocr.txt'.
+2026-09-14 11:19:59  INFO      main                                 Mode: check-offline
+2026-09-14 11:19:59  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-09-14 11:19:59  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-09-14 11:19:59  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-09-14 11:19:59  INFO      utils.offline_checker                System cache contains 8 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-09-14 11:19:59  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-09-14 11:19:59  INFO      utils.offline_checker                Patterns file OK: C:\OCR\extraction\patterns.yaml
+2026-09-14 11:20:02  INFO      main                                 Mode: full
+2026-09-14 11:20:02  INFO      document_intelligence                DocumentProcessor.process: file=ChemicalKinetics.pdf, mode=full
+2026-09-14 11:20:02  INFO      document.document_normalizer         Normalizing 'ChemicalKinetics.pdf' (type=PDF)
+2026-09-14 11:20:02  INFO      document.pdf_processor               Rendering PDF via pypdfium2: ChemicalKinetics.pdf (DPI=300, scale=4.17)
+2026-09-14 11:20:02  INFO      document.pdf_processor               PDF has 13 page(s).
+2026-09-14 11:20:06  INFO      document.document_normalizer         Normalized 'ChemicalKinetics.pdf': 13 page(s)
+2026-09-14 11:20:06  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-09-14 11:20:06  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-09-14 11:20:06  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-09-14 11:20:06  INFO      utils.offline_checker                System cache contains 8 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-09-14 11:20:06  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-09-14 11:20:06  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-09-14 11:20:06  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-09-14 11:20:06  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-09-14 11:20:06  INFO      utils.offline_checker                System cache contains 8 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-09-14 11:20:06  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-09-14 11:20:14  INFO      ocr.paddle_engine                    PaddleOCR version: 3.7.0 (major: 3)
+2026-09-14 11:20:14  INFO      ocr.paddle_engine                    Initialising PaddleOCR 3.7.0 (version=PP-OCRv6, lang=en) …
+2026-09-14 11:20:17  INFO      ocr.paddle_engine                    PaddleOCR initialised successfully.
+2026-09-14 11:20:17  INFO      ocr.ocr_pipeline                     ============================================================
+2026-09-14 11:20:17  INFO      ocr.ocr_pipeline                     Processing: ChemicalKinetics.pdf
+2026-09-14 11:20:17  INFO      ocr.ocr_pipeline                     Document type: PDF
+2026-09-14 11:20:17  INFO      document.pdf_processor               Rendering PDF via pypdfium2: ChemicalKinetics.pdf (DPI=300, scale=4.17)
+2026-09-14 11:20:17  INFO      document.pdf_processor               PDF has 13 page(s).
+2026-09-14 11:20:32  INFO      ocr.paddle_engine                    Page 1: 31 region(s) detected in 14.86s
+2026-09-14 11:20:44  INFO      ocr.paddle_engine                    Page 2: 23 region(s) detected in 12.07s
+2026-09-14 11:20:58  INFO      ocr.paddle_engine                    Page 3: 41 region(s) detected in 13.45s
+2026-09-14 11:21:12  INFO      ocr.paddle_engine                    Page 4: 25 region(s) detected in 13.40s
+2026-09-14 11:21:26  INFO      ocr.paddle_engine                    Page 5: 36 region(s) detected in 13.77s
+2026-09-14 11:21:38  INFO      ocr.paddle_engine                    Page 6: 16 region(s) detected in 11.67s
+2026-09-14 11:21:53  INFO      ocr.paddle_engine                    Page 7: 31 region(s) detected in 14.62s
+2026-09-14 11:27:32  INFO      ocr.paddle_engine                    Page 8: 28 region(s) detected in 338.73s
+2026-09-14 11:41:47  INFO      ocr.paddle_engine                    Page 9: 34 region(s) detected in 854.38s
+2026-09-14 11:46:11  INFO      main                                 Mode: full
+2026-09-14 11:46:11  INFO      document_intelligence                DocumentProcessor.process: file=ChemicalKinetics.pdf, mode=full
+2026-09-14 11:46:12  INFO      document.document_normalizer         Normalizing 'ChemicalKinetics.pdf' (type=PDF)
+2026-09-14 11:46:12  INFO      document.pdf_processor               Rendering PDF via pypdfium2: ChemicalKinetics.pdf (DPI=300, scale=4.17)
+2026-09-14 11:46:12  INFO      document.pdf_processor               PDF has 13 page(s).
+2026-09-14 11:46:16  INFO      document.document_normalizer         Normalized 'ChemicalKinetics.pdf': 13 page(s)
+2026-09-14 11:46:16  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-09-14 11:46:16  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-09-14 11:46:16  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-09-14 11:46:16  INFO      utils.offline_checker                System cache contains 8 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-09-14 11:46:16  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-09-14 11:46:16  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-09-14 11:46:16  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-09-14 11:46:16  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-09-14 11:46:16  INFO      utils.offline_checker                System cache contains 8 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-09-14 11:46:16  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-09-14 11:46:26  INFO      ocr.paddle_engine                    PaddleOCR version: 3.7.0 (major: 3)
+2026-09-14 11:46:26  INFO      ocr.paddle_engine                    Initialising PaddleOCR 3.7.0 (version=PP-OCRv6, lang=en) …
+2026-09-14 11:46:30  INFO      ocr.paddle_engine                    PaddleOCR initialised successfully.
+2026-09-14 11:46:30  INFO      ocr.ocr_pipeline                     ============================================================
+2026-09-14 11:46:30  INFO      ocr.ocr_pipeline                     Processing: ChemicalKinetics.pdf
+2026-09-14 11:46:30  INFO      ocr.ocr_pipeline                     Document type: PDF
+2026-09-14 11:46:30  INFO      document.pdf_processor               Rendering PDF via pypdfium2: ChemicalKinetics.pdf (DPI=300, scale=4.17)
+2026-09-14 11:46:30  INFO      document.pdf_processor               PDF has 13 page(s).
+2026-09-14 11:46:44  INFO      ocr.paddle_engine                    Page 1: 31 region(s) detected in 14.18s
+2026-09-14 11:46:57  INFO      ocr.paddle_engine                    Page 2: 23 region(s) detected in 12.06s
+2026-09-14 11:47:11  INFO      ocr.paddle_engine                    Page 3: 41 region(s) detected in 13.82s
+2026-09-14 11:47:25  INFO      ocr.paddle_engine                    Page 4: 25 region(s) detected in 13.48s
+2026-09-14 11:47:39  INFO      ocr.paddle_engine                    Page 5: 36 region(s) detected in 13.28s
+2026-09-14 11:51:52  INFO      ocr.paddle_engine                    Page 6: 16 region(s) detected in 253.12s
+2026-09-14 11:52:08  INFO      ocr.paddle_engine                    Page 7: 31 region(s) detected in 15.57s
+2026-09-14 11:52:19  WARNING   ocr.ocr_pipeline                     OCR failed on preprocessed page 8 (Unknown exception). Retrying with raw image...
+2026-09-14 11:52:29  ERROR     ocr.ocr_pipeline                     OCR recognition completely failed on page 8: Unknown exception
+2026-09-14 11:52:41  WARNING   ocr.ocr_pipeline                     OCR failed on preprocessed page 9 (Unknown exception). Retrying with raw image...
+2026-09-14 11:54:16  INFO      main                                 Mode: full
+2026-09-14 11:54:16  INFO      document_intelligence                DocumentProcessor.process: file=ChemicalKinetics.pdf, mode=full
+2026-09-14 11:54:16  INFO      document.document_normalizer         Normalizing 'ChemicalKinetics.pdf' (type=PDF)
+2026-09-14 11:54:16  INFO      document.pdf_processor               Rendering PDF via pypdfium2: ChemicalKinetics.pdf (DPI=300, scale=4.17)
+2026-09-14 11:54:16  INFO      document.pdf_processor               PDF has 13 page(s).
+2026-09-14 11:54:20  INFO      document.document_normalizer         Normalized 'ChemicalKinetics.pdf': 13 page(s)
+2026-09-14 11:54:20  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-09-14 11:54:20  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-09-14 11:54:20  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-09-14 11:54:20  INFO      utils.offline_checker                System cache contains 8 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-09-14 11:54:20  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-09-14 11:54:20  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-09-14 11:54:20  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-09-14 11:54:20  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-09-14 11:54:20  INFO      utils.offline_checker                System cache contains 8 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-09-14 11:54:20  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-09-14 11:54:28  INFO      ocr.paddle_engine                    PaddleOCR version: 3.7.0 (major: 3)
+2026-09-14 11:54:28  INFO      ocr.paddle_engine                    Initialising PaddleOCR 3.7.0 (version=PP-OCRv6, lang=en) …
+2026-09-14 11:54:31  INFO      ocr.paddle_engine                    PaddleOCR initialised successfully.
+2026-09-14 11:54:31  INFO      ocr.ocr_pipeline                     ============================================================
+2026-09-14 11:54:31  INFO      ocr.ocr_pipeline                     Processing: ChemicalKinetics.pdf
+2026-09-14 11:54:31  INFO      ocr.ocr_pipeline                     Document type: PDF
+2026-09-14 11:54:31  INFO      document.pdf_processor               Rendering PDF via pypdfium2: ChemicalKinetics.pdf (DPI=300, scale=4.17)
+2026-09-14 11:54:31  INFO      document.pdf_processor               PDF has 13 page(s).
+2026-09-14 11:54:46  INFO      ocr.paddle_engine                    Page 1: 31 region(s) detected in 14.35s
+2026-09-14 11:54:58  INFO      ocr.paddle_engine                    Page 2: 23 region(s) detected in 11.99s
+2026-09-14 11:55:12  INFO      ocr.paddle_engine                    Page 3: 41 region(s) detected in 13.58s
+2026-09-14 11:55:26  INFO      ocr.paddle_engine                    Page 4: 25 region(s) detected in 13.35s
+2026-09-14 11:55:40  INFO      ocr.paddle_engine                    Page 5: 36 region(s) detected in 14.24s
+2026-09-14 11:55:52  INFO      ocr.paddle_engine                    Page 6: 16 region(s) detected in 11.51s
+2026-09-14 11:56:07  INFO      ocr.paddle_engine                    Page 7: 31 region(s) detected in 15.02s
+2026-09-14 11:56:21  INFO      ocr.paddle_engine                    Page 8: 28 region(s) detected in 13.16s
+2026-09-14 11:56:35  INFO      ocr.paddle_engine                    Page 9: 34 region(s) detected in 13.58s
+2026-09-14 12:02:34  INFO      main                                 Mode: full
+2026-09-14 12:02:34  INFO      document_intelligence                DocumentProcessor.process: file=ChemicalKinetics.pdf, mode=full
+2026-09-14 12:02:34  INFO      document.document_normalizer         Normalizing 'ChemicalKinetics.pdf' (type=PDF)
+2026-09-14 12:02:34  INFO      document.pdf_processor               Rendering PDF via pypdfium2: ChemicalKinetics.pdf (DPI=300, scale=4.17)
+2026-09-14 12:02:34  INFO      document.pdf_processor               PDF has 13 page(s).
+2026-09-14 12:02:39  INFO      document.document_normalizer         Normalized 'ChemicalKinetics.pdf': 13 page(s)
+2026-09-14 12:02:39  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-09-14 12:02:39  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-09-14 12:02:39  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-09-14 12:02:39  INFO      utils.offline_checker                System cache contains 8 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-09-14 12:02:39  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-09-14 12:02:39  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-09-14 12:02:39  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-09-14 12:02:39  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-09-14 12:02:39  INFO      utils.offline_checker                System cache contains 8 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-09-14 12:02:39  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-09-14 12:02:49  INFO      ocr.paddle_engine                    PaddleOCR version: 3.7.0 (major: 3)
+2026-09-14 12:02:49  INFO      ocr.paddle_engine                    Initialising PaddleOCR 3.7.0 (version=PP-OCRv6, lang=en) …
+2026-09-14 12:02:52  INFO      ocr.paddle_engine                    PaddleOCR initialised successfully.
+2026-09-14 12:02:52  INFO      ocr.ocr_pipeline                     ============================================================
+2026-09-14 12:02:52  INFO      ocr.ocr_pipeline                     Processing: ChemicalKinetics.pdf
+2026-09-14 12:02:52  INFO      ocr.ocr_pipeline                     Document type: PDF
+2026-09-14 12:02:52  INFO      document.pdf_processor               Rendering PDF via pypdfium2: ChemicalKinetics.pdf (DPI=300, scale=4.17)
+2026-09-14 12:02:52  INFO      document.pdf_processor               PDF has 13 page(s).
+2026-09-14 12:03:06  INFO      ocr.paddle_engine                    Page 1: 31 region(s) detected in 13.09s
+2026-09-14 12:03:17  INFO      ocr.paddle_engine                    Page 2: 23 region(s) detected in 10.65s
+2026-09-14 12:03:29  INFO      ocr.paddle_engine                    Page 3: 41 region(s) detected in 12.03s
+2026-09-14 12:03:42  INFO      ocr.paddle_engine                    Page 4: 25 region(s) detected in 12.27s
+2026-09-14 12:03:54  INFO      ocr.paddle_engine                    Page 5: 36 region(s) detected in 12.53s
+2026-09-14 12:04:05  INFO      ocr.paddle_engine                    Page 6: 16 region(s) detected in 10.09s
+2026-09-14 12:04:19  INFO      ocr.paddle_engine                    Page 7: 31 region(s) detected in 14.15s
+2026-09-14 12:04:31  INFO      main                                 Mode: full
+2026-09-14 12:04:31  INFO      document_intelligence                DocumentProcessor.process: file=ChemicalKinetics.pdf, mode=full
+2026-09-14 12:04:31  INFO      document.document_normalizer         Normalizing 'ChemicalKinetics.pdf' (type=PDF)
+2026-09-14 12:04:32  INFO      document.pdf_processor               Rendering PDF via pypdfium2: ChemicalKinetics.pdf (DPI=300, scale=4.17)
+2026-09-14 12:04:32  INFO      document.pdf_processor               PDF has 13 page(s).
+2026-09-14 12:04:33  INFO      ocr.paddle_engine                    Page 8: 28 region(s) detected in 13.49s
+2026-09-14 12:04:41  INFO      document.document_normalizer         Normalized 'ChemicalKinetics.pdf': 13 page(s)
+2026-09-14 12:04:41  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-09-14 12:04:41  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-09-14 12:04:41  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-09-14 12:04:41  INFO      utils.offline_checker                System cache contains 8 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-09-14 12:04:41  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-09-14 12:04:41  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-09-14 12:04:41  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-09-14 12:04:41  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-09-14 12:04:42  INFO      utils.offline_checker                System cache contains 8 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-09-14 12:04:42  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-09-14 12:04:45  WARNING   ocr.ocr_pipeline                     OCR failed on preprocessed page 9 (Unknown exception). Retrying with raw image...
+2026-09-14 12:04:56  ERROR     ocr.ocr_pipeline                     OCR recognition completely failed on page 9: Unknown exception
+2026-09-14 12:05:05  WARNING   ocr.ocr_pipeline                     OCR failed on preprocessed page 10 (Unknown exception). Retrying with raw image...
+2026-09-14 12:05:12  INFO      ocr.paddle_engine                    PaddleOCR version: 3.7.0 (major: 3)
+2026-09-14 12:05:12  INFO      ocr.paddle_engine                    Initialising PaddleOCR 3.7.0 (version=PP-OCRv6, lang=en) …
+2026-09-14 12:05:13  ERROR     ocr.ocr_pipeline                     OCR recognition completely failed on page 10: Unknown exception
+2026-09-14 12:05:24  WARNING   ocr.ocr_pipeline                     OCR failed on preprocessed page 11 (Unknown exception). Retrying with raw image...
+2026-09-14 12:05:27  INFO      ocr.paddle_engine                    PaddleOCR initialised successfully.
+2026-09-14 12:05:27  INFO      ocr.ocr_pipeline                     ============================================================
+2026-09-14 12:05:27  INFO      ocr.ocr_pipeline                     Processing: ChemicalKinetics.pdf
+2026-09-14 12:05:27  INFO      ocr.ocr_pipeline                     Document type: PDF
+2026-09-14 12:05:27  INFO      document.pdf_processor               Rendering PDF via pypdfium2: ChemicalKinetics.pdf (DPI=300, scale=4.17)
+2026-09-14 12:05:27  INFO      document.pdf_processor               PDF has 13 page(s).
+2026-09-14 12:05:35  ERROR     ocr.ocr_pipeline                     OCR recognition completely failed on page 11: Unknown exception
+2026-09-14 12:07:42  INFO      main                                 Mode: full
+2026-09-14 12:07:42  INFO      document_intelligence                DocumentProcessor.process: file=ChemicalKinetics.pdf, mode=full
+2026-09-14 12:07:42  INFO      document.document_normalizer         Normalizing 'ChemicalKinetics.pdf' (type=PDF)
+2026-09-14 12:07:42  INFO      document.pdf_processor               Rendering PDF via pypdfium2: ChemicalKinetics.pdf (DPI=300, scale=4.17)
+2026-09-14 12:07:42  INFO      document.pdf_processor               PDF has 13 page(s).
+2026-09-14 12:07:46  INFO      document.document_normalizer         Normalized 'ChemicalKinetics.pdf': 13 page(s)
+2026-09-14 12:07:46  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-09-14 12:07:46  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-09-14 12:07:46  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-09-14 12:07:46  INFO      utils.offline_checker                System cache contains 8 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-09-14 12:07:46  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-09-14 12:07:46  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-09-14 12:07:46  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-09-14 12:07:46  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-09-14 12:07:46  INFO      utils.offline_checker                System cache contains 8 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-09-14 12:07:46  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-09-14 12:07:55  INFO      ocr.paddle_engine                    PaddleOCR version: 3.7.0 (major: 3)
+2026-09-14 12:07:55  INFO      ocr.paddle_engine                    Initialising PaddleOCR 3.7.0 (version=PP-OCRv6, lang=en) …
+2026-09-14 12:07:58  INFO      ocr.paddle_engine                    PaddleOCR initialised successfully.
+2026-09-14 12:07:58  INFO      ocr.ocr_pipeline                     ============================================================
+2026-09-14 12:07:58  INFO      ocr.ocr_pipeline                     Processing: ChemicalKinetics.pdf
+2026-09-14 12:07:58  INFO      ocr.ocr_pipeline                     Document type: PDF
+2026-09-14 12:07:58  INFO      document.pdf_processor               Rendering PDF via pypdfium2: ChemicalKinetics.pdf (DPI=300, scale=4.17)
+2026-09-14 12:07:58  INFO      document.pdf_processor               PDF has 13 page(s).
+2026-09-14 12:08:11  INFO      ocr.paddle_engine                    Page 1: 31 region(s) detected in 12.71s
+2026-09-14 12:08:22  INFO      ocr.paddle_engine                    Page 2: 23 region(s) detected in 10.61s
+2026-09-14 12:08:35  INFO      ocr.paddle_engine                    Page 3: 41 region(s) detected in 12.09s
+2026-09-14 12:08:45  INFO      main                                 Mode: full
+2026-09-14 12:08:45  INFO      document_intelligence                DocumentProcessor.process: file=ChemicalKinetics.pdf, mode=full
+2026-09-14 12:08:45  INFO      document.document_normalizer         Normalizing 'ChemicalKinetics.pdf' (type=PDF)
+2026-09-14 12:08:46  INFO      document.pdf_processor               Rendering PDF via pypdfium2: ChemicalKinetics.pdf (DPI=300, scale=4.17)
+2026-09-14 12:08:46  INFO      document.pdf_processor               PDF has 13 page(s).
+2026-09-14 12:08:49  INFO      ocr.paddle_engine                    Page 4: 25 region(s) detected in 13.63s
+2026-09-14 12:08:55  INFO      document.document_normalizer         Normalized 'ChemicalKinetics.pdf': 13 page(s)
+2026-09-14 12:08:55  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-09-14 12:08:55  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-09-14 12:08:55  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-09-14 12:08:55  INFO      utils.offline_checker                System cache contains 8 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-09-14 12:08:55  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-09-14 12:08:55  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-09-14 12:08:55  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-09-14 12:08:55  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-09-14 12:08:55  INFO      utils.offline_checker                System cache contains 8 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-09-14 12:08:55  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-09-14 12:09:04  INFO      ocr.paddle_engine                    Page 5: 36 region(s) detected in 14.70s
+2026-09-14 12:09:16  INFO      ocr.paddle_engine                    Page 6: 16 region(s) detected in 11.84s
+2026-09-14 12:09:19  INFO      ocr.paddle_engine                    PaddleOCR version: 3.7.0 (major: 3)
+2026-09-14 12:09:19  INFO      ocr.paddle_engine                    Initialising PaddleOCR 3.7.0 (version=PP-OCRv6, lang=en) …
+2026-09-14 12:09:26  WARNING   ocr.ocr_pipeline                     OCR failed on preprocessed page 7 (Unknown exception). Retrying with raw image...
+2026-09-14 12:09:30  INFO      ocr.paddle_engine                    PaddleOCR initialised successfully.
+2026-09-14 12:09:30  INFO      ocr.ocr_pipeline                     ============================================================
+2026-09-14 12:09:30  INFO      ocr.ocr_pipeline                     Processing: ChemicalKinetics.pdf
+2026-09-14 12:09:30  INFO      ocr.ocr_pipeline                     Document type: PDF
+2026-09-14 12:09:30  INFO      document.pdf_processor               Rendering PDF via pypdfium2: ChemicalKinetics.pdf (DPI=300, scale=4.17)
+2026-09-14 12:09:30  INFO      document.pdf_processor               PDF has 13 page(s).
+2026-09-14 12:09:41  ERROR     ocr.ocr_pipeline                     OCR recognition completely failed on page 7: Unknown exception
+2026-09-14 12:09:49  WARNING   ocr.ocr_pipeline                     OCR failed on preprocessed page 1 (Unknown exception). Retrying with raw image...
+2026-09-14 12:09:55  WARNING   ocr.ocr_pipeline                     OCR failed on preprocessed page 8 (Unknown exception). Retrying with raw image...
+2026-09-14 12:10:23  INFO      main                                 Mode: full
+2026-09-14 12:10:23  INFO      document_intelligence                DocumentProcessor.process: file=ChemicalKinetics.pdf, mode=full
+2026-09-14 12:10:23  INFO      document.document_normalizer         Normalizing 'ChemicalKinetics.pdf' (type=PDF)
+2026-09-14 12:10:24  INFO      document.pdf_processor               Rendering PDF via pypdfium2: ChemicalKinetics.pdf (DPI=300, scale=4.17)
+2026-09-14 12:10:24  INFO      document.pdf_processor               PDF has 13 page(s).
+2026-09-14 12:10:28  INFO      document.document_normalizer         Normalized 'ChemicalKinetics.pdf': 13 page(s)
+2026-09-14 12:10:28  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-09-14 12:10:28  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-09-14 12:10:28  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-09-14 12:10:28  INFO      utils.offline_checker                System cache contains 8 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-09-14 12:10:28  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-09-14 12:10:28  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-09-14 12:10:28  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-09-14 12:10:28  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-09-14 12:10:28  INFO      utils.offline_checker                System cache contains 8 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-09-14 12:10:28  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-09-14 12:10:39  INFO      ocr.paddle_engine                    PaddleOCR version: 3.7.0 (major: 3)
+2026-09-14 12:10:39  INFO      ocr.paddle_engine                    Initialising PaddleOCR 3.7.0 (version=PP-OCRv6, lang=en) …
+2026-09-14 12:10:43  INFO      ocr.paddle_engine                    PaddleOCR initialised successfully.
+2026-09-14 12:10:43  INFO      ocr.ocr_pipeline                     ============================================================
+2026-09-14 12:10:43  INFO      ocr.ocr_pipeline                     Processing: ChemicalKinetics.pdf
+2026-09-14 12:10:43  INFO      ocr.ocr_pipeline                     Document type: PDF
+2026-09-14 12:10:43  INFO      document.pdf_processor               Rendering PDF via pypdfium2: ChemicalKinetics.pdf (DPI=300, scale=4.17)
+2026-09-14 12:10:43  INFO      document.pdf_processor               PDF has 13 page(s).
+2026-09-14 12:10:56  INFO      ocr.paddle_engine                    Page 1: 31 region(s) detected in 13.23s
+2026-09-14 12:11:07  INFO      ocr.paddle_engine                    Page 2: 23 region(s) detected in 10.48s
+2026-09-14 12:11:20  INFO      ocr.paddle_engine                    Page 3: 41 region(s) detected in 12.38s
+2026-09-14 12:11:32  INFO      ocr.paddle_engine                    Page 4: 25 region(s) detected in 12.25s
+2026-09-14 12:11:45  INFO      ocr.paddle_engine                    Page 5: 36 region(s) detected in 12.17s
+2026-09-14 12:11:55  INFO      ocr.paddle_engine                    Page 6: 16 region(s) detected in 9.98s
+2026-09-14 12:12:08  INFO      ocr.paddle_engine                    Page 7: 31 region(s) detected in 12.90s
+2026-09-14 12:12:20  INFO      ocr.paddle_engine                    Page 8: 28 region(s) detected in 11.46s
+2026-09-14 12:12:32  INFO      ocr.paddle_engine                    Page 9: 34 region(s) detected in 11.74s
+2026-09-14 12:13:16  INFO      main                                 Mode: full
+2026-09-14 12:13:16  INFO      document_intelligence                DocumentProcessor.process: file=ChemicalKinetics.pdf, mode=full
+2026-09-14 12:13:16  INFO      document.document_normalizer         Normalizing 'ChemicalKinetics.pdf' (type=PDF)
+2026-09-14 12:13:16  INFO      document.pdf_processor               Rendering PDF via pypdfium2: ChemicalKinetics.pdf (DPI=300, scale=4.17)
+2026-09-14 12:13:16  INFO      document.pdf_processor               PDF has 13 page(s).
+2026-09-14 12:13:20  INFO      document.document_normalizer         Normalized 'ChemicalKinetics.pdf': 13 page(s)
+2026-09-14 12:13:20  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-09-14 12:13:20  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-09-14 12:13:20  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-09-14 12:13:20  INFO      utils.offline_checker                System cache contains 8 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-09-14 12:13:20  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-09-14 12:13:20  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-09-14 12:13:20  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-09-14 12:13:20  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-09-14 12:13:20  INFO      utils.offline_checker                System cache contains 8 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-09-14 12:13:20  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-09-14 12:13:30  INFO      ocr.paddle_engine                    PaddleOCR version: 3.7.0 (major: 3)
+2026-09-14 12:13:30  INFO      ocr.paddle_engine                    Initialising PaddleOCR 3.7.0 (version=PP-OCRv4, lang=en) …
+2026-09-14 12:13:33  INFO      ocr.paddle_engine                    PaddleOCR initialised successfully.
+2026-09-14 12:13:33  INFO      ocr.ocr_pipeline                     ============================================================
+2026-09-14 12:13:33  INFO      ocr.ocr_pipeline                     Processing: ChemicalKinetics.pdf
+2026-09-14 12:13:33  INFO      ocr.ocr_pipeline                     Document type: PDF
+2026-09-14 12:13:33  INFO      document.pdf_processor               Rendering PDF via pypdfium2: ChemicalKinetics.pdf (DPI=300, scale=4.17)
+2026-09-14 12:13:33  INFO      document.pdf_processor               PDF has 13 page(s).
+2026-09-14 12:13:41  INFO      ocr.paddle_engine                    Page 1: 112 region(s) detected in 7.59s
+2026-09-14 12:13:48  INFO      ocr.paddle_engine                    Page 2: 87 region(s) detected in 6.37s
+2026-09-14 12:13:54  INFO      ocr.paddle_engine                    Page 3: 59 region(s) detected in 6.14s
+2026-09-14 12:14:03  INFO      ocr.paddle_engine                    Page 4: 107 region(s) detected in 7.78s
+2026-09-14 12:14:10  INFO      ocr.paddle_engine                    Page 5: 83 region(s) detected in 7.18s
+2026-09-14 12:14:18  INFO      ocr.paddle_engine                    Page 6: 84 region(s) detected in 6.72s
+2026-09-14 12:14:24  INFO      ocr.paddle_engine                    Page 7: 72 region(s) detected in 6.09s
+2026-09-14 12:14:31  INFO      ocr.paddle_engine                    Page 8: 94 region(s) detected in 6.52s
+2026-09-14 12:14:37  INFO      ocr.paddle_engine                    Page 9: 42 region(s) detected in 5.30s
+2026-09-14 12:14:45  INFO      ocr.paddle_engine                    Page 10: 99 region(s) detected in 7.23s
+2026-09-14 12:14:51  INFO      ocr.paddle_engine                    Page 11: 61 region(s) detected in 5.50s
+2026-09-14 12:14:56  INFO      ocr.paddle_engine                    Page 12: 45 region(s) detected in 5.03s
+2026-09-14 12:15:02  INFO      ocr.paddle_engine                    Page 13: 37 region(s) detected in 4.88s
+2026-09-14 12:15:02  INFO      ocr.ocr_pipeline                     Done: 13 page(s), 982 region(s) in 88.73s
+2026-09-14 12:15:02  INFO      layout.layout_analyzer               Layout analysis complete: 1261 total region(s) across 13 page(s).
+2026-09-14 12:15:03  INFO      nlp.ner_engine                       NER engine using regex fallback backend.
+2026-09-14 12:15:03  INFO      extraction.pattern_manager           Loaded 11 field definition(s) from C:\OCR\extraction\patterns.yaml
+2026-09-14 12:15:06  INFO      sentence_transformers.base.model     No device provided, using cpu
+2026-09-14 12:15:06  INFO      sentence_transformers.base.model     No modules.json found for C:\OCR\models\embeddings\model, initializing a new SentenceTransformer model.
+2026-09-14 12:15:06  WARNING   semantic.semantic_pipeline           Embedding failed: Unrecognized model in C:\OCR\models\embeddings\model. Should have a `model_type` key in its config.json.
+2026-09-14 12:15:07  INFO      output.json_writer                   JSON output written to 'C:\OCR\output\ChemicalKinetics'.
+2026-09-14 12:15:07  INFO      output.text_writer                   Plain text output written to 'C:\OCR\output\ChemicalKinetics\ocr.txt'.
+2026-09-14 12:20:06  INFO      main                                 Mode: full
+2026-09-14 12:20:06  INFO      document_intelligence                DocumentProcessor.process: file=ChemicalKinetics.pdf, mode=full
+2026-09-14 12:20:06  INFO      document.document_normalizer         Normalizing 'ChemicalKinetics.pdf' (type=PDF)
+2026-09-14 12:20:06  INFO      document.pdf_processor               Rendering PDF via pypdfium2: ChemicalKinetics.pdf (DPI=300, scale=4.17)
+2026-09-14 12:20:06  INFO      document.pdf_processor               PDF has 13 page(s).
+2026-09-14 12:20:10  INFO      document.document_normalizer         Normalized 'ChemicalKinetics.pdf': 13 page(s)
+2026-09-14 12:20:10  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-09-14 12:20:10  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-09-14 12:20:10  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-09-14 12:20:10  INFO      utils.offline_checker                System cache contains 8 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-09-14 12:20:10  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-09-14 12:20:10  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-09-14 12:20:10  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-09-14 12:20:10  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-09-14 12:20:10  INFO      utils.offline_checker                System cache contains 8 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-09-14 12:20:10  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-09-14 12:20:17  INFO      ocr.paddle_engine                    PaddleOCR version: 3.7.0 (major: 3)
+2026-09-14 12:20:17  INFO      ocr.paddle_engine                    Initialising PaddleOCR 3.7.0 (version=PP-OCRv4, lang=en) …
+2026-09-14 12:20:19  INFO      ocr.paddle_engine                    PaddleOCR initialised successfully.
+2026-09-14 12:20:19  INFO      ocr.ocr_pipeline                     ============================================================
+2026-09-14 12:20:19  INFO      ocr.ocr_pipeline                     Processing: ChemicalKinetics.pdf
+2026-09-14 12:20:19  INFO      ocr.ocr_pipeline                     Document type: PDF
+2026-09-14 12:20:19  INFO      document.pdf_processor               Rendering PDF via pypdfium2: ChemicalKinetics.pdf (DPI=300, scale=4.17)
+2026-09-14 12:20:19  INFO      document.pdf_processor               PDF has 13 page(s).
+2026-09-14 12:20:28  INFO      ocr.paddle_engine                    Page 1: 115 region(s) detected in 7.80s
+2026-09-14 12:20:35  INFO      ocr.paddle_engine                    Page 2: 90 region(s) detected in 7.10s
+2026-09-14 12:20:41  INFO      ocr.paddle_engine                    Page 3: 59 region(s) detected in 5.94s
+2026-09-14 12:20:49  INFO      ocr.paddle_engine                    Page 4: 105 region(s) detected in 7.64s
+2026-09-14 12:20:57  INFO      ocr.paddle_engine                    Page 5: 85 region(s) detected in 7.18s
+2026-09-14 12:21:05  INFO      ocr.paddle_engine                    Page 6: 87 region(s) detected in 7.81s
+2026-09-14 12:21:12  INFO      ocr.paddle_engine                    Page 7: 75 region(s) detected in 6.72s
+2026-09-14 12:21:19  INFO      ocr.paddle_engine                    Page 8: 95 region(s) detected in 6.76s
+2026-09-14 12:21:25  INFO      ocr.paddle_engine                    Page 9: 44 region(s) detected in 5.33s
+2026-09-14 12:21:32  INFO      ocr.paddle_engine                    Page 10: 98 region(s) detected in 6.84s
+2026-09-14 12:21:38  INFO      ocr.paddle_engine                    Page 11: 60 region(s) detected in 5.46s
+2026-09-14 12:21:44  INFO      ocr.paddle_engine                    Page 12: 54 region(s) detected in 5.33s
+2026-09-14 12:21:49  INFO      ocr.paddle_engine                    Page 13: 41 region(s) detected in 4.98s
+2026-09-14 12:21:49  INFO      ocr.ocr_pipeline                     Done: 13 page(s), 1008 region(s) in 89.39s
+2026-09-14 12:21:49  INFO      layout.layout_analyzer               Layout analysis complete: 1261 total region(s) across 13 page(s).
+2026-09-14 12:21:50  INFO      nlp.ner_engine                       NER engine using regex fallback backend.
+2026-09-14 12:21:50  INFO      extraction.pattern_manager           Loaded 11 field definition(s) from C:\OCR\extraction\patterns.yaml
+2026-09-14 12:21:53  INFO      sentence_transformers.base.model     No device provided, using cpu
+2026-09-14 12:21:53  INFO      sentence_transformers.base.model     No modules.json found for C:\OCR\models\embeddings\model, initializing a new SentenceTransformer model.
+2026-09-14 12:21:53  WARNING   semantic.semantic_pipeline           Embedding failed: Unrecognized model in C:\OCR\models\embeddings\model. Should have a `model_type` key in its config.json.
+2026-09-14 12:21:53  INFO      output.json_writer                   JSON output written to 'C:\OCR\output\ChemicalKinetics'.
+2026-09-14 12:21:53  INFO      output.text_writer                   Plain text output written to 'C:\OCR\output\ChemicalKinetics\ocr.txt'.
+2026-09-14 12:31:31  INFO      main                                 Mode: full
+2026-09-14 12:31:31  INFO      document_intelligence                DocumentProcessor.process: file=ChemicalKinetics.pdf, mode=full
+2026-09-14 12:31:32  INFO      document.document_normalizer         Normalizing 'ChemicalKinetics.pdf' (type=PDF)
+2026-09-14 12:31:32  INFO      document.pdf_processor               Rendering PDF via pypdfium2: ChemicalKinetics.pdf (DPI=300, scale=4.17)
+2026-09-14 12:31:32  INFO      document.pdf_processor               PDF has 13 page(s).
+2026-09-14 12:31:36  INFO      document.document_normalizer         Normalized 'ChemicalKinetics.pdf': 13 page(s)
+2026-09-14 12:31:36  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-09-14 12:31:36  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-09-14 12:31:36  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-09-14 12:31:36  INFO      utils.offline_checker                System cache contains 8 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-09-14 12:31:36  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-09-14 12:31:36  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-09-14 12:31:36  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-09-14 12:31:36  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-09-14 12:31:36  INFO      utils.offline_checker                System cache contains 8 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-09-14 12:31:36  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-09-14 12:31:43  INFO      ocr.paddle_engine                    PaddleOCR version: 3.7.0 (major: 3)
+2026-09-14 12:31:43  INFO      ocr.paddle_engine                    Initialising PaddleOCR 3.7.0 (version=PP-OCRv5, lang=en) …
+2026-09-14 12:31:50  INFO      httpx                                HTTP Request: GET https://huggingface.co/api/agent-harnesses "HTTP/1.1 200 OK"
+2026-09-14 12:31:50  INFO      httpx                                HTTP Request: GET https://huggingface.co/api/models/PaddlePaddle/PP-OCRv5_server_det/revision/main "HTTP/1.1 200 OK"
+2026-09-14 12:31:50  INFO      httpx                                HTTP Request: GET https://huggingface.co/api/models/PaddlePaddle/PP-OCRv5_server_det/tree/ca867c897ecbca8873081573a802ad70d499cb94?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-09-14 12:31:51  INFO      httpx                                HTTP Request: HEAD https://huggingface.co/PaddlePaddle/PP-OCRv5_server_det/resolve/ca867c897ecbca8873081573a802ad70d499cb94/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-09-14 12:31:51  INFO      httpx                                HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/PaddlePaddle/PP-OCRv5_server_det/ca867c897ecbca8873081573a802ad70d499cb94/README.md "HTTP/1.1 200 OK"
+2026-09-14 12:31:51  INFO      httpx                                HTTP Request: GET https://huggingface.co/api/resolve-cache/models/PaddlePaddle/PP-OCRv5_server_det/ca867c897ecbca8873081573a802ad70d499cb94/README.md "HTTP/1.1 200 OK"
+2026-09-14 12:31:51  INFO      httpx                                HTTP Request: HEAD https://huggingface.co/PaddlePaddle/PP-OCRv5_server_det/resolve/ca867c897ecbca8873081573a802ad70d499cb94/.gitattributes "HTTP/1.1 307 Temporary Redirect"
+2026-09-14 12:31:51  INFO      httpx                                HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/PaddlePaddle/PP-OCRv5_server_det/ca867c897ecbca8873081573a802ad70d499cb94/.gitattributes "HTTP/1.1 200 OK"
+2026-09-14 12:31:51  INFO      httpx                                HTTP Request: HEAD https://huggingface.co/PaddlePaddle/PP-OCRv5_server_det/resolve/ca867c897ecbca8873081573a802ad70d499cb94/inference.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-14 12:31:51  INFO      httpx                                HTTP Request: GET https://huggingface.co/api/resolve-cache/models/PaddlePaddle/PP-OCRv5_server_det/ca867c897ecbca8873081573a802ad70d499cb94/.gitattributes "HTTP/1.1 200 OK"
+2026-09-14 12:31:51  INFO      httpx                                HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/PaddlePaddle/PP-OCRv5_server_det/ca867c897ecbca8873081573a802ad70d499cb94/inference.json "HTTP/1.1 200 OK"
+2026-09-14 12:31:51  INFO      httpx                                HTTP Request: GET https://huggingface.co/api/resolve-cache/models/PaddlePaddle/PP-OCRv5_server_det/ca867c897ecbca8873081573a802ad70d499cb94/inference.json "HTTP/1.1 200 OK"
+2026-09-14 12:31:51  INFO      httpx                                HTTP Request: HEAD https://huggingface.co/PaddlePaddle/PP-OCRv5_server_det/resolve/ca867c897ecbca8873081573a802ad70d499cb94/inference.yml "HTTP/1.1 307 Temporary Redirect"
+2026-09-14 12:31:51  INFO      httpx                                HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/PaddlePaddle/PP-OCRv5_server_det/ca867c897ecbca8873081573a802ad70d499cb94/inference.yml "HTTP/1.1 200 OK"
+2026-09-14 12:31:51  INFO      httpx                                HTTP Request: GET https://huggingface.co/api/resolve-cache/models/PaddlePaddle/PP-OCRv5_server_det/ca867c897ecbca8873081573a802ad70d499cb94/inference.yml "HTTP/1.1 200 OK"
+2026-09-14 12:31:51  INFO      httpx                                HTTP Request: HEAD https://huggingface.co/PaddlePaddle/PP-OCRv5_server_det/resolve/ca867c897ecbca8873081573a802ad70d499cb94/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-14 12:31:51  INFO      httpx                                HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/PaddlePaddle/PP-OCRv5_server_det/ca867c897ecbca8873081573a802ad70d499cb94/config.json "HTTP/1.1 200 OK"
+2026-09-14 12:31:51  INFO      httpx                                HTTP Request: GET https://huggingface.co/api/resolve-cache/models/PaddlePaddle/PP-OCRv5_server_det/ca867c897ecbca8873081573a802ad70d499cb94/config.json "HTTP/1.1 200 OK"
+2026-09-14 12:32:17  INFO      httpx                                HTTP Request: GET https://huggingface.co/api/models/PaddlePaddle/en_PP-OCRv5_mobile_rec/revision/main "HTTP/1.1 200 OK"
+2026-09-14 12:32:17  INFO      httpx                                HTTP Request: GET https://huggingface.co/api/models/PaddlePaddle/en_PP-OCRv5_mobile_rec/tree/267c36e24c331595590fe7bd72bde2436fd286f2?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-09-14 12:32:18  INFO      httpx                                HTTP Request: HEAD https://huggingface.co/PaddlePaddle/en_PP-OCRv5_mobile_rec/resolve/267c36e24c331595590fe7bd72bde2436fd286f2/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-09-14 12:32:18  INFO      httpx                                HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/PaddlePaddle/en_PP-OCRv5_mobile_rec/267c36e24c331595590fe7bd72bde2436fd286f2/README.md "HTTP/1.1 200 OK"
+2026-09-14 12:32:18  INFO      httpx                                HTTP Request: GET https://huggingface.co/api/resolve-cache/models/PaddlePaddle/en_PP-OCRv5_mobile_rec/267c36e24c331595590fe7bd72bde2436fd286f2/README.md "HTTP/1.1 200 OK"
+2026-09-14 12:32:18  INFO      httpx                                HTTP Request: HEAD https://huggingface.co/PaddlePaddle/en_PP-OCRv5_mobile_rec/resolve/267c36e24c331595590fe7bd72bde2436fd286f2/inference.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-14 12:32:18  INFO      httpx                                HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/PaddlePaddle/en_PP-OCRv5_mobile_rec/267c36e24c331595590fe7bd72bde2436fd286f2/inference.json "HTTP/1.1 200 OK"
+2026-09-14 12:32:18  INFO      httpx                                HTTP Request: HEAD https://huggingface.co/PaddlePaddle/en_PP-OCRv5_mobile_rec/resolve/267c36e24c331595590fe7bd72bde2436fd286f2/inference.yml "HTTP/1.1 307 Temporary Redirect"
+2026-09-14 12:32:18  INFO      httpx                                HTTP Request: GET https://huggingface.co/api/resolve-cache/models/PaddlePaddle/en_PP-OCRv5_mobile_rec/267c36e24c331595590fe7bd72bde2436fd286f2/inference.json "HTTP/1.1 200 OK"
+2026-09-14 12:32:18  INFO      httpx                                HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/PaddlePaddle/en_PP-OCRv5_mobile_rec/267c36e24c331595590fe7bd72bde2436fd286f2/inference.yml "HTTP/1.1 200 OK"
+2026-09-14 12:32:18  INFO      httpx                                HTTP Request: HEAD https://huggingface.co/PaddlePaddle/en_PP-OCRv5_mobile_rec/resolve/267c36e24c331595590fe7bd72bde2436fd286f2/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-14 12:32:18  INFO      httpx                                HTTP Request: HEAD https://huggingface.co/PaddlePaddle/en_PP-OCRv5_mobile_rec/resolve/267c36e24c331595590fe7bd72bde2436fd286f2/.gitattributes "HTTP/1.1 307 Temporary Redirect"
+2026-09-14 12:32:18  INFO      httpx                                HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/PaddlePaddle/en_PP-OCRv5_mobile_rec/267c36e24c331595590fe7bd72bde2436fd286f2/config.json "HTTP/1.1 200 OK"
+2026-09-14 12:32:18  INFO      httpx                                HTTP Request: GET https://huggingface.co/api/resolve-cache/models/PaddlePaddle/en_PP-OCRv5_mobile_rec/267c36e24c331595590fe7bd72bde2436fd286f2/inference.yml "HTTP/1.1 200 OK"
+2026-09-14 12:32:18  INFO      httpx                                HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/PaddlePaddle/en_PP-OCRv5_mobile_rec/267c36e24c331595590fe7bd72bde2436fd286f2/.gitattributes "HTTP/1.1 200 OK"
+2026-09-14 12:32:18  INFO      httpx                                HTTP Request: GET https://huggingface.co/api/resolve-cache/models/PaddlePaddle/en_PP-OCRv5_mobile_rec/267c36e24c331595590fe7bd72bde2436fd286f2/config.json "HTTP/1.1 200 OK"
+2026-09-14 12:32:18  INFO      httpx                                HTTP Request: GET https://huggingface.co/api/resolve-cache/models/PaddlePaddle/en_PP-OCRv5_mobile_rec/267c36e24c331595590fe7bd72bde2436fd286f2/.gitattributes "HTTP/1.1 200 OK"
+2026-09-14 12:32:21  INFO      ocr.paddle_engine                    PaddleOCR initialised successfully.
+2026-09-14 12:32:21  INFO      ocr.ocr_pipeline                     ============================================================
+2026-09-14 12:32:21  INFO      ocr.ocr_pipeline                     Processing: ChemicalKinetics.pdf
+2026-09-14 12:32:21  INFO      ocr.ocr_pipeline                     Document type: PDF
+2026-09-14 12:32:21  INFO      document.pdf_processor               Rendering PDF via pypdfium2: ChemicalKinetics.pdf (DPI=300, scale=4.17)
+2026-09-14 12:32:21  INFO      document.pdf_processor               PDF has 13 page(s).
+2026-09-14 12:32:39  INFO      ocr.paddle_engine                    Page 1: 37 region(s) detected in 17.45s
+2026-09-14 12:32:52  INFO      ocr.paddle_engine                    Page 2: 27 region(s) detected in 12.49s
+2026-09-14 12:33:06  INFO      ocr.paddle_engine                    Page 3: 34 region(s) detected in 13.81s
+2026-09-14 12:33:17  WARNING   ocr.ocr_pipeline                     OCR failed on preprocessed page 4 (Unknown exception). Retrying with raw image...
+2026-09-14 12:33:27  ERROR     ocr.ocr_pipeline                     OCR recognition completely failed on page 4: Unknown exception
+2026-09-14 12:33:37  WARNING   ocr.ocr_pipeline                     OCR failed on preprocessed page 5 (Unknown exception). Retrying with raw image...
+2026-09-14 12:33:47  ERROR     ocr.ocr_pipeline                     OCR recognition completely failed on page 5: Unknown exception
+2026-09-14 12:33:57  WARNING   ocr.ocr_pipeline                     OCR failed on preprocessed page 6 (Unknown exception). Retrying with raw image...
+2026-09-14 12:35:52  INFO      main                                 Mode: full
+2026-09-14 12:35:52  INFO      document_intelligence                DocumentProcessor.process: file=ChemicalKinetics.pdf, mode=full
+2026-09-14 12:35:52  INFO      document.document_normalizer         Normalizing 'ChemicalKinetics.pdf' (type=PDF)
+2026-09-14 12:35:52  INFO      document.pdf_processor               Rendering PDF via pypdfium2: ChemicalKinetics.pdf (DPI=300, scale=4.17)
+2026-09-14 12:35:52  INFO      document.pdf_processor               PDF has 13 page(s).
+2026-09-14 12:35:56  INFO      document.document_normalizer         Normalized 'ChemicalKinetics.pdf': 13 page(s)
+2026-09-14 12:35:56  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-09-14 12:35:56  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-09-14 12:35:56  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-09-14 12:35:56  INFO      utils.offline_checker                System cache contains 10 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-09-14 12:35:56  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-09-14 12:35:56  INFO      utils.offline_checker                Local model dir OK: DET   (1 file(s))  C:\OCR\models\paddleocr\det
+2026-09-14 12:35:56  INFO      utils.offline_checker                Local model dir OK: REC   (1 file(s))  C:\OCR\models\paddleocr\rec
+2026-09-14 12:35:56  WARNING   utils.offline_checker                Local model dir has no .pdmodel/.pdiparams files: CLS  (C:\OCR\models\paddleocr\cls)
+2026-09-14 12:35:56  INFO      utils.offline_checker                System cache contains 10 model file(s) under ~/.paddlex or ~/.paddleocr.
+2026-09-14 12:35:56  INFO      utils.offline_checker                Models are in the system cache but not yet copied to models/paddleocr/.
+Run `python setup_models.py` to copy them for explicit offline use.
+The system will still work using the cache location.
+2026-09-14 12:36:07  INFO      ocr.paddle_engine                    PaddleOCR version: 3.7.0 (major: 3)
+2026-09-14 12:36:07  INFO      ocr.paddle_engine                    Initialising PaddleOCR 3.7.0 (version=PP-OCRv5, lang=en) …
+2026-09-14 12:36:12  INFO      ocr.paddle_engine                    PaddleOCR initialised successfully.
+2026-09-14 12:36:12  INFO      ocr.ocr_pipeline                     ============================================================
+2026-09-14 12:36:12  INFO      ocr.ocr_pipeline                     Processing: ChemicalKinetics.pdf
+2026-09-14 12:36:12  INFO      ocr.ocr_pipeline                     Document type: PDF
+2026-09-14 12:36:12  INFO      document.pdf_processor               Rendering PDF via pypdfium2: ChemicalKinetics.pdf (DPI=300, scale=4.17)
+2026-09-14 12:36:12  INFO      document.pdf_processor               PDF has 13 page(s).
+2026-09-14 12:36:19  INFO      ocr.paddle_engine                    Page 1: 31 region(s) detected in 7.16s
+2026-09-14 12:36:26  INFO      ocr.paddle_engine                    Page 2: 28 region(s) detected in 6.29s
+2026-09-14 12:36:33  INFO      ocr.paddle_engine                    Page 3: 33 region(s) detected in 6.77s
+2026-09-14 12:36:40  INFO      ocr.paddle_engine                    Page 4: 32 region(s) detected in 6.99s
+2026-09-14 12:36:47  INFO      ocr.paddle_engine                    Page 5: 34 region(s) detected in 6.61s
+2026-09-14 12:36:53  INFO      ocr.paddle_engine                    Page 6: 27 region(s) detected in 5.82s
+2026-09-14 12:37:01  INFO      ocr.paddle_engine                    Page 7: 25 region(s) detected in 7.66s
+2026-09-14 12:37:08  INFO      ocr.paddle_engine                    Page 8: 30 region(s) detected in 6.64s
+2026-09-14 12:37:15  INFO      ocr.paddle_engine                    Page 9: 29 region(s) detected in 6.23s
+2026-09-14 12:37:21  INFO      ocr.paddle_engine                    Page 10: 25 region(s) detected in 5.48s
+2026-09-14 12:37:28  INFO      ocr.paddle_engine                    Page 11: 33 region(s) detected in 6.67s
+2026-09-14 12:37:34  INFO      ocr.paddle_engine                    Page 12: 24 region(s) detected in 5.25s
+2026-09-14 12:37:40  INFO      ocr.paddle_engine                    Page 13: 22 region(s) detected in 6.34s
+2026-09-14 12:37:40  INFO      ocr.ocr_pipeline                     Done: 13 page(s), 373 region(s) in 88.56s
+2026-09-14 12:37:41  INFO      layout.layout_analyzer               Layout analysis complete: 1261 total region(s) across 13 page(s).
+2026-09-14 12:37:42  INFO      nlp.ner_engine                       NER engine using regex fallback backend.
+2026-09-14 12:37:42  INFO      extraction.pattern_manager           Loaded 11 field definition(s) from C:\OCR\extraction\patterns.yaml
+2026-09-14 12:37:46  INFO      sentence_transformers.base.model     No device provided, using cpu
+2026-09-14 12:37:46  INFO      sentence_transformers.base.model     No modules.json found for C:\OCR\models\embeddings\model, initializing a new SentenceTransformer model.
+2026-09-14 12:37:46  WARNING   semantic.semantic_pipeline           Embedding failed: Unrecognized model in C:\OCR\models\embeddings\model. Should have a `model_type` key in its config.json.
+2026-09-14 12:37:46  INFO      output.json_writer                   JSON output written to 'C:\OCR\output\ChemicalKinetics'.
+2026-09-14 12:37:46  INFO      output.text_writer                   Plain text output written to 'C:\OCR\output\ChemicalKinetics\ocr.txt'.

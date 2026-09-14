@@ -126,6 +126,8 @@ class PaddleEngine(BaseOCREngine):
                 kwargs["text_det_thresh"] = float(paddle_cfg["text_det_thresh"])
             if "text_det_limit_side_len" in valid_params and "text_det_limit_side_len" in paddle_cfg:
                 kwargs["text_det_limit_side_len"] = int(paddle_cfg["text_det_limit_side_len"])
+            if "text_det_limit_type" in valid_params and "text_det_limit_type" in paddle_cfg:
+                kwargs["text_det_limit_type"] = str(paddle_cfg["text_det_limit_type"])
             if "text_rec_score_thresh" in valid_params:
                 kwargs["text_rec_score_thresh"] = float(paddle_cfg.get("drop_score", 0.35))
         else:
