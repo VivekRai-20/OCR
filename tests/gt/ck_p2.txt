@@ -1,0 +1,9 @@
+Instantaneous Rate
+The rate of reaction at a given instant of time is called as instantaneous rate of reaction.
+To determine instantaneous rate of reaction, a graph of concentration versus time is plotted, a curve is obtained and the tangent is drawn at a point on a curve where the slope is rate of reaction.
+[R] slope = -d[R] / dt Time
+[P] slope = d[P] / dt Time
+Instantaneous rate of consumption of R = -d[R] / dt
+Instantaneous rate of formation of P = d[P] / dt
+Instantaneous rate of Reaction = -d[R] / dt = d[P] / dt
+Unit = Ms-1 = mol dm-3 s-1

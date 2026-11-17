@@ -1,0 +1,16 @@
+ORDER OF REACTION
+Consider a general reaction
+aA + bB -> cC + dD
+If the rate of reaction is experimentally determined
+Rate = K [A]^x [B]^y
+Then the sum of x+y gives overall order of reaction. Thus, overall order of reaction is given as the sum of power of the concentration terms in the rate law expression.
+Example
+2H2O2 -> 2H2O + O2
+Rate = K [H2O2]^1 1st order
+NO2 + CO -> CO2 + NO
+Rate = k [NO2]^2 [CO]^0
+2nd order w.r.t NO2 Zero w.r.t CO
+CH3CHO -> CH4 + CO
+Rate = [CH3CHO]^3/2 Experimentally determined value
+H2 + I2 -> 2HI
+Rate = K [H2]^1 [I2]^1

@@ -1,0 +1,14 @@
+CHEMICAL KINETICS
+Chemical Kinetics is branch of chemistry that deals with the rates of reaction or factors affecting rate and the mechanism of the reaction.
+RATE OF REACTION
+The rate of chemical reaction is defined as the change in concentration of a designated species i.e. reactant or product in the given time interval.
+AVERAGE RATE
+It is defined as change in concentration of reactant or product in a given interval of time.
+Consider a reaction
+R -> P
+Avg. rate of Rxn = Δ[c] / Δt
+Because rate cannot be negative
+Avg. rate of consumption of R = -Δ[R] / Δt
+Avg. rate of formation of P = Δ[P] / Δt
+Δ[c] / Δt = -Δ[R] / Δt = ΔP / Δt
+Unit = M/s = mol/dm3 s

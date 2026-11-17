@@ -1,0 +1,11 @@
+# large binary assets are distributed with the folder, not through git
+.venv/
+wheels/
+installers/
+models/
+output/
+datasets/
+user/
+__pycache__/
+*.pyc
+*.tmp/

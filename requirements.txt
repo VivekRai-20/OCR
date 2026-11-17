@@ -1,80 +1,41 @@
-# =============================================================================
-# requirements.txt
-# Offline OCR & Document Information-Extraction System
-# =============================================================================
-#
-# IMPORTANT — Python version requirement:
-#   PaddlePaddle ONLY supports Python 3.8, 3.9, 3.10, 3.11, 3.12.
-#   Python 3.13 and 3.14 are NOT supported.
-#
-#   Recommended: Python 3.11 or 3.12
-#   Download: https://www.python.org/ftp/python/3.11.9/python-3.11.9-amd64.exe
-#
-# Setup (recommended order):
-#   1. Install Python 3.11 or 3.12 from python.org
-#   2. py -3.12 -m venv .venv
-#   3. .venv\Scripts\activate
-#   4. pip install -r requirements.txt
-#
-# GPU note:
-#   The default installs CPU PaddlePaddle.
-#   For GPU (CUDA 11.x), replace paddlepaddle with:
-#     pip install paddlepaddle-gpu==2.6.2 -f https://www.paddlepaddle.org.cn/whl/windows/mkl/avx/stable.html
-#   Or for CUDA 11.8:
-#     pip install paddlepaddle-gpu -i https://www.paddlepaddle.org.cn/packages/stable/cu118/
-#
-# PDF Rendering note:
-#   - pypdfium2 & pymupdf are self-contained and do NOT require external binaries.
-#   - pdf2image is included as a fallback and requires Poppler binaries:
-#       Windows: https://github.com/oschwartz10612/poppler-windows/releases
-#       Linux:   sudo apt install poppler-utils
-#       macOS:   brew install poppler
-# =============================================================================
+# Offline OCR - Python 3.12, 64-bit Windows.
+# All wheels for these pins (and their dependencies) are stored in wheels/,
+# so install.bat installs them with --no-index (no internet).
+# To refresh wheels/ on a PC with internet:  python tools/fetch_assets.py --wheels
 
-# ── Core OCR ──────────────────────────────────────────────────────────────────
-# PaddleOCR 3.x requires PaddlePaddle 3.x AND Python 3.8-3.12
-# PaddleX 3.x is pulled in automatically as a dependency of paddleocr 3.x
-# Verified working combination: paddlepaddle==3.1.0 + paddleocr>=3.7.0
-paddlepaddle==3.1.0
-paddleocr>=3.7.0
+# --- OCR (PaddleOCR 2.8 on PaddlePaddle 2.6 CPU; paddle on Windows needs protobuf <= 3.20.2)
+paddlepaddle==2.6.2
+paddleocr==2.8.1
+protobuf==3.20.2
+numpy==1.26.4
+opencv-python==4.10.0.84
+opencv-contrib-python==4.10.0.84
+Pillow==10.4.0
+shapely==2.0.5
+pyclipper==1.3.0.post5
+scikit-image==0.24.0
 
-# ── Computer Vision & Preprocessing ───────────────────────────────────────────
-opencv-python-headless>=4.8.0
-Pillow>=10.0.0
-numpy>=1.24.0
-scikit-image>=0.21.0
-scipy>=1.11.0
+# --- handwriting (TrOCR) + fine-tuning, CPU build of torch
+torch==2.13.0+cpu
+torchvision==0.28.0+cpu
+transformers==5.15.0
+sentencepiece==0.2.2
+safetensors
 
-# ── Document Ingestion & Processing ───────────────────────────────────────────
-pypdfium2>=4.0.0         # Primary PDF renderer (fast, standalone, zero external binaries)
-pymupdf>=1.23.0          # PDF rendering fallback & direct embedded image extraction
-pdf2image>=1.17.0        # PDF → images fallback (requires Poppler binaries)
-pdfplumber>=0.10.0       # Direct PDF text extraction fallback
-python-docx>=1.1.0       # DOCX reading and embedded image extraction
+# --- formulas (LaTeX-OCR ONNX); onnxruntime pinned to a release that accepts protobuf 3.20
+rapid_latex_ocr==0.0.9
+onnxruntime==1.20.1
+latex2mathml==3.81.1
 
-# ── Local REST API Service (api/) ─────────────────────────────────────────────
-fastapi>=0.100.0         # Local REST API framework (127.0.0.1 offline service)
-uvicorn>=0.23.0          # ASGI server to run the local API
-pydantic>=2.0.0          # Request/response schema validation
+# --- input / output
+pypdfium2==4.30.0
+PyMuPDF==1.24.9
+python-docx==1.2.0
+openpyxl==3.1.5
+lxml==6.1.1
+matplotlib==3.11.1
+PyYAML==6.0.2
 
-# ── NLP & Information Extraction (nlp/ & extraction/) ─────────────────────────
-python-dateutil>=2.8.2   # Entity date/time normalization (nlp/entity_normalizer.py)
-spacy>=3.7.0             # Optional local Named Entity Recognition backend (nlp/ner_engine.py)
-
-# ── Machine Learning & Document Classification ────────────────────────────────
-scikit-learn>=1.3.0      # Document classifier, TF-IDF extraction & model fine-tuning
-editdistance>=0.6.2      # CER/WER metric computation in fine-tuning evaluation
-
-# ── Semantic Intelligence & Keyword Extraction (semantic/) ────────────────────
-yake>=0.4.8              # Unsupervised offline keyword extraction
-sentence-transformers>=2.2.0  # Offline dense embeddings (semantic/embedding_engine.py)
-
-# ── Handwriting Recognition (TrOCR / Transformers) ───────────────────────────
-torch>=2.0.0             # Deep learning backend for TrOCR handwriting recognition
-transformers>=4.35.0     # Offline TrOCR transformer models (ocr/handwriting_engine.py)
-
-# ── Configuration & Serialization ─────────────────────────────────────────────
-PyYAML>=6.0
-
-# ── Testing & Quality Assurance ───────────────────────────────────────────────
-pytest>=7.4.0
+# --- GUI (same Qt binding as the CDTRS frontend)
+PySide6-Essentials==6.7.2
+accelerate==1.14.0
