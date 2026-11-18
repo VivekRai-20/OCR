@@ -4,9 +4,7 @@ from __future__ import annotations
 import sys
 from pathlib import Path
 
-# In the packaged OfflineOCR.exe the data folders (models, user, output, ...)
-# sit next to the exe; otherwise they are in the project folder.
-ROOT = Path(sys.executable).resolve().parent if getattr(sys, "frozen", False) else Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[1]
 MODELS = ROOT / "models"
 PADDLE = MODELS / "paddle"
 FORMULA = MODELS / "formula"

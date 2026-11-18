@@ -1,11 +1,68 @@
-# large binary assets are distributed with the folder, not through git
+# ---------------------------------------------------------------------------
+# Large binary assets: distributed with the project folder, not through git
+# (GitHub rejects files over 100 MB). Rebuild them with tools/fetch_assets.py.
+# ---------------------------------------------------------------------------
 .venv/
+venv/
+.venv*/
 wheels/
 installers/
 models/
+build_tools/
+
+# ---------------------------------------------------------------------------
+# Generated / personal data
+# ---------------------------------------------------------------------------
 output/
 datasets/
 user/
+input/
+temp/
+*.log
+
+# packaging output
+dist/
+build/
+*.spec.bak
+*.zip
+*.7z
+
+# large model / data file types, wherever they are
+*.safetensors
+*.bin
+*.pdiparams
+*.pdiparams.info
+*.pdmodel
+*.onnx
+*.pt
+*.pth
+*.ckpt
+*.whl
+*.exe
+*.dll
+*.pyd
+
+# ---------------------------------------------------------------------------
+# Python
+# ---------------------------------------------------------------------------
 __pycache__/
-*.pyc
+*.py[cod]
+*.egg-info/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
 *.tmp/
+
+# ---------------------------------------------------------------------------
+# Editors / OS / secrets
+# ---------------------------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+Thumbs.db
+desktop.ini
+.DS_Store
+.env
+.env.*
