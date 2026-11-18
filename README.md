@@ -16,6 +16,18 @@ Measured word accuracy on the Chemical Kinetics notes (hand-transcribed pages 1,
 
 Speed: about 35-45 s per page on an NVIDIA GTX 1650 (4 GB). On a CPU it takes 5-15 minutes per page, so a GPU is strongly recommended. `install.bat` installs the CUDA build of torch from `wheels\gpu` automatically when `nvidia-smi` is present.
 
+## Ruled tables (forms, data sheets)
+
+Tables drawn with lines are rebuilt from the lines themselves (`ocrapp/grid_tables.py`), so any layout works: every row and column, merged cells (row and column spans) and **empty cells**, which stay empty in Excel, Word and HTML. Each cell is read on its own: printed text with PaddleOCR, handwritten entries with the handwriting model. In columns that are mostly numbers, common handwriting slips are corrected (7 read as F, 501-20 → 501.20). Writing beside or around the table is read as normal text. Ruled notebook paper and scanned page edges are not mistaken for tables. Tables without lines still use the SLANet table model.
+
+On the test data sheet (`tests/make_table_samples.py`, `tests/eval_table.py`: 29 × 14 cells, 167 handwritten values):
+
+| | Clean scan | Slanted, blurred photo |
+|---|---|---|
+| Grid and merged cells | exact | exact |
+| Empty cells kept empty | 118/118 | 116/118 |
+| Handwritten values read exactly | 92% | 82% |
+
 ## What it reads
 
 | Content | How |

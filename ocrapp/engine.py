@@ -21,6 +21,7 @@ import time
 from difflib import SequenceMatcher
 from typing import Callable, Optional
 
+import cv2
 import numpy as np
 
 from . import compat
@@ -109,7 +110,13 @@ class OCREngine:
 
         key = (self.s.hw_model, self.s.hw_beams)
         if self._hw is None or self._hw_key != key:
-            self._hw = HandwritingReader(self.s.hw_model, beams=self.s.hw_beams)
+            try:
+                import torch
+
+                dev = "cuda" if torch.cuda.is_available() else "cpu"
+            except Exception:
+                dev = "cpu"
+            self._hw = HandwritingReader(self.s.hw_model, beams=self.s.hw_beams, device=dev)
             self._hw_key = key
         return self._hw
 
@@ -268,14 +275,30 @@ class OCREngine:
 
         say("reading text", 0.2)
         lines = self._read_lines(img)
-        if self._use_vlm(lines):
+        all_lines = list(lines)
+        # ruled tables (forms, data sheets): exact grid from the printed rules,
+        # every cell read on its own; the rest of the page is read as usual
+        grid_blocks: list[Block] = []
+        if s.tables:
+            say("ruled tables", 0.25)
+            grid_blocks, lines = self._grid_tables(img, lines, page.notes, say)
+        if self._use_vlm(all_lines):
             say(f"AI page reader ({self.vlm_device()}) - reading the whole page", 0.35)
             try:
-                md = self.vlm_model().read(img)
                 h, w = img.shape[:2]
-                page.blocks = vlm.to_blocks(md, _join_words(list(lines)), w, h)
+                rest = img
+                if grid_blocks:  # the tables are done; let the AI reader see only the rest
+                    rest = img.copy()
+                    for b in grid_blocks:
+                        x1, y1, x2, y2 = b.bbox
+                        rest[max(0, y1 - 4):y2 + 4, max(0, x1 - 4):x2 + 4] = 255
+                blocks = []
+                if not grid_blocks or len(lines) >= 1:
+                    md = self.vlm_model().read(rest)
+                    page.markdown = md
+                    blocks = vlm.to_blocks(md, _join_words(list(lines)), w, h)
+                page.blocks = _reading_order(blocks + grid_blocks, w)
                 page.notes.append(f"read by GLM-OCR on {self.vlm_device()}")
-                page.markdown = md
                 self._apply_corrections(page)
                 page.seconds = time.time() - t0
                 return page
@@ -289,10 +312,117 @@ class OCREngine:
         if s.layout or s.tables or s.formulas:
             say("layout analysis", 0.65)
             regions = self._layout(img)
+            if grid_blocks:  # the ruled tables are already read
+                regions = [r for r in regions
+                           if not any(_overlap(r["bbox"], b.bbox) > 0.4 for b in grid_blocks)]
         page.blocks = self._assemble(img, lines, regions, say)
+        if grid_blocks:
+            page.blocks = _reading_order(page.blocks + grid_blocks, img.shape[1])
         self._apply_corrections(page)
         page.seconds = time.time() - t0
         return page
+
+    # ------------------------------------------------------------ ruled tables
+    def _grid_tables(self, img: np.ndarray, lines: list[Line], notes: list, say) -> tuple[list[Block], list[Line]]:
+        """Ruled tables -> Blocks with the exact grid (merged and empty cells kept).
+        Returns the table blocks and the page lines that are outside every table."""
+        from . import grid_tables
+
+        try:
+            tables = grid_tables.find_tables(img)
+        except Exception as e:
+            notes.append(f"ruled-table detection failed: {e}")
+            return [], lines
+        if not tables:
+            return [], lines
+        outside = [l for l in lines if not any(_center_in(l.bbox, t.bbox) for t in tables)]
+        blocks = []
+        hw: list[tuple] = []  # (cell, line) that should be checked by the handwriting model
+        n_cells = sum(len(t.cells) for t in tables)
+        done = 0
+        for t in tables:
+            for cell in t.cells:
+                done += 1
+                if done % 20 == 0:
+                    say(f"reading table cells {done}/{n_cells}", 0.25 + 0.1 * done / n_cells)
+                if not grid_tables.cell_has_ink(img, cell.box):
+                    continue  # empty cell: stays empty
+                cell.lines = self._read_cell(img, cell.box)
+                if not cell.lines:
+                    hw.append((cell, None))  # ink, but no printed text found: likely handwriting
+                    continue
+                for l in cell.lines:
+                    if self.s.mode == "handwritten" or l.conf < self.s.hw_threshold:
+                        hw.append((cell, l))
+        if hw and self.s.mode != "printed":
+            say(f"handwriting in {len(hw)} table cells", 0.4)
+            self._read_cells_handwriting(img, hw, notes)
+        for t in tables:
+            all_cell_lines = []
+            for cell in t.cells:
+                cell.lines = _merge_rows(cell.lines) if cell.lines else []
+                cell.text = "\n".join(l.text for l in cell.lines).strip()
+            _fix_numeric_columns(t)
+            for cell in t.cells:
+                all_cell_lines += cell.lines
+            b = Block("table", list(t.bbox), lines=all_cell_lines, cells=grid_tables.to_block_cells(t))
+            blocks.append(b)
+        filled = sum(1 for t in tables for c in t.cells if c.text)
+        notes.append(f"{len(tables)} ruled table(s): {n_cells} cells, {filled} with text, "
+                     f"{n_cells - filled} empty")
+        return blocks, outside
+
+    def _read_cell(self, img: np.ndarray, box) -> list[Line]:
+        """Printed-text OCR of one table cell (the crop stops text running into the
+        next cell). Lines come back in page coordinates."""
+        x1, y1, x2, y2 = [int(v) for v in box]
+        crop = _erase_rules(img[y1:y2, x1:x2].copy())
+        if crop.size == 0:
+            return []
+        pad = 10
+        padded = cv2.copyMakeBorder(crop, pad, pad, pad, pad, cv2.BORDER_CONSTANT, value=(255, 255, 255))
+        res = self.ocr_model().ocr(padded, det=True, rec=True, cls=False)
+        out = []
+        for item in (res[0] or []) if res else []:
+            poly, (text, conf) = item
+            if not text.strip():
+                continue
+            out.append(Line(text=text, conf=float(conf),
+                            poly=[[float(px) - pad + x1, float(py) - pad + y1] for px, py in poly]))
+        if not out:  # very small or faint text: recognise the whole cell as one line
+            r = self.ocr_model().ocr(padded, det=False, rec=True, cls=False)
+            if r and r[0] and r[0][0][0].strip() and r[0][0][1] > 0.5:
+                text, conf = r[0][0]
+                out.append(Line(text=text, conf=float(conf), poly=[[x1, y1], [x2, y1], [x2, y2], [x1, y2]]))
+        return out
+
+    def _read_cells_handwriting(self, img: np.ndarray, todo: list[tuple], notes: list) -> None:
+        try:
+            reader = self.hw_model()
+        except Exception as e:
+            notes.append(f"handwriting model unavailable: {e}")
+            return
+        crops = []
+        for cell, line in todo:
+            if line is None:
+                crops.append(_trim_ink(imaging.crop_box(img, cell.box, pad=0)))
+            else:
+                crops.append(imaging.crop_poly(img, line.poly))
+        results = reader.read(crops)
+        for (cell, line), (text, conf) in zip(todo, results):
+            text = re.sub(r"\s+([.,;:!?)])", lambda m: m.group(1), text).strip()
+            if not text:
+                continue
+            if line is None:
+                if conf >= 0.35:  # below that TrOCR is guessing at specks or strokes
+                    x1, y1, x2, y2 = cell.box
+                    cell.lines = [Line(text=text, conf=conf, poly=[[x1, y1], [x2, y1], [x2, y2], [x1, y2]],
+                                       source="hand")]
+            elif self.s.mode == "handwritten" or conf > line.conf + 0.03:
+                line.alt_text, line.alt_conf = line.text, line.conf
+                line.text, line.conf, line.source = text, conf, "hand"
+            else:
+                line.alt_text, line.alt_conf = text, conf
 
     def _apply_corrections(self, page: Page) -> None:
         if not self.s.apply_corrections:
@@ -521,6 +651,79 @@ class OCREngine:
 
 _MATH_WORDS = {"sin", "cos", "tan", "exp", "log", "lim", "sinh", "cosh", "tanh", "arcsin", "arccos", "arctan",
                 "max", "min", "sup", "inf", "det", "mod"}
+
+
+def _erase_rules(crop: np.ndarray) -> np.ndarray:
+    """Paint out bits of table rules left inside a cell crop (they read as '1', '|')."""
+    if crop.size == 0:
+        return crop
+    g = cv2.cvtColor(crop, cv2.COLOR_BGR2GRAY) if crop.ndim == 3 else crop
+    bw = cv2.adaptiveThreshold(g, 255, cv2.ADAPTIVE_THRESH_MEAN_C, cv2.THRESH_BINARY_INV, 25, 15)
+    h, w = bw.shape
+    hl = cv2.morphologyEx(bw, cv2.MORPH_OPEN, cv2.getStructuringElement(cv2.MORPH_RECT, (max(10, int(w * 0.6)), 1)))
+    vl = cv2.morphologyEx(bw, cv2.MORPH_OPEN, cv2.getStructuringElement(cv2.MORPH_RECT, (1, max(10, int(h * 0.85)))))
+    # only rules hugging the cell border; long strokes inside the cell are writing
+    edge = np.zeros_like(bw)
+    m = max(4, min(h, w) // 8)
+    edge[:m, :] = edge[-m:, :] = 255
+    edge[:, :m] = edge[:, -m:] = 255
+    rules = cv2.dilate(cv2.bitwise_and(cv2.bitwise_or(hl, vl), edge), np.ones((3, 3), np.uint8))
+    crop[rules > 0] = 255
+    return crop
+
+
+_NUM_FIX = str.maketrans({"O": "0", "o": "0", "D": "0", "Q": "0", "l": "1", "I": "1", "|": "1", "i": "1",
+                          "F": "7", "T": "7", "S": "5", "s": "5", "B": "8", "q": "9", "g": "9", "Z": "2",
+                          "z": "2", "G": "6", "b": "6", "A": "4", "·": ".", ",": "."})
+_NUMBER = re.compile(r"^[-+]?\d+(\.\d+)?%?$")
+
+
+def _fix_numeric_columns(t) -> None:
+    """In a column that is mostly numbers, fix the usual handwriting confusions
+    (7 read as F, 0 as O, decimal point as '-' or a space...). A cell is changed
+    only when the corrected text is a valid number."""
+    by_col: dict[int, list] = {}
+    for c in t.cells:
+        if c.colspan == 1 and c.text:
+            by_col.setdefault(c.c, []).append(c)
+    for cells in by_col.values():
+        if len(cells) < 4:
+            continue
+        numeric = sum(1 for c in cells if _NUMBER.match(c.text.replace(" ", "")))
+        if numeric / len(cells) < 0.5:
+            continue
+        for c in cells:
+            if _NUMBER.match(c.text):
+                continue
+            cand = c.text.strip().translate(_NUM_FIX)
+            cand = re.sub(r"(?<=\d)\s*[-–—·:]\s*(?=\d)", ".", cand)  # 501-20 -> 501.20
+            cand = re.sub(r"(?<=\d)\s+(?=\d{2}$)", ".", cand)       # 79 98 -> 79.98
+            cand = cand.replace(" ", "")
+            if _NUMBER.match(cand):
+                c.text = cand
+                for l in c.lines:
+                    l.alt_text = l.alt_text or l.text
+                if c.lines:
+                    c.lines = [c.lines[0].__class__(text=cand, conf=min(l.conf for l in c.lines),
+                                                    poly=c.lines[0].poly, source=c.lines[0].source,
+                                                    alt_text=" ".join(l.text for l in c.lines))]
+
+
+def _trim_ink(crop: np.ndarray, pad: int = 6) -> np.ndarray:
+    """Crop a cell image to its writing (drops leftover rule pixels at the edges)."""
+    g = cv2.cvtColor(crop, cv2.COLOR_BGR2GRAY) if crop.ndim == 3 else crop
+    _, bw = cv2.threshold(g, 0, 255, cv2.THRESH_BINARY_INV + cv2.THRESH_OTSU)
+    m = 4
+    bw[:m, :] = 0
+    bw[-m:, :] = 0
+    bw[:, :m] = 0
+    bw[:, -m:] = 0
+    ys, xs = np.where(bw > 0)
+    if len(xs) == 0:
+        return crop
+    y1, y2 = max(0, ys.min() - pad), min(crop.shape[0], ys.max() + pad)
+    x1, x2 = max(0, xs.min() - pad), min(crop.shape[1], xs.max() + pad)
+    return crop[y1:y2, x1:x2]
 
 
 def looks_handwritten(lines: list[Line]) -> bool:
